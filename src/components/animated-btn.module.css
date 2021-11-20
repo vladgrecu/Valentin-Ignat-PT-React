@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.animated-btn {
+  color: var(--dl-color-neutral-white);
+  cursor: pointer;
+  height: 60px;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  transition: color 0.4s linear;
+  align-items: center;
+  line-height: 0;
+  padding-top: 30px;
+  border-color: var(--dl-color-default-primary);
+  border-width: 1px;
+  padding-left: 43px;
+  padding-right: 43px;
+  flex-direction: row;
+  padding-bottom: 30px;
+  background-color: var(--dl-color-default-primary);
+}
+.text {
+  font-size: 18px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}

@@ -1,0 +1,366 @@
+.container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-neutral-black);
+}
+.Main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Hero {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding-top: 250px;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/playground_assets/img_9801-1500h.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
+.max-content {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.About {
+  width: 100%;
+  display: flex;
+  min-height: 50vh;
+  padding-top: var(--dl-space-space-eightunits);
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: center;
+}
+.max-content1 {
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixteenunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-sixteenunits);
+  justify-content: space-between;
+}
+.Text-Container {
+  width: 45%;
+  display: flex;
+  margin-top: var(--dl-space-space-eightunits);
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.Container1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.horizontal-line {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-doubleunit);
+  flex-direction: column;
+  background-color: var(--dl-color-neutral-white);
+}
+.text {
+  color: var(--dl-color-neutral-white);
+}
+.Heading {
+  color: var(--dl-color-neutral-white);
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.image {
+  width: var(--dl-size-size-half);
+  align-self: stretch;
+  object-fit: cover;
+}
+.Services {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 0px;
+  flex-direction: column;
+}
+.max-content-picture {
+  width: 100%;
+  display: flex;
+  max-width: var(--dl-size-size-maxwidth);
+  min-height: 600px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.Heading1 {
+  display: none;
+  margin-bottom: 0px;
+}
+.container2 {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-size: cover;
+  background-image: url("/playground_assets/img_9665-1500h.jpg");
+  background-position: top left;
+}
+.container3 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-eightunits);
+}
+.max-content2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Cards-Container {
+  gap: 32px;
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: space-between;
+}
+.Stories {
+  width: 100%;
+  display: flex;
+  padding-top: var(--dl-space-space-eightunits);
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: center;
+}
+.max-content3 {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+.Shop {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-eightunits);
+}
+.max-content4 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Tablet-Container {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: center;
+}
+.Tablet {
+  flex: 0 0 auto;
+  width: 75%;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-doubleunit);
+  padding-left: var(--dl-space-space-eightunits);
+  border-radius: 48px;
+  padding-right: var(--dl-space-space-eightunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-doubleunit);
+  background-color: var(--dl-color-neutral-white);
+}
+.container4 {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/playground_assets/img_9766-1500w.jpg");
+  background-position: left;
+}
+.text8 {
+  margin-bottom: var(--dl-space-space-doubleunit);
+}
+.Blog {
+  width: 100%;
+  display: flex;
+  padding-top: var(--dl-space-space-eightunits);
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: center;
+}
+.max-content5 {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+.Cards-Container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: space-between;
+}
+@media(max-width: 991px) {
+  .max-content1 {
+    background-position: right;
+  }
+  .Text-Container {
+    width: 100%;
+  }
+  .Cards-Container {
+    justify-content: flex-start;
+  }
+  .Tablet-Container {
+    justify-content: center;
+  }
+  .Tablet {
+    width: 100%;
+  }
+  .container4 {
+    height: 350px;
+  }
+}
+@media(max-width: 767px) {
+  .Hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: 50f90a63-16d4-4214-94c8-733e5c4b9f6f;
+    background-attachment: unset;
+  }
+  .About {
+    padding-top: var(--dl-space-space-eightunits);
+    padding-bottom: var(--dl-space-space-eightunits);
+    background-size: cover;
+  }
+  .max-content1 {
+    padding-top: var(--dl-space-space-fourunits);
+    flex-direction: column-reverse;
+    padding-bottom: var(--dl-space-space-fourunits);
+    background-size: cover;
+    background-position: top;
+  }
+  .Text-Container {
+    margin-bottom: var(--dl-space-space-fourunits);
+  }
+  .Container1 {
+    margin-bottom: 0px;
+  }
+  .image {
+    width: 100%;
+  }
+  .Services {
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .max-content2 {
+    flex-direction: column;
+  }
+  .Cards-Container {
+    justify-content: center;
+  }
+  .Stories {
+    background-size: cover;
+  }
+  .Shop {
+    background-size: cover;
+  }
+  .Tablet {
+    padding-top: var(--dl-space-space-unit);
+    padding-left: var(--dl-space-space-fourunits);
+    padding-right: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .Blog {
+    background-size: cover;
+  }
+}
+@media(max-width: 479px) {
+  .Hero {
+    padding-top: var(--dl-space-space-sixteenunits);
+    padding-bottom: var(--dl-space-space-sixteenunits);
+    justify-content: flex-end;
+  }
+  .About {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .max-content1 {
+    padding-top: var(--dl-space-space-eightunits);
+    background-size: contain;
+  }
+  .Text-Container {
+    margin-bottom: 0px;
+  }
+  .Heading {
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+  .text2 {
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+  .max-content-picture {
+    min-height: 400px;
+  }
+  .container3 {
+    padding-bottom: 0px;
+  }
+  .Cards-Container {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .Stories {
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .Shop {
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .Tablet-Container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .container4 {
+    height: 200px;
+  }
+  .Blog {
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .Cards-Container1 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}

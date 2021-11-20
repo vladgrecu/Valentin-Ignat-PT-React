@@ -1,0 +1,36 @@
+.TitleContainer {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.Container {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.horizontal-line {
+  flex: 0 0 auto;
+  width: 50px;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-doubleunit);
+  flex-direction: column;
+  background-color: var(--dl-color-neutral-white);
+}
+.text {
+  color: var(--dl-color-neutral-white);
+}
+.component {
+  text-decoration: none;
+}
+
+
+
+@media(max-width: 767px) {
+  .TitleContainer {
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+}

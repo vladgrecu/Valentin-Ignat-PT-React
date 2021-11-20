@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rootClassName15 {
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.rootClassName16 {
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 479px) {
+  .text {
+    font-size: 18px;
+  }
+}

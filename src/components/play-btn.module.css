@@ -1,0 +1,82 @@
+.Video {
+  flex: 0 0 auto;
+  width: 90px;
+  cursor: pointer;
+  filter: drop-shadow(4px 0px 2px rgba(150, 150, 150, 0.65));
+  height: 90px;
+  display: flex;
+  position: relative;
+  align-self: center;
+  align-items: center;
+  border-color: var(--dl-color-neutral-white);
+  border-width: 5px;
+  border-radius: var(--dl-radius-radius-round);
+  flex-direction: column;
+  justify-content: center;
+}
+.rotating-cog-counter-clockwise {
+  top: -5px;
+  flex: 0 0 auto;
+  left: -5px;
+  right: auto;
+  width: 90px;
+  bottom: auto;
+  height: 90px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-color: var(--dl-color-neutral-gray);
+  border-style: double;
+  border-width: 5px;
+  border-radius: var(--dl-radius-radius-round);
+  flex-direction: column;
+}
+.rotating-cog-clockwise {
+  flex: 0 0 auto;
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  border-color: var(--dl-color-neutral-white);
+  border-style: double;
+  border-width: 5px;
+  border-radius: var(--dl-radius-radius-round);
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-neutral-black);
+}
+.inner-background {
+  flex: 0 0 auto;
+  width: 75%;
+  height: 75%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-round);
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-default-primary);
+}
+.icon {
+  fill: var(--dl-color-neutral-white);
+  width: 36px;
+  filter: drop-shadow(4px 0px 2px rgba(150, 150, 150, 0.65));
+  height: 36px;
+  transition: 0.1s;
+  margin-left: var(--dl-space-space-halfunit);
+}
+.icon:hover {
+  transform: scale(1.2);
+}
+.icon:active {
+  transform: scale(1);
+}
+
+@media(max-width: 767px) {
+  .rotating-cog-counter-clockwise {
+    border-style: double;
+  }
+  .rotating-cog-clockwise {
+    border-style: double;
+  }
+}

@@ -1,0 +1,75 @@
+.Card {
+  flex: 0 0 auto;
+  width: 30%;
+  display: flex;
+  padding: var(--dl-space-space-fourunits);
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  max-width: 350px;
+  transition: 0.4s;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--dl-color-neutral-white);
+}
+.image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.text {
+  margin-bottom: var(--dl-space-space-tripleunit);
+}
+.text1 {
+  text-align: center;
+  margin-bottom: var(--dl-space-space-eightunits);
+}
+.Card-Button {
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100%;
+  bottom: -17%;
+  cursor: pointer;
+  height: 64px;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+  transition: 0.4s;
+  visibility: hidden;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: var(--dl-color-default-primary);
+}
+.text2 {
+  color: var(--dl-color-neutral-white);
+  margin-right: var(--dl-space-space-doubleunit);
+}
+.icon {
+  fill: var(--dl-color-neutral-white);
+  width: 20px;
+  height: 20px;
+}
+@media(max-width: 991px) {
+  .Card {
+    width: 40%;
+  }
+}
+@media(max-width: 767px) {
+  .Card {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media(max-width: 479px) {
+  .Card-Button {
+    bottom: 0%;
+    height: 48px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .text2 {
+    font-size: 18px;
+  }
+}

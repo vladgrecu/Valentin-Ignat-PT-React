@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Valentin Ignat PT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <style>
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6 {  margin: 0;  padding: 0;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}
+    </style>
+    <style>
+      html {
+        font-family: Source Sans Pro;
+        font-size: 18px;
+      }
+
+      body {
+        font-weight: 300;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: undefined;
+        letter-spacing: normal;
+        line-height: rem;
+        color: var(--dl-color-neutral-black);
+        background-color: var(--dl-color-neutral-white);
+
+      }
+    </style>
+    <link
+      rel="shortcut icon"
+      href="/playground_assets/justskull-whitebrain-redlines.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nosifer:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+    />
+    <style>
+      body {
+      overflow-x: hidden;
+      }
+
+      .fixed-navbar {
+        position: fixed !important;
+        animation: slideInDown 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+      }
+
+      .animated-btn::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 101%;
+          height: 101%;
+          background: #000;
+          z-index: 1;
+          border-radius: 5px;
+          transition: transform 0.5s;
+          transition-timing-function: ease;
+          transform-origin: 0 0;
+          transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
+          transform: scaleX(0);
+          border-radius: 0;
+      }
+
+      .animated-btn:hover::before {
+          transform: scaleX(1);
+          color: #fff!important;
+          z-index: -1;
+      }
+
+      .card:hover .card-button {
+         bottom: 0;
+         opacity:1;
+         visibility: visible;
+      }
+
+      .left-side:hover .left-overlay{
+         transform: translateX(0%);
+      }
+
+      .tl:hover .tl-overlay,
+              .tr:hover .tr-overlay,
+              .bl:hover .bl-overlay,
+              .br:hover .br-overlay {
+                transform: translateX(0%);
+              }
+
+      .cardfullbg:hover .card-caption {
+                background-color: #ff1313;
+                bottom: 0;
+              }
+              .cardfullbg:hover .social-media-links svg {
+                transform: translateY(6px);
+              }
+             .mobile-menu:hover .social-media-links svg{
+               transform: translateY(6px);
+              }
+
+      .slideInDown {
+        -webkit-animation-name: slideInDown;
+        animation-name: slideInDown;
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+
+      @-webkit-keyframes slideInDown {
+        0% {
+          -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes slideInDown {
+        0% {
+          -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .fade-in-left {
+        -webkit-animation-name: fadeInLeft;
+        animation-name: fadeInLeft;
+        -webkit-animation-duration: 2s;
+        animation-duration: 2s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+
+      @-webkit-keyframes fadeInLeft {
+        0% {
+          opacity: 0;
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+
+      @keyframes fadeInLeft {
+        0% {
+          opacity: 0;
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0);
+        }
+        100% {
+          opacity: 1;
+          -webkit-transform: none;
+          transform: none;
+        }
+      }
+
+       @-webkit-keyframes rotating-clockwise /* Safari and Chrome */ {
+                from {
+                  -webkit-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+                to {
+                  -webkit-transform: rotate(360deg);
+                  -o-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                }
+              }
+
+              @keyframes rotating-clockwise {
+                from {
+                  -ms-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+                to {
+                  -ms-transform: rotate(360deg);
+                  -moz-transform: rotate(360deg);
+                  -webkit-transform: rotate(360deg);
+                  -o-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                }
+              }
+
+              @-webkit-keyframes rotating-counter-clockwise /* Safari and Chrome */ {
+                from {
+                  -webkit-transform: rotate(360deg);
+                  -o-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                }
+                to {
+                  -webkit-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+              }
+
+              @keyframes rotating-counter-clockwise {
+                from {
+                  -ms-transform: rotate(360deg);
+                  -moz-transform: rotate(360deg);
+                  -webkit-transform: rotate(360deg);
+                  -o-transform: rotate(360deg);
+                  transform: rotate(360deg);
+                }
+                to {
+                  -ms-transform: rotate(0deg);
+                  -moz-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  -o-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+              }
+
+      .video:hover .rotating-cog-clockwise{
+        -webkit-animation: rotating-clockwise 2s linear infinite;
+        -moz-animation: rotating-clockwise 2s linear infinite;
+        -ms-animation: rotating-clockwise 2s linear infinite;
+        -o-animation: rotating-clockwise 2s linear infinite;
+        animation: rotating-clockwise 2s linear infinite;
+      }
+
+      .video:hover .rotating-cog-counter-clockwise{
+        -webkit-animation: rotating-counter-clockwise 2s linear infinite;
+        -moz-animation: rotating-counter-clockwise 2s linear infinite;
+        -ms-animation: rotating-counter-clockwise 2s linear infinite;
+        -o-animation: rotating-counter-clockwise 2s linear infinite;
+        animation: rotating-counter-clockwise 2s linear infinite;
+      }
+
+      .overlay-container:hover .services-cta-container{
+        display: flex;
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      window.onload = () => {
+        const setActivePage = () => {
+          document.querySelectorAll('.timeline-bullet').forEach(bullet => {
+            if (bullet.dataset.url === `/${location.href.split('/')[3]}`) {
+              bullet.classList.add('tl-bullet-active')
+              bullet.firstElementChild.classList.add('tl-inner-active')
+            } else {
+              bullet.classList.remove('tl-bullet-active')
+              bullet.firstElementChild.classList.remove('tl-inner-active')
+            }
+          })
+
+          document.querySelectorAll('.mobile-link-title').forEach(title => {
+            if (title.dataset.url === `/${location.href.split('/')[3]}`) {
+              title.classList.add('mobile-link-active')
+            } else {
+              title.classList.remove('mobile.link-active')
+            }
+          })
+        }
+
+        const initializeAllCarrousels = () => {
+          const allCarrousels = document.querySelectorAll('[data-role="carrousel"]')
+          allCarrousels.forEach(carrousel => {
+            const disableAutoSlide = allCarrousels.length > 1
+            initializeCarrousel(carrousel, disableAutoSlide)
+          })
+          console.log('All car:', allCarrousels)
+        }
+
+        const listenForUrlChanges = () => {
+          let url = location.href;
+          document.body.addEventListener('click', () => {
+            requestAnimationFrame(() => {
+              if (url !== location.href) {
+                setActivePage()
+                initializeAllCarrousels()
+                url = location.href
+              }
+            });
+          }, true);
+        }
+
+        // CARROUSEL
+        const initializeCarrousel = (carrousel, disableAutoSlide) => {
+          const slides = carrousel.querySelectorAll('.carrousel-slide-img[data-slide-index]')
+          const buttons = carrousel.querySelectorAll('.carrousel-control-btn[data-slide-index]')
+          let currentSlide = 0
+
+          const changeSlide = (imageIndex) => {
+            currentSlide = imageIndex
+            slides.forEach((slide) => slide.classList.remove("slide-active"))
+
+            slides[imageIndex].classList.add("slide-active")
+            buttons[imageIndex].firstElementChild.classList.add("tl-bullet-active")
+            buttons[imageIndex].firstElementChild.firstElementChild.classList.add("tl-inner-active")
+
+            // set active btn
+            buttons.forEach((btn) => {
+              const bullet = btn.firstElementChild
+              const bulletBg = bullet.firstElementChild
+              bullet.classList.remove('tl-bullet-active')
+              bulletBg.classList.remove('tl-inner-active')
+            }
+            )
+            const bullet = buttons[imageIndex].firstElementChild
+            bullet.classList.add(
+              "tl-bullet-active"
+            )
+            bullet.firstElementChild.classList.add('tl-inner-active')
+
+            // adjust currentSlide
+            imageIndex < slides.length - 1 ? currentSlide++ : (currentSlide = 0)
+          }
+          // react to carrousell-image click/mouseover/mouseleave
+          const pauseSlideShow = () => {
+            clearInterval(carrousellInterval)
+          }
+          const resumeSlideShow = () => {
+            carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
+          }
+          const renderNextSlide = () => {
+            changeSlide(currentSlide)
+          }
+
+          const handleClickOnButton = (index) => {
+            clearInterval(carrousellInterval)
+            changeSlide(index)
+            carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
+          }
+
+          let carrousellInterval = 0
+          if (!disableAutoSlide) {
+            carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
+          }
+
+          slides.forEach((slide) => slide.addEventListener("click", renderNextSlide))
+          slides.forEach((slide) => slide.addEventListener("mouseout", resumeSlideShow))
+          slides.forEach((slide) =>
+            slide.addEventListener("mouseenter", pauseSlideShow)
+          )
+
+          buttons.forEach((btn, index) => {
+            btn.addEventListener("click", () => handleClickOnButton(index))
+          })
+        }
+
+
+        setActivePage()
+        listenForUrlChanges()
+        initializeAllCarrousels()
+
+        document.addEventListener("scroll", (e) => {
+          const header = document.querySelector(".slide-in-down-navbar")
+          e.stopPropagation()
+          const scrollTop = window.pageYOffset
+
+          if (scrollTop > 400) {
+            header.classList.add("fixed-navbar")
+            header.style.backgroundColor = '#000'
+          } else {
+            header.classList.remove("fixed-navbar")
+            header.style.backgroundColor = 'transparent'
+          }
+        })
+
+        document.addEventListener("click", (e) => {
+          e.stopPropagation()
+
+          const isClickedElement = (elementIdentifier) => {
+            return e.composedPath().map(element => {
+              return String(element.className)
+            }).find(target => {
+              return target.includes(elementIdentifier)
+            })
+          }
+
+          const mobileMenu = document.querySelector('.mobile-menu')
+          if (isClickedElement('menu')) {
+            mobileMenu.style.transform = 'translateX(0%)'
+          }
+          if (isClickedElement('close-menu') || isClickedElement('mobile-links')) {
+            mobileMenu.style.transform = 'translateX(100%)'
+          }
+        })
+
+      }
+    </script>
+  </body>
+</html>
