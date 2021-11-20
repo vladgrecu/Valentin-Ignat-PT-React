@@ -29,7 +29,7 @@
     </style>
     <link
       rel="shortcut icon"
-      href="/playground_assets/justskull-whitebrain-redlines.png"
+      href="/playground_assets/logo - variantele principale-391.png"
       type="icon/png"
       sizes="32x32"
     />
@@ -301,8 +301,8 @@
         const initializeAllCarrousels = () => {
           const allCarrousels = document.querySelectorAll('[data-role="carrousel"]')
           allCarrousels.forEach(carrousel => {
-            const disableAutoSlide = allCarrousels.length > 1
-            initializeCarrousel(carrousel, disableAutoSlide)
+            const isAutoPlayDisabled = allCarrousels.length > 1
+            initializeCarrousel(carrousel, isAutoPlayDisabled)
           })
           console.log('All car:', allCarrousels)
         }
@@ -321,8 +321,7 @@
         }
 
         // CARROUSEL
-        const initializeCarrousel = (carrousel, disableAutoSlide) => {
-          console.log("isAutoSlideDisabled: ", disableAutoSlide)
+        const initializeCarrousel = (carrousel, isAutoPlayDisabled) => {
           const slider = carrousel.firstElementChild
           const slides = carrousel.querySelectorAll('.carrousel-slide[data-slide-index]')
           const buttons = carrousel.querySelectorAll('.carrousel-control-btn[data-slide-index]')
@@ -357,35 +356,33 @@
           }
           // react to carrousell-image click/mouseover/mouseleave
           const pauseSlideShow = () => {
-            console.log('Entering, should pause, interval is: ', carrousellInterval)
             clearInterval(carrousellInterval)
           }
 
           const resumeSlideShow = () => {
-            console.log('Resuming, interval is: ', carrousellInterval)
-            if (disableAutoSlide) {
+            pauseSlideShow()
+            if (isAutoPlayDisabled) {
               return
             }
             carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
           }
 
           const renderNextSlide = () => {
-            console.log('Clicked on slide, should move to next slide, interval is: ', carrousellInterval)
-            if (!disableAutoSlide) {
-              pauseSlideShow()
-            }
             changeSlide(currentSlide)
+            if (isAutoPlayDisabled) {
+              return
+            }
+            pauseSlideShow()
           }
 
-          const handleClickOnButton = (index) => {
-            console.log('Clicked on button, should move to next slide, interval is: ', carrousellInterval)
+          const changeToSlideAndResumeSlideShow = (index) => {
             pauseSlideShow()
             changeSlide(index)
-            if (disableAutoSlide) {
+            if (isAutoPlayDisabled) {
               return
             }
 
-            carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
+            resumeSlideShow()
           }
 
           let carrousellInterval = 0
@@ -395,18 +392,13 @@
 
           slides.forEach((slide) => slide.addEventListener("click", renderNextSlide))
 
-          // slides.forEach((slide) => slide.addEventListener("mouseout", resumeSlideShow))
-          // slides.forEach((slide) =>
-          //   slide.addEventListener("mouseenter", pauseSlideShow)
-          // )
-
           buttons.forEach((btn, index) => {
-            btn.addEventListener("click", () => handleClickOnButton(index))
+            btn.addEventListener("click", () => changeToSlideAndResumeSlideShow(index))
           })
 
           changeSlide(currentSlide)
 
-          if (disableAutoSlide) {
+          if (isAutoPlayDisabled) {
             return
           }
 

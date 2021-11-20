@@ -16,8 +16,12 @@ const Hiit = () => {
         <title>Hiit - Valentin Ignat PT</title>
         <meta property="og:title" content="Hiit - Valentin Ignat PT" />
         <meta
+          property="og:description"
+          content="Hello there, how are you?\nWe can put here whatever message we want!"
+        />
+        <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/27a3c67c-61d9-403f-afbd-260f79571dcb?org_if_sml=1"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/fd70f607-bc85-4d7b-bb1f-7847d3ed2e1c?org_if_sml=1"
         />
       </Helmet>
       <MobileMenu></MobileMenu>
@@ -511,105 +515,112 @@ const Hiit = () => {
               <div className={styles['Container11']}>
                 <div className={styles['Timeline']}>
                   <div className={styles['Item']}>
-                    <div className={styles['container12']}>
-                      <div className={styles['container13']}>
+                    <div className={styles['TriggerContainer']}>
+                      <div className={styles['Container12']}>
                         <div className={styles['Line']}></div>
                         <div className={styles['Bullet']}></div>
                         <div className={styles['Line1']}></div>
                       </div>
+                      <div className={styles['Line2']}></div>
                     </div>
-                    <span
-                      className={` ${styles['Text62']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                    >
-                      <span>
-                        Am creat o
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
+                    <div className={styles['ContentContainer']}>
+                      <span
+                        className={` ${styles['Text62']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      >
+                        <span>
+                          Am creat o
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                        <span className={styles['text64']}>
+                          periodizare
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                        <span>
+                          cu o durata de 8 saptamani in care te antrenezi de 3
+                          ori/saptamana. Am inceput totul cu intervale de lucru
+                          1:2 si pe parcursul celor 8 saptamani am evoluat la
+                          intervale de lucru 2:1.
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                        <br></br>
+                        <span></span>
                       </span>
-                      <span className={styles['text64']}>
-                        periodizare
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                      <span>
-                        cu o durata de 8 saptamani in care te antrenezi de 3
-                        ori/saptamana. Am inceput totul cu intervale de lucru
-                        1:2 si pe parcursul celor 8 saptamani am evoluat la
-                        intervale de lucru 2:1.
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                      <br></br>
-                      <span></span>
-                    </span>
+                    </div>
                   </div>
                   <div className={styles['Item1']}>
-                    <div className={styles['container14']}>
-                      <div className={styles['container15']}>
+                    <div className={styles['TriggerContainer1']}>
+                      <div className={styles['container13']}>
                         <div className={styles['Bullet1']}></div>
-                        <div className={styles['Line2']}></div>
+                        <div className={styles['Line3']}></div>
                       </div>
+                      <div className={styles['Line4']}></div>
                     </div>
-                    <span
-                      className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['Text67']} `}
-                    >
-                      <span>
-                        La finalul programului vei simti cum sistemul tau
-                        cardiovascular este mult imbunatatit. Practic vei fi mai
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
+                    <div className={styles['ContentContainer1']}>
+                      <span
+                        className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['Text67']} `}
+                      >
+                        <span>
+                          La finalul programului vei simti cum sistemul tau
+                          cardiovascular este mult imbunatatit. Practic vei fi
+                          mai
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                        <span className={styles['text69']}>
+                          rezistent
+                          <span
+                            dangerouslySetInnerHTML={{
+                              __html: ' ',
+                            }}
+                          />
+                        </span>
+                        <span>
+                          fizic si psihic, vei putea face fata la tot ce se
+                          intampla in jurul tau. O sa te uiti in oglinda si vei
+                          observa cum apar forme mai definite ale sistemului tau
+                          muscular.
+                        </span>
                       </span>
-                      <span className={styles['text69']}>
-                        rezistent
-                        <span
-                          dangerouslySetInnerHTML={{
-                            __html: ' ',
-                          }}
-                        />
-                      </span>
-                      <span>
-                        fizic si psihic, vei putea face fata la tot ce se
-                        intampla in jurul tau. O sa te uiti in oglinda si vei
-                        observa cum apar forme mai definite ale sistemului tau
-                        muscular.
-                      </span>
-                    </span>
+                    </div>
                   </div>
                   <div className={styles['Item2']}>
-                    <div className={styles['Container16']}>
-                      <div className={styles['container17']}>
+                    <div className={styles['TriggerContainer2']}>
+                      <div className={styles['container14']}>
                         <div className={styles['Bullet2']}></div>
-                        <div className={styles['Line3']}></div>
-                        <svg
-                          viewBox="0 0 1024 1024"
-                          className={styles['icon12']}
-                        >
-                          <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
-                        </svg>
+                        <div className={styles['Line5']}></div>
                       </div>
+                      <div className={styles['Line6']}></div>
+                      <svg viewBox="0 0 1024 1024" className={styles['Icon12']}>
+                        <path d="M250 176l92-90 426 426-426 426-92-90 338-336z"></path>
+                      </svg>
                     </div>
-                    <span
-                      className={` ${styles['Text71']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                    >
-                      <span>
-                        Eu voi fi alaturi de tine pe parcursul celor 8
-                        saptamani, la fiecare antrenament si il vom executa
-                        impreuna. Pe ecran ma vei vedea tot timpul pe mine,
-                        cronometrul si muzica.
+                    <div className={styles['ContentContainer2']}>
+                      <span
+                        className={` ${styles['Text71']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      >
+                        <span>
+                          Eu voi fi alaturi de tine pe parcursul celor 8
+                          saptamani, la fiecare antrenament si il vom executa
+                          impreuna. Pe ecran ma vei vedea tot timpul pe mine,
+                          cronometrul si muzica.
+                        </span>
                       </span>
-                    </span>
+                    </div>
                   </div>
                 </div>
                 <img

@@ -7,6 +7,7 @@ import MobileMenu from '../components/mobile-menu'
 import CtaBtnRounded from '../components/cta-btn-rounded'
 import ResultsCard from '../components/results-card'
 import CarrouselWithText from '../components/carrousel-with-text'
+import CarrouselWithTextReverse from '../components/carrousel-with-text-reverse'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
 import styles from './stories.module.css'
@@ -18,8 +19,12 @@ const Stories = () => {
         <title>Stories - Valentin Ignat PT</title>
         <meta property="og:title" content="Stories - Valentin Ignat PT" />
         <meta
+          property="og:description"
+          content="Hello there, how are you?\nWe can put here whatever message we want!"
+        />
+        <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/27a3c67c-61d9-403f-afbd-260f79571dcb?org_if_sml=1"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/fd70f607-bc85-4d7b-bb1f-7847d3ed2e1c?org_if_sml=1"
         />
       </Helmet>
       <SlideInDownNavbar1 rootClassName="rootClassName3"></SlideInDownNavbar1>
@@ -123,12 +128,12 @@ const Stories = () => {
           >
             <div className={styles['cards-container1']}>
               <CarrouselWithText rootClassName="rootClassName"></CarrouselWithText>
-              <CarrouselWithText
-                rootClassName="rootClassName1"
-                slide_one_src="/playground_assets/01-1500h.jpg"
-                slide_two_src="/playground_assets/back-1500h.jpg"
-                slide_three_src="/playground_assets/21-1500h.jpg"
-              ></CarrouselWithText>
+              <CarrouselWithTextReverse
+                rootClassName="rootClassName"
+                slide_one_src="/playground_assets/front-romina-1500h.jpg"
+                slide_two_src="/playground_assets/back-romina-1500h.jpg"
+                slide_three_src="/playground_assets/lateral-romina-1500h.jpg"
+              ></CarrouselWithTextReverse>
             </div>
           </div>
         </div>

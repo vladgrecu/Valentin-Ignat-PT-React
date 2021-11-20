@@ -44,7 +44,7 @@
   justify-content: center;
 }
 .text {
-  text-align: center;
+  text-align: right;
   margin-bottom: var(--dl-space-space-eightunits);
 }
 .text2 {

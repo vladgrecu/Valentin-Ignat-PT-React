@@ -16,8 +16,12 @@ const About = () => {
         <title>About - Valentin Ignat PT</title>
         <meta property="og:title" content="About - Valentin Ignat PT" />
         <meta
+          property="og:description"
+          content="Hello there, how are you?\nWe can put here whatever message we want!"
+        />
+        <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/27a3c67c-61d9-403f-afbd-260f79571dcb?org_if_sml=1"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/fd70f607-bc85-4d7b-bb1f-7847d3ed2e1c?org_if_sml=1"
         />
       </Helmet>
       <SlideInDownNavbar1 rootClassName="rootClassName1"></SlideInDownNavbar1>

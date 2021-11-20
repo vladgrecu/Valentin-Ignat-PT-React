@@ -1,5 +1,6 @@
 .Carrousel {
   display: flex;
+  flex-direction: row-reverse;
 }
 .Slider {
   flex: 0 0 auto;
@@ -7,7 +8,7 @@
   display: flex;
   align-self: stretch;
   align-items: center;
-  margin-right: var(--dl-space-space-eightunits);
+  margin-left: var(--dl-space-space-eightunits);
   flex-direction: column;
   justify-content: flex-end;
 }
@@ -69,6 +70,7 @@
   }
   .Slider {
     width: 100%;
+    margin-left: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
   }

@@ -3,9 +3,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import projectStyles from '../style.module.css'
-import styles from './carrousel-with-text.module.css'
+import styles from './carrousel-with-text-reverse.module.css'
 
-const CarrouselWithText = (props) => {
+const CarrouselWithTextReverse = (props) => {
   return (
     <div
       data-role="carrousel"
@@ -87,20 +87,20 @@ const CarrouselWithText = (props) => {
   )
 }
 
-CarrouselWithText.defaultProps = {
-  text: 'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
+CarrouselWithTextReverse.defaultProps = {
+  rootClassName: '',
+  slide_three_src: '/playground_assets/1-1500h.jpg',
   slide_two_src: '/playground_assets/2-1500h.jpg',
   slide_one_src: '/playground_assets/0-1500h.jpg',
-  slide_three_src: '/playground_assets/1-1500h.jpg',
-  rootClassName: '',
+  text: 'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
 }
 
-CarrouselWithText.propTypes = {
-  text: PropTypes.string,
+CarrouselWithTextReverse.propTypes = {
+  rootClassName: PropTypes.string,
+  slide_three_src: PropTypes.string,
   slide_two_src: PropTypes.string,
   slide_one_src: PropTypes.string,
-  slide_three_src: PropTypes.string,
-  rootClassName: PropTypes.string,
+  text: PropTypes.string,
 }
 
-export default CarrouselWithText
+export default CarrouselWithTextReverse

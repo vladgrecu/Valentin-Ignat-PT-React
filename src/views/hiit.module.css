@@ -647,14 +647,14 @@
   flex-direction: row;
   justify-content: center;
 }
-.container12 {
+.TriggerContainer {
   display: flex;
   align-self: stretch;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
-.container13 {
+.Container12 {
   display: flex;
   align-self: stretch;
   align-items: center;
@@ -694,6 +694,23 @@
   flex-direction: column;
   background-color: var(--dl-color-default-primary);
 }
+.Line2 {
+  flex: 1;
+  width: 6px;
+  display: flex;
+  margin-top: -1px;
+  min-height: 100px;
+  align-items: flex-start;
+  margin-left: 12px;
+  flex-direction: column;
+  background-color: var(--dl-color-default-primary);
+}
+.ContentContainer {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
 .Text62 {
   margin-top: var(--dl-space-space-eightunits);
 }
@@ -710,14 +727,14 @@
   flex-direction: row;
   justify-content: center;
 }
-.container14 {
+.TriggerContainer1 {
   display: flex;
   align-self: stretch;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
-.container15 {
+.container13 {
   display: flex;
   align-self: stretch;
   align-items: center;
@@ -726,54 +743,6 @@
   justify-content: center;
 }
 .Bullet1 {
-  width: 30px;
-  height: 30px;
-  padding: var(--dl-space-space-halfunit);
-  min-width: 30px;
-  box-shadow: none;
-  min-height: 30px;
-  align-items: center;
-  border-radius: var(--dl-radius-radius-round);
-  justify-content: center;
-  background-color: var(--dl-color-default-primary);
-}
-.Line2 {
-  flex: 1;
-  width: 6px;
-  display: flex;
-  margin-top: -1px;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: var(--dl-color-default-primary);
-}
-.text69 {
-  color: var(--dl-color-default-primary);
-}
-.Item2 {
-  flex: 1;
-  display: flex;
-  position: relative;
-  min-width: 100%;
-  margin-top: -1px;
-  flex-direction: row;
-  justify-content: center;
-}
-.Container16 {
-  display: flex;
-  align-self: stretch;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-.container17 {
-  display: flex;
-  align-self: stretch;
-  align-items: center;
-  margin-right: var(--dl-space-space-tripleunit);
-  flex-direction: column;
-  justify-content: center;
-}
-.Bullet2 {
   width: 30px;
   height: 30px;
   padding: var(--dl-space-space-halfunit);
@@ -794,12 +763,94 @@
   flex-direction: column;
   background-color: var(--dl-color-default-primary);
 }
-.icon12 {
+.Line4 {
+  flex: 1;
+  width: 6px;
+  display: flex;
+  margin-top: -1px;
+  min-height: 100px;
+  align-items: flex-start;
+  margin-left: 12px;
+  flex-direction: column;
+  background-color: var(--dl-color-default-primary);
+}
+.ContentContainer1 {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
+}
+.text69 {
+  color: var(--dl-color-default-primary);
+}
+.Item2 {
+  flex: 1;
+  display: flex;
+  position: relative;
+  min-width: 100%;
+  margin-top: -1px;
+  flex-direction: row;
+  justify-content: center;
+}
+.TriggerContainer2 {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.container14 {
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  margin-right: var(--dl-space-space-tripleunit);
+  flex-direction: column;
+  justify-content: center;
+}
+.Bullet2 {
+  width: 30px;
+  height: 30px;
+  padding: var(--dl-space-space-halfunit);
+  min-width: 30px;
+  box-shadow: none;
+  min-height: 30px;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-round);
+  justify-content: center;
+  background-color: var(--dl-color-default-primary);
+}
+.Line5 {
+  flex: 1;
+  width: 6px;
+  display: flex;
+  margin-top: -1px;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-default-primary);
+}
+.Line6 {
+  flex: 1;
+  width: 6px;
+  display: flex;
+  margin-top: -1px;
+  min-height: 100px;
+  align-items: flex-start;
+  margin-left: 12px;
+  flex-direction: column;
+  background-color: var(--dl-color-default-primary);
+}
+.Icon12 {
   fill: var(--dl-color-default-primary);
   width: 30px;
   height: 30px;
   transform: rotate(90deg);
   margin-top: -20px;
+}
+.ContentContainer2 {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: center;
 }
 .Text71 {
   margin-bottom: var(--dl-space-space-eightunits);
@@ -1110,7 +1161,7 @@
   .text61 {
     text-align: left;
   }
-  .container13 {
+  .Container12 {
     margin-right: var(--dl-space-space-unit);
   }
   .Line {
@@ -1120,13 +1171,13 @@
     margin-top: var(--dl-space-space-fourunits);
     margin-bottom: var(--dl-space-space-fourunits);
   }
-  .container15 {
+  .container13 {
     margin-right: var(--dl-space-space-unit);
   }
   .Text67 {
     margin-bottom: var(--dl-space-space-fourunits);
   }
-  .container17 {
+  .container14 {
     margin-right: var(--dl-space-space-unit);
   }
   .Text71 {

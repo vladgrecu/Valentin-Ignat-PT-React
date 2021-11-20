@@ -274,6 +274,7 @@
 }
 .fade-in-left {
   display: flex;
+  margin-top: 40%;
 }
 .circle-try {
   flex: 0 0 auto;
