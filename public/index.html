@@ -322,9 +322,11 @@
 
         // CARROUSEL
         const initializeCarrousel = (carrousel, disableAutoSlide) => {
-          const slides = carrousel.querySelectorAll('.carrousel-slide-img[data-slide-index]')
+          const slider = carrousel.firstElementChild
+          const slides = carrousel.querySelectorAll('.carrousel-slide[data-slide-index]')
           const buttons = carrousel.querySelectorAll('.carrousel-control-btn[data-slide-index]')
-          let currentSlide = 0
+
+          let currentSlide = 1
 
           const changeSlide = (imageIndex) => {
             currentSlide = imageIndex
@@ -342,6 +344,7 @@
               bulletBg.classList.remove('tl-inner-active')
             }
             )
+
             const bullet = buttons[imageIndex].firstElementChild
             bullet.classList.add(
               "tl-bullet-active"
@@ -355,9 +358,14 @@
           const pauseSlideShow = () => {
             clearInterval(carrousellInterval)
           }
+
           const resumeSlideShow = () => {
+            if (disableAutoSlide) {
+              return
+            }
             carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
           }
+
           const renderNextSlide = () => {
             changeSlide(currentSlide)
           }
@@ -365,23 +373,34 @@
           const handleClickOnButton = (index) => {
             clearInterval(carrousellInterval)
             changeSlide(index)
+            if (disableAutoSlide) {
+              return
+            }
+
             carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
           }
 
           let carrousellInterval = 0
-          if (!disableAutoSlide) {
-            carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
-          }
+
+          slider.addEventListener("mouseenter", pauseSlideShow)
+          slider.addEventListener("mouseout", resumeSlideShow)
 
           slides.forEach((slide) => slide.addEventListener("click", renderNextSlide))
-          slides.forEach((slide) => slide.addEventListener("mouseout", resumeSlideShow))
-          slides.forEach((slide) =>
-            slide.addEventListener("mouseenter", pauseSlideShow)
-          )
+
+          // slides.forEach((slide) => slide.addEventListener("mouseout", resumeSlideShow))
+          // slides.forEach((slide) =>
+          //   slide.addEventListener("mouseenter", pauseSlideShow)
+          // )
 
           buttons.forEach((btn, index) => {
             btn.addEventListener("click", () => handleClickOnButton(index))
           })
+
+          if (disableAutoSlide) {
+            return
+          }
+
+          carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
         }
 
 
