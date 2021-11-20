@@ -322,11 +322,12 @@
 
         // CARROUSEL
         const initializeCarrousel = (carrousel, disableAutoSlide) => {
+          console.log("isAutoSlideDisabled: ", disableAutoSlide)
           const slider = carrousel.firstElementChild
           const slides = carrousel.querySelectorAll('.carrousel-slide[data-slide-index]')
           const buttons = carrousel.querySelectorAll('.carrousel-control-btn[data-slide-index]')
 
-          let currentSlide = 1
+          let currentSlide = 0
 
           const changeSlide = (imageIndex) => {
             currentSlide = imageIndex
@@ -356,10 +357,12 @@
           }
           // react to carrousell-image click/mouseover/mouseleave
           const pauseSlideShow = () => {
+            console.log('Entering, should pause, interval is: ', carrousellInterval)
             clearInterval(carrousellInterval)
           }
 
           const resumeSlideShow = () => {
+            console.log('Resuming, interval is: ', carrousellInterval)
             if (disableAutoSlide) {
               return
             }
@@ -367,11 +370,16 @@
           }
 
           const renderNextSlide = () => {
+            console.log('Clicked on slide, should move to next slide, interval is: ', carrousellInterval)
+            if (!disableAutoSlide) {
+              pauseSlideShow()
+            }
             changeSlide(currentSlide)
           }
 
           const handleClickOnButton = (index) => {
-            clearInterval(carrousellInterval)
+            console.log('Clicked on button, should move to next slide, interval is: ', carrousellInterval)
+            pauseSlideShow()
             changeSlide(index)
             if (disableAutoSlide) {
               return
@@ -382,7 +390,7 @@
 
           let carrousellInterval = 0
 
-          slider.addEventListener("mouseenter", pauseSlideShow)
+          slider.addEventListener("mouseover", pauseSlideShow)
           slider.addEventListener("mouseout", resumeSlideShow)
 
           slides.forEach((slide) => slide.addEventListener("click", renderNextSlide))
@@ -395,6 +403,8 @@
           buttons.forEach((btn, index) => {
             btn.addEventListener("click", () => handleClickOnButton(index))
           })
+
+          changeSlide(currentSlide)
 
           if (disableAutoSlide) {
             return
