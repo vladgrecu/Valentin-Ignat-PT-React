@@ -44,15 +44,13 @@ const SlideInDownNavbar = (props) => {
               services
             </span>
           </div>
-          <Link to="/my-mission" className={styles['navlink']}>
-            <div className={styles['container4']}>
-              <span
-                className={` ${styles['text5']} ${projectStyles['navbar-Link']} `}
-              >
-                {props.text1}
-              </span>
-            </div>
-          </Link>
+          <div className={styles['container4']}>
+            <span
+              className={` ${styles['text5']} ${projectStyles['navbar-Link']} `}
+            >
+              {props.text1}
+            </span>
+          </div>
           <div className={styles['container5']}>
             <span
               className={` ${styles['Text6']} ${projectStyles['navbar-Link']} `}
@@ -60,7 +58,7 @@ const SlideInDownNavbar = (props) => {
               {props.text2}
             </span>
           </div>
-          <Link to="/hiit" className={styles['navlink1']}>
+          <Link to="/hiit" className={styles['navlink']}>
             <div className={styles['container6']}>
               <span
                 className={` ${styles['text7']} ${projectStyles['navbar-Link']} `}

@@ -26,9 +26,6 @@
 .component {
   text-decoration: none;
 }
-
-
-
 @media(max-width: 767px) {
   .TitleContainer {
     margin-bottom: var(--dl-space-space-tripleunit);

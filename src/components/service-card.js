@@ -17,7 +17,7 @@ const ServiceCard = (props) => {
         {props.card_title}
       </span>
       <span className={styles['text1']}>{props.card_text}</span>
-      <div className={styles['Card-Button']}>
+      <div data-action="showContactFormModal" className={styles['Card-Button']}>
         <span
           className={` ${styles['text2']} ${projectStyles['button-Text']} `}
         >

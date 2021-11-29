@@ -1,12 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
+import ContactFormModal from '../components/contact-form-modal'
 import SlideInDownNavbar1 from '../components/slide-in-down-navbar1'
 import MobileMenu from '../components/mobile-menu'
 import FadeInLeftComponent1 from '../components/fade-in-left-component1'
-import CtaBtnRounded from '../components/cta-btn-rounded'
-import SectionHeading from '../components/section-heading'
+import BtnPrimary from '../components/btn-primary'
 import ServiceCard from '../components/service-card'
 import CarrouselWithText from '../components/carrousel-with-text'
 import PlayBtn from '../components/play-btn'
@@ -19,17 +20,18 @@ const Home = () => {
   return (
     <div className={styles['container']}>
       <Helmet>
-        <title>Valentin Ignat PT</title>
-        <meta property="og:title" content="Valentin Ignat PT" />
+        <title>Coach Vali Ignat</title>
+        <meta property="og:title" content="Coach Vali Ignat" />
         <meta
           property="og:description"
           content="Hello there, how are you?\nWe can put here whatever message we want!"
         />
         <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/fd70f607-bc85-4d7b-bb1f-7847d3ed2e1c?org_if_sml=1"
+          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/3a2f6895-526e-403a-884d-eca828114341?org_if_sml=1"
         />
       </Helmet>
+      <ContactFormModal rootClassName="rootClassName3"></ContactFormModal>
       <SlideInDownNavbar1 rootClassName="rootClassName"></SlideInDownNavbar1>
       <MobileMenu rootClassName="rootClassName"></MobileMenu>
       <main className={styles['Main']}>
@@ -62,7 +64,7 @@ const Home = () => {
                 <span>obiectivul meu</span>
               </h2>
               <span
-                className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text2']} `}
+                className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text02']} `}
               >
                 <span>
                   Misiunea mea este sa ajut oamenii din jurul meu sa
@@ -101,14 +103,17 @@ const Home = () => {
                   principal.
                 </span>
               </span>
-              <CtaBtnRounded
-                cta_text="afla mai mult"
-                rootClassName="rootClassName2"
-              ></CtaBtnRounded>
+              <Link to="/despre" className={styles['navlink']}>
+                <BtnPrimary
+                  cta_text="afla mai mult"
+                  rootClassName="rootClassName2"
+                  className={styles['component03']}
+                ></BtnPrimary>
+              </Link>
             </div>
             <img
               alt="image"
-              src="/playground_assets/img_9759-1500h.jpg"
+              src="/playground_assets/img_9913-1500h.jpg"
               className={styles['image']}
             />
           </div>
@@ -117,10 +122,8 @@ const Home = () => {
           <div
             className={` ${styles['max-content-picture']} ${projectStyles['max-content']} `}
           >
-            <h1
-              className={` ${styles['Heading1']} ${projectStyles['heading-1']} `}
-            >
-              Evaluare. conexiune. experienta
+            <h1 className={projectStyles['heading-1']}>
+              evaluare. conexiune. experienta.
             </h1>
             <div className={styles['container2']}></div>
           </div>
@@ -128,12 +131,26 @@ const Home = () => {
             <div
               className={` ${styles['max-content2']} ${projectStyles['max-content']} `}
             >
-              <SectionHeading
-                title="Servicii"
-                description="Shop"
-                rootClassName="rootClassName1"
-                link_component="https://services-new"
-              ></SectionHeading>
+              <div className={projectStyles['section-heading-container']}>
+                <div className={styles['TitleContainer']}>
+                  <div className={styles['Container4']}>
+                    <div className={styles['horizontal-line1']}></div>
+                    <span
+                      className={` ${styles['text09']} ${projectStyles['before-H2']} `}
+                    >
+                      Shop
+                    </span>
+                  </div>
+                  <h1 className={projectStyles['heading-1']}>Servicii</h1>
+                </div>
+                <Link to="/servicii">
+                  <BtnPrimary
+                    cta_text="Afla mai mult"
+                    rootClassName="rootClassName26"
+                    className={styles['component04']}
+                  ></BtnPrimary>
+                </Link>
+              </div>
               <div className={styles['Cards-Container']}>
                 <ServiceCard
                   image_src="/playground_assets/img_4081-1500w.jpg"
@@ -155,7 +172,28 @@ const Home = () => {
           <div
             className={` ${styles['max-content3']} ${projectStyles['max-content']} `}
           >
-            <SectionHeading></SectionHeading>
+            <div className={projectStyles['section-heading-container']}>
+              <div className={styles['TitleContainer1']}>
+                <div className={styles['Container5']}>
+                  <div className={styles['horizontal-line2']}></div>
+                  <span
+                    className={` ${styles['text11']} ${projectStyles['before-H2']} `}
+                  >
+                    feedback
+                  </span>
+                </div>
+                <h1 className={projectStyles['heading-1']}>
+                  Povesti de succes
+                </h1>
+              </div>
+              <Link to="/povesti-de-succes">
+                <BtnPrimary
+                  cta_text="Afla mai mult"
+                  rootClassName="rootClassName27"
+                  className={styles['component08']}
+                ></BtnPrimary>
+              </Link>
+            </div>
             <CarrouselWithText></CarrouselWithText>
           </div>
         </section>
@@ -163,21 +201,44 @@ const Home = () => {
           <div
             className={` ${styles['max-content4']} ${projectStyles['max-content']} `}
           >
-            <SectionHeading
-              title="Cum pot sa te ajut"
-              description="HIIT"
-              rootClassName="rootClassName2"
-            ></SectionHeading>
+            <div className={projectStyles['section-heading-container']}>
+              <div className={styles['TitleContainer2']}>
+                <div className={styles['Container6']}>
+                  <div className={styles['horizontal-line3']}></div>
+                  <span
+                    className={` ${styles['text13']} ${projectStyles['before-H2']} `}
+                  >
+                    HIIT
+                  </span>
+                </div>
+                <h1 className={projectStyles['heading-1']}>
+                  Cum pot sa te ajut
+                </h1>
+              </div>
+              <Link to="/hiit">
+                <BtnPrimary
+                  cta_text="Afla mai mult"
+                  rootClassName="rootClassName28"
+                  className={styles['component10']}
+                ></BtnPrimary>
+              </Link>
+            </div>
             <div className={styles['Tablet-Container']}>
               <div className={styles['Tablet']}>
-                <div className={styles['container4']}>
-                  <h1
-                    className={` ${styles['text8']} ${projectStyles['heading-1']} `}
-                  >
-                    hiit
-                  </h1>
-                  <PlayBtn rootClassName="rootClassName"></PlayBtn>
-                </div>
+                <video
+                  src="https://mypthelperbucket.s3.us-east-2.amazonaws.com/HIIT+promo+2.mp4"
+                  muted="true"
+                  poster="/playground_assets/img_9766-1500h.jpg"
+                  preload="auto"
+                  controls="true"
+                  playsinline="true"
+                  data-video-type="promoVideo"
+                  className={styles['video']}
+                ></video>
+                <PlayBtn
+                  rootClassName="rootClassName"
+                  className={styles['component11']}
+                ></PlayBtn>
               </div>
             </div>
           </div>
@@ -186,21 +247,36 @@ const Home = () => {
           <div
             className={` ${styles['max-content5']} ${projectStyles['max-content']} `}
           >
-            <SectionHeading
-              title="Ce mai scriu"
-              description="Blog"
-              rootClassName="rootClassName"
-            ></SectionHeading>
+            <div className={projectStyles['section-heading-container']}>
+              <div className={styles['TitleContainer3']}>
+                <div className={styles['Container7']}>
+                  <div className={styles['horizontal-line4']}></div>
+                  <span
+                    className={` ${styles['text15']} ${projectStyles['before-H2']} `}
+                  >
+                    Blog
+                  </span>
+                </div>
+                <h1 className={projectStyles['heading-1']}>Ce mai scriu</h1>
+              </div>
+              <Link to="/blog">
+                <BtnPrimary
+                  cta_text="Afla mai mult"
+                  rootClassName="rootClassName29"
+                  className={styles['component12']}
+                ></BtnPrimary>
+              </Link>
+            </div>
             <div className={styles['Cards-Container1']}>
               <BlogCard
-                text="Nutrition"
-                heading3="Toni Eatgood"
-                image_src="https://images.unsplash.com/photo-1556908153-c0e609dda194?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=1000"
+                data="24 dec 2021"
+                autor="Vali Ignat"
+                image_src="/playground_assets/image%205%20%5B1%5D-1500w.png"
                 rootClassName="rootClassName"
               ></BlogCard>
               <BlogCard
-                text="Marketing"
-                heading3="Gigi Gogutu"
+                data="11 nov 2021"
+                autor="Guest writter"
                 image_src="https://images.unsplash.com/photo-1468436139062-f60a71c5c892?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=1000"
                 rootClassName="rootClassName2"
               ></BlogCard>

@@ -2,29 +2,32 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import CtaBtnRounded from './cta-btn-rounded'
+import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './fade-in-left-component1.module.css'
 
 const FadeInLeftComponent1 = (props) => {
   return (
     <div
-      className={` ${styles['container']} ${projectStyles['fade-in-left']} ${
-        styles[props.rootClassName]
-      } `}
+      className={` ${styles['container']} ${
+        projectStyles['animation-fade-in-left']
+      } ${styles[props.rootClassName]} `}
     >
       <div className={styles['horizontal-line']}></div>
       <div className={styles['Container1']}>
-        <h1
-          className={` ${styles['heading-hero']} ${projectStyles['heading-1']} `}
-        >
-          {props.text_content}
-        </h1>
         <div className={styles['Container2']}>
-          <CtaBtnRounded
-            cta_text="Contacteaza-ma"
-            rootClassName="rootClassName1"
-          ></CtaBtnRounded>
+          <span className={` ${styles['text']} ${projectStyles['heading-1']} `}>
+            {props.text_content}
+          </span>
+          <div
+            data-action="showContactFormModal"
+            className={styles['container3']}
+          >
+            <BtnPrimary
+              cta_text="Contacteaza-ma"
+              rootClassName="rootClassName1"
+            ></BtnPrimary>
+          </div>
         </div>
       </div>
     </div>

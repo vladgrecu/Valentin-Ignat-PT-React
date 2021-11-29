@@ -134,12 +134,16 @@
 .text4 {
   left: 3px;
 }
+.navlink6 {
+  display: contents;
+}
 .Bullet5 {
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  text-decoration: none;
 }
 .BulletContent5 {
   z-index: 100;
@@ -147,12 +151,16 @@
 .text5 {
   left: 2px;
 }
+.navlink7 {
+  display: contents;
+}
 .Bullet6 {
   display: flex;
   position: relative;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+  text-decoration: none;
 }
 .BulletContent6 {
   z-index: 100;
@@ -173,15 +181,11 @@
   height: 36px;
 }
 
-.rootClassName1 {
-  background-color: #000 !important;
-}
-.rootClassName2 {
-  background-color: #000 !important;
-}
-.rootClassName3 {
-  background-color: #000 !important;
-}
+
+
+
+
+
 
 @media(max-width: 767px) {
   .Navbar {

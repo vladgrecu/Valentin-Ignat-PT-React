@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.cta-btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.rootClassName15 {
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+.rootClassName16 {
+  margin-bottom: var(--dl-space-space-fourunits);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 479px) {
+  .cta-btn {
+    font-size: 16px;
+    padding-top: 12px;
+    padding-left: var(--dl-space-space-tripleunit);
+    padding-right: var(--dl-space-space-tripleunit);
+    padding-bottom: 12px;
+  }
+}

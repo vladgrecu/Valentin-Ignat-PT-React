@@ -3,22 +3,24 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './style.module.css'
-import Services from './views/services'
-import MyMission from './views/my-mission'
-import About from './views/about'
+import Servicii from './views/servicii'
+import Despre from './views/despre'
 import Home from './views/home'
-import Stories from './views/stories'
+import Contact from './views/contact'
+import PovestiDeSucces from './views/povesti-de-succes'
+import Blog from './views/blog'
 import Hiit from './views/hiit'
 
 const App = () => {
   return (
     <Router>
       <div>
-        <Route exact component={Services} path="/services" />
-        <Route exact component={MyMission} path="/my-mission" />
-        <Route exact component={About} path="/about" />
+        <Route exact component={Servicii} path="/servicii" />
+        <Route exact component={Despre} path="/despre" />
         <Route exact component={Home} path="/" />
-        <Route exact component={Stories} path="/stories" />
+        <Route exact component={Contact} path="/contact" />
+        <Route exact component={PovestiDeSucces} path="/povesti-de-succes" />
+        <Route exact component={Blog} path="/blog" />
         <Route exact component={Hiit} path="/hiit" />
       </div>
     </Router>

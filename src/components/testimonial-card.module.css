@@ -18,7 +18,6 @@
   display: flex;
   align-self: stretch;
   overflow-x: hidden;
-  margin-bottom: var(--dl-space-space-tripleunit);
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
@@ -48,6 +47,9 @@
   margin-top: var(--dl-space-space-fourunits);
   margin-bottom: var(--dl-space-space-fourunits);
 }
+
+
+
 @media(max-width: 767px) {
   .Carrousel {
     flex-direction: column;

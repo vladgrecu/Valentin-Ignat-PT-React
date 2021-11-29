@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import CtaBtnRounded from './cta-btn-rounded'
+import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './section-heading.module.css'
 
@@ -23,11 +23,11 @@ const SectionHeading = (props) => {
         <h1 className={projectStyles['heading-1']}>{props.title}</h1>
       </div>
       <a href={props.link_component}>
-        <CtaBtnRounded
+        <BtnPrimary
           cta_text="Afla mai mult"
           rootClassName="rootClassName5"
           className={styles['component']}
-        ></CtaBtnRounded>
+        ></BtnPrimary>
       </a>
     </div>
   )

@@ -135,9 +135,6 @@
 .text4:hover {
   color: var(--dl-color-default-subtitle);
 }
-.navlink {
-  display: contents;
-}
 .container4 {
   display: flex;
   align-items: center;
@@ -174,7 +171,7 @@
 .Text6:hover {
   color: var(--dl-color-default-subtitle);
 }
-.navlink1 {
+.navlink {
   display: contents;
 }
 .container6 {

@@ -1,0 +1,191 @@
+.container {
+  width: 100%;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: var(--dl-color-neutral-black);
+}
+.Main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.Hero {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  padding-top: 250px;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("/playground_assets/img_9828-1500h.jpg");
+}
+.max-content {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+}
+.FadeInLeftRich {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+}
+.horizontal-line {
+  width: 4px;
+  display: flex;
+  align-self: stretch;
+  margin-right: var(--dl-space-space-doubleunit);
+  background-color: var(--dl-color-default-primary);
+}
+.Container1 {
+  display: flex;
+  padding-top: var(--dl-space-space-unit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+}
+.text {
+  margin-bottom: var(--dl-space-space-tripleunit);
+}
+.text2 {
+  color: var(--dl-color-default-primary);
+}
+.container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.RealResults {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  padding-top: var(--dl-space-space-eightunits);
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: center;
+}
+.max-content1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.text4 {
+  width: 100%;
+  margin-bottom: var(--dl-space-space-eightunits);
+  padding-bottom: var(--dl-space-space-eightunits);
+}
+.cards-container {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-eightunits);
+  justify-content: space-between;
+}
+.Stories {
+  width: 100%;
+  display: flex;
+  min-height: 100vh;
+  padding-top: var(--dl-space-space-eightunits);
+  padding-bottom: 0px;
+  justify-content: center;
+}
+.max-content2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards-container1 {
+  gap: 64px;
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: stretch;
+  padding-top: var(--dl-space-space-eightunits);
+  flex-direction: row;
+  justify-content: center;
+}
+@media(max-width: 991px) {
+  .max-content1 {
+    flex-direction: column;
+  }
+  .max-content2 {
+    flex-direction: column;
+  }
+  .cards-container1 {
+    justify-content: center;
+  }
+}
+@media(max-width: 767px) {
+  .Hero {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    justify-content: flex-end;
+    background-position: top left;
+  }
+  .RealResults {
+    padding-bottom: 0px;
+    background-size: contain;
+  }
+  .max-content1 {
+    padding-left: var(--dl-space-space-doubleunit);
+    padding-right: var(--dl-space-space-doubleunit);
+    flex-direction: column;
+  }
+  .text4 {
+    padding: var(--dl-space-space-doubleunit);
+  }
+  .cards-container {
+    justify-content: center;
+  }
+  .Stories {
+    padding-top: var(--dl-space-space-eightunits);
+    padding-bottom: var(--dl-space-space-eightunits);
+    background-size: contain;
+  }
+  .max-content2 {
+    flex-direction: column;
+  }
+}
+@media(max-width: 479px) {
+  .Hero {
+    padding-top: var(--dl-space-space-twentyunits);
+    padding-bottom: var(--dl-space-space-twentyunits);
+  }
+  .horizontal-line {
+    margin-right: var(--dl-space-space-unit);
+  }
+  .text {
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+  .text4 {
+    padding: var(--dl-space-space-halfunit);
+    margin-bottom: var(--dl-space-space-sixteenunits);
+  }
+  .cards-container {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .cards-container1 {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+}

@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import CtaBtnRounded from './cta-btn-rounded'
+import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './testimonial-card.module.css'
 
@@ -13,7 +13,7 @@ const TestimonialCard = (props) => {
         <div className={styles['Slides']}>
           <img
             alt="slide-1"
-            src="/playground_assets/2-1500h.jpg"
+            src={props.image_src}
             className={styles['image']}
           />
         </div>
@@ -22,19 +22,12 @@ const TestimonialCard = (props) => {
         <span
           className={` ${styles['text']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
         >
-          <span>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lob- ortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolorad Lorem ipsum dolor sit
-            amet
-          </span>
+          {props.text}
         </span>
-        <CtaBtnRounded
+        <BtnPrimary
           cta_text="Afla mai mult"
           rootClassName="rootClassName17"
-        ></CtaBtnRounded>
+        ></BtnPrimary>
       </div>
     </div>
   )
@@ -42,10 +35,14 @@ const TestimonialCard = (props) => {
 
 TestimonialCard.defaultProps = {
   rootClassName: '',
+  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
+  text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob- ortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolorad Lorem ipsum dolor sit amet',
 }
 
 TestimonialCard.propTypes = {
   rootClassName: PropTypes.string,
+  image_src: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default TestimonialCard

@@ -20,10 +20,10 @@ const BlogCard = (props) => {
             <span
               className={` ${styles['text']} ${projectStyles['content-Light']} `}
             >
-              {props.text}
+              {props.data}
             </span>
           </div>
-          <h3 className={styles['text1']}>{props.heading3}</h3>
+          <h3 className={styles['text1']}>{props.autor}</h3>
           <div className={styles['social-media-links']}>
             <a
               href={props.link_icon2}
@@ -77,24 +77,24 @@ const BlogCard = (props) => {
 }
 
 BlogCard.defaultProps = {
-  heading3: 'Maria Nutrean',
+  autor: 'Maria Nutrean',
   rootClassName: '',
   link_icon1: 'https://www.linkedln.com',
   link_icon: '',
   link_icon2: 'https://www.facebook.com',
   image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
-  text: 'Masaj profesionist',
+  data: 'Masaj profesionist',
   image_alt: 'image',
 }
 
 BlogCard.propTypes = {
-  heading3: PropTypes.string,
+  autor: PropTypes.string,
   rootClassName: PropTypes.string,
   link_icon1: PropTypes.string,
   link_icon: PropTypes.string,
   link_icon2: PropTypes.string,
   image_src: PropTypes.string,
-  text: PropTypes.string,
+  data: PropTypes.string,
   image_alt: PropTypes.string,
 }
 

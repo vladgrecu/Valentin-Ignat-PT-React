@@ -17,19 +17,19 @@ const CarrouselWithText = (props) => {
             alt="slide-1"
             src={props.slide_one_src}
             data-slide-index="0"
-            className={` ${projectStyles['carrousel-slide']} ${projectStyles['slide-active']} ${projectStyles['fade-in']} `}
+            className={` ${projectStyles['carrousel-slide']} ${projectStyles['slide-active']} ${projectStyles['animation-fade-in']} `}
           />
           <img
             alt="slide-1"
             src={props.slide_two_src}
             data-slide-index="1"
-            className={` ${styles['Image1']} ${projectStyles['carrousel-slide']} ${projectStyles['fade-in']} `}
+            className={` ${styles['Image1']} ${projectStyles['carrousel-slide']} ${projectStyles['animation-fade-in']} `}
           />
           <img
             alt="slide-1"
             src={props.slide_three_src}
             data-slide-index="2"
-            className={` ${styles['Image2']} ${projectStyles['carrousel-slide']} ${projectStyles['fade-in']} `}
+            className={` ${styles['Image2']} ${projectStyles['carrousel-slide']} ${projectStyles['animation-fade-in']} `}
           />
         </div>
         <div className={projectStyles['carrousel-controls-container']}>
@@ -38,41 +38,41 @@ const CarrouselWithText = (props) => {
             className={projectStyles['carrousel-control-btn']}
           >
             <div
-              className={` ${styles['BulletContent']} ${projectStyles['tl-bullet-active']} ${projectStyles['timeline-bullet']} `}
+              className={` ${styles['BulletContent']} ${projectStyles['tl-bullet-active']} ${projectStyles['tl-bullet']} `}
             >
               <div
                 className={` ${projectStyles['tl-inner-active']} ${projectStyles['inner-white']} `}
               ></div>
             </div>
-            <div className={projectStyles['timeline-bullet-inner']}></div>
+            <div className={projectStyles['tl-bullet-inner']}></div>
           </div>
           <div
-            className={` ${styles['Line']} ${projectStyles['timeline-line']} `}
+            className={` ${styles['Line']} ${projectStyles['tl-line']} `}
           ></div>
           <div
             data-slide-index="1"
             className={projectStyles['carrousel-control-btn']}
           >
             <div
-              className={` ${styles['BulletContent1']} ${projectStyles['timeline-bullet']} `}
+              className={` ${styles['BulletContent1']} ${projectStyles['tl-bullet']} `}
             >
               <div className={projectStyles['inner-white']}></div>
             </div>
-            <div className={projectStyles['timeline-bullet-inner']}></div>
+            <div className={projectStyles['tl-bullet-inner']}></div>
           </div>
           <div
-            className={` ${styles['Line1']} ${projectStyles['timeline-line']} `}
+            className={` ${styles['Line1']} ${projectStyles['tl-line']} `}
           ></div>
           <div
             data-slide-index="2"
             className={projectStyles['carrousel-control-btn']}
           >
             <div
-              className={` ${styles['BulletContent2']} ${projectStyles['timeline-bullet']} `}
+              className={` ${styles['BulletContent2']} ${projectStyles['tl-bullet']} `}
             >
               <div className={projectStyles['inner-white']}></div>
             </div>
-            <div className={projectStyles['timeline-bullet-inner']}></div>
+            <div className={projectStyles['tl-bullet-inner']}></div>
           </div>
         </div>
       </div>

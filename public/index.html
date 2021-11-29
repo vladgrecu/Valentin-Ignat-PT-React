@@ -29,7 +29,7 @@
     </style>
     <link
       rel="shortcut icon"
-      href="/playground_assets/logo - variantele principale-391.png"
+      href="/playground_assets/logotab.jpeg"
       type="icon/png"
       sizes="32x32"
     />
@@ -55,73 +55,59 @@
     />
     <style>
       body {
-      overflow-x: hidden;
-      }
-
-      .fixed-navbar {
-        position: fixed !important;
-        animation: slideInDown 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+        overflow-x: hidden;
       }
 
       .animated-btn::before {
-          content: "";
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 101%;
-          height: 101%;
-          background: #000;
-          z-index: 1;
-          border-radius: 5px;
-          transition: transform 0.5s;
-          transition-timing-function: ease;
-          transform-origin: 0 0;
-          transition-timing-function: cubic-bezier(.5,1.6,.4,.7);
-          transform: scaleX(0);
-          border-radius: 0;
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 101%;
+        height: 101%;
+        background: #000;
+        z-index: 1;
+        border-radius: 5px;
+        transition: transform 0.5s;
+        transition-timing-function: ease;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5, 1.6, 0.4, 0.7);
+        transform: scaleX(0);
+        border-radius: 0;
       }
 
       .animated-btn:hover::before {
-          transform: scaleX(1);
-          color: #fff!important;
-          z-index: -1;
+        transform: scaleX(1);
+        color: #fff !important;
+        z-index: -1;
       }
 
       .card:hover .card-button {
-         bottom: 0;
-         opacity:1;
-         visibility: visible;
+        bottom: 0;
+        opacity: 1;
+        visibility: visible;
       }
 
-      .left-side:hover .left-overlay{
-         transform: translateX(0%);
+      .left-side:hover .left-overlay {
+        transform: translateX(0%);
       }
 
       .tl:hover .tl-overlay,
-              .tr:hover .tr-overlay,
-              .bl:hover .bl-overlay,
-              .br:hover .br-overlay {
-                transform: translateX(0%);
-              }
+      .tr:hover .tr-overlay,
+      .bl:hover .bl-overlay,
+      .br:hover .br-overlay {
+        transform: translateX(0%);
+      }
 
       .cardfullbg:hover .card-caption {
-                background-color: #ff1313;
-                bottom: 0;
-              }
-              .cardfullbg:hover .social-media-links svg {
-                transform: translateY(6px);
-              }
-             .mobile-menu:hover .social-media-links svg{
-               transform: translateY(6px);
-              }
-
-      .slideInDown {
-        -webkit-animation-name: slideInDown;
-        animation-name: slideInDown;
-        -webkit-animation-duration: 1s;
-        animation-duration: 1s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+        background-color: #d72730;
+        bottom: 0;
+      }
+      .cardfullbg:hover .social-media-links svg {
+        transform: translateY(6px);
+      }
+      .mobile-menu:hover .social-media-links svg {
+        transform: translateY(6px);
       }
 
       @-webkit-keyframes slideInDown {
@@ -148,6 +134,98 @@
         }
       }
 
+      @-webkit-keyframes slideInRight {
+        0% {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInRight {
+        0% {
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+
+      @-webkit-keyframes slideInLeft {
+        0% {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInLeft {
+        0% {
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+          visibility: visible;
+        }
+        100% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      }
+
+      @-webkit-keyframes slideOutLeft {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        100% {
+          visibility: hidden;
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+      }
+      @keyframes slideOutLeft {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        100% {
+          visibility: hidden;
+          -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+        }
+      }
+
+      @-webkit-keyframes slideOutRight {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        100% {
+          visibility: hidden;
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+      }
+      @keyframes slideOutRight {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+        100% {
+          visibility: hidden;
+          -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+        }
+      }
+
       @keyframes fadeIn {
         0% {
           opacity: 0;
@@ -157,13 +235,13 @@
         }
       }
 
-      .fade-in-left {
-        -webkit-animation-name: fadeInLeft;
-        animation-name: fadeInLeft;
-        -webkit-animation-duration: 2s;
-        animation-duration: 2s;
-        -webkit-animation-fill-mode: both;
-        animation-fill-mode: both;
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
 
       @-webkit-keyframes fadeInLeft {
@@ -192,67 +270,67 @@
         }
       }
 
-       @-webkit-keyframes rotating-clockwise /* Safari and Chrome */ {
-                from {
-                  -webkit-transform: rotate(0deg);
-                  -o-transform: rotate(0deg);
-                  transform: rotate(0deg);
-                }
-                to {
-                  -webkit-transform: rotate(360deg);
-                  -o-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                }
-              }
+      @-webkit-keyframes rotating-clockwise /* Safari and Chrome */ {
+        from {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
 
-              @keyframes rotating-clockwise {
-                from {
-                  -ms-transform: rotate(0deg);
-                  -moz-transform: rotate(0deg);
-                  -webkit-transform: rotate(0deg);
-                  -o-transform: rotate(0deg);
-                  transform: rotate(0deg);
-                }
-                to {
-                  -ms-transform: rotate(360deg);
-                  -moz-transform: rotate(360deg);
-                  -webkit-transform: rotate(360deg);
-                  -o-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                }
-              }
+      @keyframes rotating-clockwise {
+        from {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
 
-              @-webkit-keyframes rotating-counter-clockwise /* Safari and Chrome */ {
-                from {
-                  -webkit-transform: rotate(360deg);
-                  -o-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                }
-                to {
-                  -webkit-transform: rotate(0deg);
-                  -o-transform: rotate(0deg);
-                  transform: rotate(0deg);
-                }
-              }
+      @-webkit-keyframes rotating-counter-clockwise /* Safari and Chrome */ {
+        from {
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+        to {
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+      }
 
-              @keyframes rotating-counter-clockwise {
-                from {
-                  -ms-transform: rotate(360deg);
-                  -moz-transform: rotate(360deg);
-                  -webkit-transform: rotate(360deg);
-                  -o-transform: rotate(360deg);
-                  transform: rotate(360deg);
-                }
-                to {
-                  -ms-transform: rotate(0deg);
-                  -moz-transform: rotate(0deg);
-                  -webkit-transform: rotate(0deg);
-                  -o-transform: rotate(0deg);
-                  transform: rotate(0deg);
-                }
-              }
+      @keyframes rotating-counter-clockwise {
+        from {
+          -ms-transform: rotate(360deg);
+          -moz-transform: rotate(360deg);
+          -webkit-transform: rotate(360deg);
+          -o-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+        to {
+          -ms-transform: rotate(0deg);
+          -moz-transform: rotate(0deg);
+          -webkit-transform: rotate(0deg);
+          -o-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+      }
 
-      .video:hover .rotating-cog-clockwise{
+      .video:hover .rotating-cog-clockwise {
         -webkit-animation: rotating-clockwise 2s linear infinite;
         -moz-animation: rotating-clockwise 2s linear infinite;
         -ms-animation: rotating-clockwise 2s linear infinite;
@@ -260,7 +338,7 @@
         animation: rotating-clockwise 2s linear infinite;
       }
 
-      .video:hover .rotating-cog-counter-clockwise{
+      .video:hover .rotating-cog-counter-clockwise {
         -webkit-animation: rotating-counter-clockwise 2s linear infinite;
         -moz-animation: rotating-counter-clockwise 2s linear infinite;
         -ms-animation: rotating-counter-clockwise 2s linear infinite;
@@ -268,7 +346,7 @@
         animation: rotating-counter-clockwise 2s linear infinite;
       }
 
-      .overlay-container:hover .services-cta-container{
+      .overlay-container:hover .services-cta-container {
         display: flex;
         opacity: 1;
       }
@@ -279,172 +357,257 @@
     <script>
       window.onload = () => {
         const setActivePage = () => {
-          document.querySelectorAll('.timeline-bullet').forEach(bullet => {
-            if (bullet.dataset.url === `/${location.href.split('/')[3]}`) {
-              bullet.classList.add('tl-bullet-active')
-              bullet.firstElementChild.classList.add('tl-inner-active')
+          document.querySelectorAll(".tl-bullet").forEach((bullet) => {
+            if (bullet.dataset.url === `/${location.href.split("/")[3]}`) {
+              bullet.classList.add("tl-bullet-active");
+              bullet.firstElementChild.classList.add("tl-inner-active");
             } else {
-              bullet.classList.remove('tl-bullet-active')
-              bullet.firstElementChild.classList.remove('tl-inner-active')
+              bullet.classList.remove("tl-bullet-active");
+              bullet.firstElementChild.classList.remove("tl-inner-active");
             }
-          })
+          });
 
-          document.querySelectorAll('.mobile-link-title').forEach(title => {
-            if (title.dataset.url === `/${location.href.split('/')[3]}`) {
-              title.classList.add('mobile-link-active')
+          document.querySelectorAll(".mobile-link-title").forEach((title) => {
+            if (title.dataset.url === `/${location.href.split("/")[3]}`) {
+              title.classList.add("mobile-link-active");
             } else {
-              title.classList.remove('mobile.link-active')
+              title.classList.remove("mobile.link-active");
             }
-          })
-        }
-
-        const initializeAllCarrousels = () => {
-          const allCarrousels = document.querySelectorAll('[data-role="carrousel"]')
-          allCarrousels.forEach(carrousel => {
-            const isAutoPlayDisabled = allCarrousels.length > 1
-            initializeCarrousel(carrousel, isAutoPlayDisabled)
-          })
-          console.log('All car:', allCarrousels)
-        }
+          });
+        };
 
         const listenForUrlChanges = () => {
           let url = location.href;
-          document.body.addEventListener('click', () => {
-            requestAnimationFrame(() => {
-              if (url !== location.href) {
-                setActivePage()
-                initializeAllCarrousels()
-                url = location.href
+          document.body.addEventListener(
+            "click",
+            () => {
+              requestAnimationFrame(() => {
+                if (url !== location.href) {
+                  setActivePage();
+                  initializeAllCarrousels();
+                  url = location.href;
+                }
+              });
+            },
+            true
+          );
+        };
+
+        const initializeAllCarrousels = () => {
+          const allCarrousels = document.querySelectorAll(
+            '[data-role="carrousel"]'
+          );
+          allCarrousels.forEach((carrousel) => {
+            const autoplay = carrousel.parentElement.dataset.autoplay;
+            const isAutoPlayDisabled = !autoplay && allCarrousels.length > 1;
+            initializeCarrousel(carrousel, isAutoPlayDisabled);
+          });
+        };
+
+        const addEventListenersToDocument = () => {
+          document.addEventListener("scroll", (e) => {
+            const header = document.querySelector(".slide-in-down-navbar");
+            e.stopPropagation();
+            const scrollTop = window.pageYOffset;
+
+            if (scrollTop > 400) {
+              header.classList.add("fixed-navbar");
+              header.style.backgroundColor = "#000";
+            } else {
+              header.classList.remove("fixed-navbar");
+              header.style.backgroundColor = "transparent";
+            }
+          });
+
+          document.addEventListener("click", (e) => {
+            e.stopPropagation();
+            console.log(e.target.dataset);
+
+            const isClickedElementByClassName = (className) => {
+              return e
+                .composedPath()
+                .map((element) => {
+                  return String(element.className);
+                })
+                .find((target) => {
+                  return target.includes(className);
+                });
+            };
+
+            const isClickedElementByDataSetProp = (prop, value) => {
+              return e
+                .composedPath()
+                .map((element) => {
+                  return element.dataset ? element.dataset : null;
+                })
+                .find((target) => {
+                  return target && target[prop] === value;
+                });
+            };
+
+            const mobileMenu = document.querySelector(".mobile-menu");
+            if (isClickedElementByClassName("menu")) {
+              mobileMenu.style.transform = "translateX(0%)";
+            }
+            if (
+              isClickedElementByClassName("close-menu") ||
+              isClickedElementByClassName("mobile-links")
+            ) {
+              mobileMenu.style.transform = "translateX(100%)";
+            }
+
+            const contactFormModal = document.querySelector(
+              '[data-type="ContactFormModal"]'
+            );
+            if (
+              isClickedElementByDataSetProp("action", "showContactFormModal")
+            ) {
+              contactFormModal.style.display = "flex";
+            }
+            if (
+              isClickedElementByDataSetProp(
+                "action",
+                "closeContactFormModal"
+              ) ||
+              (e.target.dataset && e.target.dataset.type === "ContactFormModal")
+            ) {
+              contactFormModal.style.display = "none";
+            }
+
+            const playBtn = e.target.closest('[data-action="playVideo"');
+            if (
+              playBtn &&
+              isClickedElementByDataSetProp("action", "playVideo")
+            ) {
+              const promoVideo = playBtn.previousElementSibling;
+              if (!promoVideo) {
+                console.error("No corresponding video found!");
+                return;
               }
-            });
-          }, true);
-        }
+              playBtn.style.display = "none";
+              promoVideo.play();
+              promoVideo.addEventListener(
+                "ended",
+                () => {
+                  promoVideo.currentTime = 0.5;
+                  playBtn.style.display = "flex";
+                },
+                false
+              );
+            }
+          });
+        };
 
         // CARROUSEL
         const initializeCarrousel = (carrousel, isAutoPlayDisabled) => {
-          const slider = carrousel.firstElementChild
-          const slides = carrousel.querySelectorAll('.carrousel-slide[data-slide-index]')
-          const buttons = carrousel.querySelectorAll('.carrousel-control-btn[data-slide-index]')
+          const slider = carrousel.firstElementChild;
+          const slides = carrousel.querySelectorAll(
+            ".carrousel-slide[data-slide-index]"
+          );
+          const buttons = carrousel.querySelectorAll(
+            ".carrousel-control-btn[data-slide-index]"
+          );
 
-          let currentSlide = 0
+          let currentSlide = 0;
 
           const changeSlide = (imageIndex) => {
-            currentSlide = imageIndex
-            slides.forEach((slide) => slide.classList.remove("slide-active"))
+            currentSlide = imageIndex;
+            slides.forEach((slide) => slide.classList.remove("slide-active"));
 
-            slides[imageIndex].classList.add("slide-active")
-            buttons[imageIndex].firstElementChild.classList.add("tl-bullet-active")
-            buttons[imageIndex].firstElementChild.firstElementChild.classList.add("tl-inner-active")
+            slides[imageIndex].classList.add("slide-active");
+            buttons[imageIndex].firstElementChild.classList.add(
+              "tl-bullet-active"
+            );
+            buttons[
+              imageIndex
+            ].firstElementChild.firstElementChild.classList.add(
+              "tl-inner-active"
+            );
 
             // set active btn
             buttons.forEach((btn) => {
-              const bullet = btn.firstElementChild
-              const bulletBg = bullet.firstElementChild
-              bullet.classList.remove('tl-bullet-active')
-              bulletBg.classList.remove('tl-inner-active')
-            }
-            )
+              const bullet = btn.firstElementChild;
+              const bulletBg = bullet.firstElementChild;
+              bullet.classList.remove("tl-bullet-active");
+              bulletBg.classList.remove("tl-inner-active");
+            });
 
-            const bullet = buttons[imageIndex].firstElementChild
-            bullet.classList.add(
-              "tl-bullet-active"
-            )
-            bullet.firstElementChild.classList.add('tl-inner-active')
+            const bullet = buttons[imageIndex].firstElementChild;
+            bullet.classList.add("tl-bullet-active");
+            bullet.firstElementChild.classList.add("tl-inner-active");
 
             // adjust currentSlide
-            imageIndex < slides.length - 1 ? currentSlide++ : (currentSlide = 0)
-          }
+            imageIndex < slides.length - 1
+              ? currentSlide++
+              : (currentSlide = 0);
+          };
           // react to carrousell-image click/mouseover/mouseleave
           const pauseSlideShow = () => {
-            clearInterval(carrousellInterval)
-          }
+            clearInterval(carrousellInterval);
+          };
 
           const resumeSlideShow = () => {
-            pauseSlideShow()
+            pauseSlideShow();
             if (isAutoPlayDisabled) {
-              return
+              return;
             }
-            carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
-          }
+            carrousellInterval = setInterval(
+              () => changeSlide(currentSlide),
+              3000
+            );
+          };
 
           const renderNextSlide = () => {
-            changeSlide(currentSlide)
+            changeSlide(currentSlide);
             if (isAutoPlayDisabled) {
-              return
+              return;
             }
-            pauseSlideShow()
-          }
+            pauseSlideShow();
+          };
 
           const changeToSlideAndResumeSlideShow = (index) => {
-            pauseSlideShow()
-            changeSlide(index)
+            pauseSlideShow();
+            changeSlide(index);
             if (isAutoPlayDisabled) {
-              return
+              return;
             }
 
-            resumeSlideShow()
-          }
+            resumeSlideShow();
+          };
 
-          let carrousellInterval = 0
+          let carrousellInterval = 0;
 
-          slider.addEventListener("mouseover", pauseSlideShow)
-          slider.addEventListener("mouseout", resumeSlideShow)
+          slider.addEventListener("mouseover", pauseSlideShow);
+          slider.addEventListener("mouseout", resumeSlideShow);
 
-          slides.forEach((slide) => slide.addEventListener("click", renderNextSlide))
+          slides.forEach((slide) =>
+            slide.addEventListener("click", renderNextSlide)
+          );
 
           buttons.forEach((btn, index) => {
-            btn.addEventListener("click", () => changeToSlideAndResumeSlideShow(index))
-          })
+            btn.addEventListener("click", () =>
+              changeToSlideAndResumeSlideShow(index)
+            );
+          });
 
-          changeSlide(currentSlide)
+          changeSlide(currentSlide);
 
           if (isAutoPlayDisabled) {
-            return
+            return;
           }
 
-          carrousellInterval = setInterval(() => changeSlide(currentSlide), 3000)
-        }
+          carrousellInterval = setInterval(
+            () => changeSlide(currentSlide),
+            3000
+          );
+        };
 
+        setActivePage();
+        initializeAllCarrousels();
 
-        setActivePage()
-        listenForUrlChanges()
-        initializeAllCarrousels()
-
-        document.addEventListener("scroll", (e) => {
-          const header = document.querySelector(".slide-in-down-navbar")
-          e.stopPropagation()
-          const scrollTop = window.pageYOffset
-
-          if (scrollTop > 400) {
-            header.classList.add("fixed-navbar")
-            header.style.backgroundColor = '#000'
-          } else {
-            header.classList.remove("fixed-navbar")
-            header.style.backgroundColor = 'transparent'
-          }
-        })
-
-        document.addEventListener("click", (e) => {
-          e.stopPropagation()
-
-          const isClickedElement = (elementIdentifier) => {
-            return e.composedPath().map(element => {
-              return String(element.className)
-            }).find(target => {
-              return target.includes(elementIdentifier)
-            })
-          }
-
-          const mobileMenu = document.querySelector('.mobile-menu')
-          if (isClickedElement('menu')) {
-            mobileMenu.style.transform = 'translateX(0%)'
-          }
-          if (isClickedElement('close-menu') || isClickedElement('mobile-links')) {
-            mobileMenu.style.transform = 'translateX(100%)'
-          }
-        })
-
-      }
+        addEventListenersToDocument();
+        listenForUrlChanges();
+      };
     </script>
   </body>
 </html>

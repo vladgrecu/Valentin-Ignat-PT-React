@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import CtaBtnRounded from './cta-btn-rounded'
+import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './shop-card.module.css'
 
@@ -17,7 +17,7 @@ const ShopCard = (props) => {
       <span className={` ${styles['text']} ${projectStyles['h5']} `}>
         {props.card_title}
       </span>
-      <CtaBtnRounded rootClassName="rootClassName7"></CtaBtnRounded>
+      <BtnPrimary rootClassName="rootClassName7"></BtnPrimary>
     </div>
   )
 }

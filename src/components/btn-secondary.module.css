@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .rootClassName5 {
+    align-self: flex-end;
+  }
+  .rootClassName6 {
+    align-self: flex-end;
+  }
+  .rootClassName7 {
+    align-self: flex-end;
+  }
+  .rootClassName8 {
+    align-self: flex-end;
+  }
+  .rootClassName9 {
+    align-self: flex-end;
+  }
+}

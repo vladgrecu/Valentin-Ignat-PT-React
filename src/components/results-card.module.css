@@ -60,6 +60,27 @@
   margin-bottom: var(--dl-space-space-sixteenunits);
 }
 
+.rootClassName9 {
+  margin-bottom: var(--dl-space-space-sixteenunits);
+}
+.rootClassName10 {
+  margin-bottom: var(--dl-space-space-sixteenunits);
+}
+.rootClassName11 {
+  margin-bottom: var(--dl-space-space-sixteenunits);
+}
+.rootClassName12 {
+  margin-bottom: var(--dl-space-space-sixteenunits);
+}
+.rootClassName13 {
+  margin-bottom: var(--dl-space-space-sixteenunits);
+}
+.rootClassName14 {
+  margin-bottom: var(--dl-space-space-sixteenunits);
+}
+
+
+
 @media(max-width: 991px) {
   .ResultsCard {
     width: calc(50% - 32px);
@@ -68,6 +89,12 @@
     margin-bottom: var(--dl-space-space-sixteenunits);
   }
   .rootClassName8 {
+    margin-bottom: var(--dl-space-space-sixteenunits);
+  }
+  .rootClassName15 {
+    margin-bottom: var(--dl-space-space-sixteenunits);
+  }
+  .rootClassName16 {
     margin-bottom: var(--dl-space-space-sixteenunits);
   }
 }

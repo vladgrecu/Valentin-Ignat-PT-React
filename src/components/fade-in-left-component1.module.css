@@ -10,16 +10,22 @@
   background-color: var(--dl-color-default-primary);
 }
 .Container1 {
+  flex: 1;
   width: 100%;
   padding-top: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
 }
-.heading-hero {
-  margin-bottom: var(--dl-space-space-tripleunit);
-}
 .Container2 {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text {
+  margin-bottom: var(--dl-space-space-tripleunit);
+}
+.container3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +34,9 @@
   width: 100%;
   align-self: flex-start;
 }
+
+
+
 @media(max-width: 991px) {
   .rootClassName {
     width: 100%;
@@ -37,7 +46,7 @@
   .horizontal-line {
     margin-right: var(--dl-space-space-unit);
   }
-  .heading-hero {
+  .text {
     margin-bottom: var(--dl-space-space-tripleunit);
   }
 }

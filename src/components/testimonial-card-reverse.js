@@ -2,7 +2,7 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import CtaBtnRounded from './cta-btn-rounded'
+import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './testimonial-card-reverse.module.css'
 
@@ -17,7 +17,7 @@ const TestimonialCardReverse = (props) => {
         <div className={styles['Slides']}>
           <img
             alt="slide-1"
-            src="/playground_assets/colaj-1500h.jpeg"
+            src={props.image_src}
             className={styles['image']}
           />
         </div>
@@ -26,30 +26,27 @@ const TestimonialCardReverse = (props) => {
         <span
           className={` ${styles['text']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
         >
-          <span>
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat
-            volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
-            ullamcorper suscipit lob- ortis nisl ut aliquip ex ea commodo
-            consequat. Duis autem vel eum iriure dolorad Lorem ipsum dolor sit
-            amet
-          </span>
+          {props.text}
         </span>
-        <CtaBtnRounded
+        <BtnPrimary
           cta_text="Afla mai mult"
           rootClassName="rootClassName18"
-        ></CtaBtnRounded>
+        ></BtnPrimary>
       </div>
     </div>
   )
 }
 
 TestimonialCardReverse.defaultProps = {
+  image_src: 'https://play.teleporthq.io/static/svg/default-img.svg',
   rootClassName: '',
+  text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob- ortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolorad Lorem ipsum dolor sit amet',
 }
 
 TestimonialCardReverse.propTypes = {
+  image_src: PropTypes.string,
   rootClassName: PropTypes.string,
+  text: PropTypes.string,
 }
 
 export default TestimonialCardReverse

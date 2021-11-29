@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import PropTypes from 'prop-types'
 
@@ -16,94 +17,101 @@ const Footer = (props) => {
         <div className={styles['Content']}>
           <div className={styles['Sitemap']}>
             <div className={styles['container']}>
-              <span
-                className={` ${styles['text']} ${projectStyles['footer-Title']} `}
+              <Link
+                to="/"
+                className={` ${styles['navlink']} ${projectStyles['footer-Title']} `}
               >
                 Acasa
-              </span>
-              <span
-                className={` ${styles['text01']} ${projectStyles['footer-Link']} `}
+              </Link>
+              <Link
+                to="/despre"
+                className={` ${styles['navlink1']} ${projectStyles['footer-Link']} `}
               >
                 Despre mine
-              </span>
+              </Link>
               <span
-                className={` ${styles['text02']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text']} ${projectStyles['footer-Link']} `}
               >
                 <span>Politica de confidentialitate</span>
               </span>
               <span
-                className={` ${styles['text04']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text02']} ${projectStyles['footer-Link']} `}
               >
                 <span>ANPC</span>
               </span>
               <span
-                className={` ${styles['text06']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text04']} ${projectStyles['footer-Link']} `}
               >
                 <span>Termeni si conditii</span>
               </span>
             </div>
             <div className={styles['container01']}>
               <div className={styles['container02']}>
-                <span
-                  className={` ${styles['text08']} ${projectStyles['footer-Title']} `}
+                <Link
+                  to="/servicii"
+                  className={` ${styles['navlink2']} ${projectStyles['footer-Title']} `}
                 >
                   servicii
-                </span>
+                </Link>
                 <span
-                  className={` ${styles['text09']} ${projectStyles['footer-Link']} `}
+                  className={` ${styles['text06']} ${projectStyles['footer-Link']} `}
                 >
                   Personal Training
                 </span>
                 <span
-                  className={` ${styles['text10']} ${projectStyles['footer-Link']} `}
+                  className={` ${styles['text07']} ${projectStyles['footer-Link']} `}
                 >
                   <span>Online Coaching</span>
                 </span>
                 <span
-                  className={` ${styles['text12']} ${projectStyles['footer-Link']} `}
+                  className={` ${styles['text09']} ${projectStyles['footer-Link']} `}
                 >
                   <span>Evaluare</span>
                 </span>
               </div>
-              <span
-                className={` ${styles['text14']} ${projectStyles['footer-Title']} `}
+              <Link
+                to="/blog"
+                className={` ${styles['navlink3']} ${projectStyles['footer-Title']} `}
               >
                 Blog
-              </span>
+              </Link>
             </div>
             <div className={styles['container03']}>
-              <span
-                className={` ${styles['text15']} ${projectStyles['footer-Title']} `}
+              <Link
+                to="/hiit"
+                className={` ${styles['navlink4']} ${projectStyles['footer-Title']} `}
               >
                 hiit
-              </span>
+              </Link>
               <span
-                className={` ${styles['text16']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text11']} ${projectStyles['footer-Link']} `}
               >
                 De ce HIIT?
               </span>
               <span
-                className={` ${styles['text17']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text12']} ${projectStyles['footer-Link']} `}
               >
                 <span>Beneficii</span>
               </span>
               <span
-                className={` ${styles['text19']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text14']} ${projectStyles['footer-Link']} `}
               >
                 <span>Ce contine?</span>
               </span>
               <span
-                className={` ${styles['text21']} ${projectStyles['footer-Link']} `}
+                className={` ${styles['text16']} ${projectStyles['footer-Link']} `}
               >
                 <span>Arunca o privire</span>
               </span>
             </div>
             <div className={styles['container04']}>
-              <img
-                alt="image"
-                src="/playground_assets/logo%20secundar-05.svg"
-                className={styles['image']}
-              />
+              <Link to="/" className={styles['navlink5']}>
+                <img
+                  alt="image"
+                  src="/playground_assets/logo%20secundar-05.svg"
+                  className={styles['image']}
+                />
+              </Link>
               <div className={styles['SocialMedia']}>
                 <div className={styles['container05']}>
                   <svg viewBox="0 0 1024 1024" className={styles['icon']}>
@@ -135,11 +143,11 @@ const Footer = (props) => {
           <div className={styles['Actual-Footer']}>
             <div className={styles['container09']}>
               <div className={styles['container10']}>
-                <span className={styles['text23']}>Copyright</span>
+                <span className={styles['text18']}>Copyright</span>
                 <svg viewBox="0 0 1024 1024" className={styles['icon12']}>
                   <path d="M512 854q140 0 241-101t101-241-101-241-241-101-241 101-101 241 101 241 241 101zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125zM506 390q-80 0-80 116v12q0 116 80 116 30 0 50-17t20-43h76q0 50-44 88-42 36-102 36-80 0-122-48t-42-132v-12q0-82 40-128 48-54 124-54 66 0 104 38 42 42 42 98h-76q0-14-6-26-10-20-14-24-20-20-50-20z"></path>
                 </svg>
-                <span className={styles['text24']}>
+                <span className={styles['text19']}>
                   2021 All rights reserved.
                 </span>
               </div>
@@ -150,7 +158,7 @@ const Footer = (props) => {
                 className={styles['link']}
               >
                 <div className={styles['TeleportHQ']}>
-                  <span className={styles['text25']}>Made in TeleportHQ</span>
+                  <span className={styles['text20']}>Made in TeleportHQ</span>
                   <img
                     alt="image"
                     src="/playground_assets/logo%2098x98%20(3)-1500h.png"
