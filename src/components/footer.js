@@ -9,9 +9,9 @@ import styles from './footer.module.css'
 const Footer = (props) => {
   return (
     <div
-      className={` ${styles['Footer']} ${projectStyles['max-content']} ${
-        styles[props.rootClassName]
-      } `}
+      className={` ${styles['Footer']} ${
+        projectStyles['max-content-container']
+      } ${styles[props.rootClassName]} `}
     >
       <div className={styles['Bg-Overlay']}>
         <div className={styles['Content']}>
@@ -161,7 +161,7 @@ const Footer = (props) => {
                   <span className={styles['text20']}>Made in TeleportHQ</span>
                   <img
                     alt="image"
-                    src="/playground_assets/logo%2098x98%20(3)-1500h.png"
+                    src="/playground_assets/logo%2098x98%20(3)-200w.png"
                     className={styles['image1']}
                   />
                 </div>

@@ -89,9 +89,9 @@ const CarrouselWithTextReverse = (props) => {
 
 CarrouselWithTextReverse.defaultProps = {
   rootClassName: '',
-  slide_three_src: '/playground_assets/1-1500h.jpg',
-  slide_two_src: '/playground_assets/2-1500h.jpg',
-  slide_one_src: '/playground_assets/0-1500h.jpg',
+  slide_three_src: '/playground_assets/1-200h.jpg',
+  slide_two_src: '/playground_assets/2-200h.jpg',
+  slide_one_src: '/playground_assets/0-200h.jpg',
   text: 'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
 }
 

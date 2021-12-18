@@ -16,15 +16,6 @@
   justify-content: flex-start;
 }
 .Hero {
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
-  min-height: 100vh;
-  align-items: center;
-  padding-top: 250px;
-  flex-direction: column;
-  background-size: cover;
-  justify-content: center;
   background-image: url("/playground_assets/img_9818-1500h.jpg");
   background-repeat: no-repeat;
   background-position: left;
@@ -34,13 +25,6 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
-}
-.Map {
-  width: 100%;
-  display: flex;
-  padding-top: var(--dl-space-space-eightunits);
-  padding-bottom: 0px;
   justify-content: center;
 }
 .max-content1 {
@@ -160,15 +144,6 @@
   }
 }
 @media(max-width: 767px) {
-  .Hero {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    justify-content: flex-end;
-  }
-  .Map {
-    padding-bottom: 0px;
-    background-size: contain;
-  }
   .max-content1 {
     flex-direction: column;
   }
@@ -191,6 +166,7 @@
   .separator1 {
     width: 100px;
     height: 1px;
+    display: none;
   }
   .container4 {
     width: 100%;
@@ -198,8 +174,6 @@
 }
 @media(max-width: 479px) {
   .Hero {
-    padding-top: var(--dl-space-space-twentyunits);
-    padding-bottom: var(--dl-space-space-twentyunits);
     background-position: center;
   }
   .max-content {

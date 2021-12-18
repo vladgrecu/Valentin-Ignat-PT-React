@@ -9,7 +9,7 @@ const BtnSecondary = (props) => {
   return (
     <div className={` ${styles['container']} ${styles[props.rootClassName]} `}>
       <button
-        className={` ${projectStyles['animated-btn']} ${projectStyles['button-Text']} ${projectStyles['btn-secondary']} `}
+        className={` ${projectStyles['button-Text']} ${projectStyles['animated-btn']} ${projectStyles['button-Text']} ${projectStyles['btn-secondary']} `}
       >
         {props.cta_text}
       </button>

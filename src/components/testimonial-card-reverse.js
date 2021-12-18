@@ -13,14 +13,8 @@ const TestimonialCardReverse = (props) => {
         styles[props.rootClassName]
       } `}
     >
-      <div className={styles['Slider']}>
-        <div className={styles['Slides']}>
-          <img
-            alt="slide-1"
-            src={props.image_src}
-            className={styles['image']}
-          />
-        </div>
+      <div className={styles['Image']}>
+        <img alt="slide-1" src={props.image_src} className={styles['image1']} />
       </div>
       <div className={styles['Text-Container']}>
         <span

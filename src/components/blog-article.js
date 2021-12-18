@@ -9,7 +9,7 @@ const BlogArticle = () => {
     <div className={styles['Article']}>
       <img
         alt="image"
-        src="/playground_assets/image%206%20%5B2%5D-1500h.png"
+        src="/playground_assets/image%206%20%5B2%5D-800w.png"
         className={styles['image']}
       />
       <div className={styles['container']}>

@@ -65,7 +65,7 @@
   align-self: flex-start;
   transition: 0.3s;
   background-size: cover;
-  background-image: url("/playground_assets/img_4100-1500w.jpg");
+  background-image: url("/playground_assets/img_4100-200w.jpg");
   background-position: center;
 }
 .tl-overlay {
@@ -97,7 +97,7 @@
   align-self: flex-start;
   transition: 0.3s;
   background-size: cover;
-  background-image: url("/playground_assets/img_2868-1500h.jpg");
+  background-image: url("/playground_assets/img_2868-200h.jpg");
   background-position: right;
 }
 .tr-overlay {
@@ -129,7 +129,7 @@
   align-self: flex-end;
   transition: 0.3s;
   background-size: cover;
-  background-image: url("/playground_assets/img_3005-1500h.jpg");
+  background-image: url("/playground_assets/img_3005-200h.jpg");
   background-position: center;
 }
 .bl-overlay {
@@ -161,7 +161,7 @@
   align-self: flex-end;
   transition: 0.3s;
   background-size: cover;
-  background-image: url("/playground_assets/img_3703-edit-1500h.jpg");
+  background-image: url("/playground_assets/img_3703-edit-200h.jpg");
   background-position: center;
 }
 .br-overlay {

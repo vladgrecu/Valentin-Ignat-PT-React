@@ -3,10 +3,12 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
+import LoginModal from '../components/login-modal'
+import RegisterModal from '../components/register-modal'
 import ContactFormModal from '../components/contact-form-modal'
-import SlideInDownNavbar1 from '../components/slide-in-down-navbar1'
+import Navbar from '../components/navbar'
 import MobileMenu from '../components/mobile-menu'
-import FadeInLeftComponent1 from '../components/fade-in-left-component1'
+import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
 import BtnPrimary from '../components/btn-primary'
 import ServiceCard from '../components/service-card'
 import CarrouselWithText from '../components/carrousel-with-text'
@@ -31,29 +33,35 @@ const Home = () => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/3a2f6895-526e-403a-884d-eca828114341?org_if_sml=1"
         />
       </Helmet>
+      <LoginModal rootClassName="rootClassName"></LoginModal>
+      <RegisterModal rootClassName="rootClassName3"></RegisterModal>
       <ContactFormModal rootClassName="rootClassName3"></ContactFormModal>
-      <SlideInDownNavbar1 rootClassName="rootClassName"></SlideInDownNavbar1>
+      <Navbar rootClassName="rootClassName"></Navbar>
       <MobileMenu rootClassName="rootClassName"></MobileMenu>
       <main className={styles['Main']}>
-        <section className={styles['Hero']}>
+        <section
+          className={` ${styles['Hero']} ${projectStyles['hero-container']} `}
+        >
           <div
-            className={` ${styles['max-content']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content']} ${projectStyles['max-content-container']} `}
           >
-            <FadeInLeftComponent1
+            <FadeInLeftHeroSection
               text_content="Listening is power"
               rootClassName="rootClassName"
-            ></FadeInLeftComponent1>
+            ></FadeInLeftHeroSection>
           </div>
         </section>
-        <section className={styles['About']}>
+        <section
+          className={` ${styles['About']} ${projectStyles['section-container']} `}
+        >
           <div
-            className={` ${styles['max-content1']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content1']} ${projectStyles['max-content-container']} `}
           >
             <div className={styles['Text-Container']}>
-              <div className={styles['Container1']}>
+              <div className={styles['Info']}>
                 <div className={styles['horizontal-line']}></div>
                 <span
-                  className={` ${styles['text']} ${projectStyles['before-H2']} `}
+                  className={` ${styles['info-text']} ${projectStyles['before-H2']} `}
                 >
                   despre mine
                 </span>
@@ -64,7 +72,7 @@ const Home = () => {
                 <span>obiectivul meu</span>
               </h2>
               <span
-                className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text02']} `}
+                className={` ${styles['text01']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
               >
                 <span>
                   Misiunea mea este sa ajut oamenii din jurul meu sa
@@ -107,7 +115,7 @@ const Home = () => {
                 <BtnPrimary
                   cta_text="afla mai mult"
                   rootClassName="rootClassName2"
-                  className={styles['component03']}
+                  className={styles['component06']}
                 ></BtnPrimary>
               </Link>
             </div>
@@ -118,66 +126,68 @@ const Home = () => {
             />
           </div>
         </section>
-        <section className={styles['Services']}>
+        <section
+          className={` ${styles['Services']} ${projectStyles['section-container']} `}
+        >
           <div
-            className={` ${styles['max-content-picture']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content-picture']} ${projectStyles['max-content-container']} `}
           >
             <h1 className={projectStyles['heading-1']}>
               evaluare. conexiune. experienta.
             </h1>
-            <div className={styles['container2']}></div>
+            <div className={styles['container1']}></div>
           </div>
-          <div className={styles['container3']}>
-            <div
-              className={` ${styles['max-content2']} ${projectStyles['max-content']} `}
-            >
-              <div className={projectStyles['section-heading-container']}>
-                <div className={styles['TitleContainer']}>
-                  <div className={styles['Container4']}>
-                    <div className={styles['horizontal-line1']}></div>
-                    <span
-                      className={` ${styles['text09']} ${projectStyles['before-H2']} `}
-                    >
-                      Shop
-                    </span>
-                  </div>
-                  <h1 className={projectStyles['heading-1']}>Servicii</h1>
+          <div
+            className={` ${styles['max-content2']} ${projectStyles['max-content-container']} `}
+          >
+            <div className={projectStyles['section-heading-container']}>
+              <div className={styles['TitleContainer']}>
+                <div className={styles['Container2']}>
+                  <div className={styles['horizontal-line1']}></div>
+                  <span
+                    className={` ${styles['text08']} ${projectStyles['before-H2']} `}
+                  >
+                    Shop
+                  </span>
                 </div>
-                <Link to="/servicii">
-                  <BtnPrimary
-                    cta_text="Afla mai mult"
-                    rootClassName="rootClassName26"
-                    className={styles['component04']}
-                  ></BtnPrimary>
-                </Link>
+                <h1 className={projectStyles['heading-1']}>Servicii</h1>
               </div>
-              <div className={styles['Cards-Container']}>
-                <ServiceCard
-                  image_src="/playground_assets/img_4081-1500w.jpg"
-                  card_title="personal training"
-                ></ServiceCard>
-                <ServiceCard
-                  image_src="/playground_assets/121300894_398877651278033_1137013070053583593_n-1500w.jpg"
-                  card_title="online coaching"
-                ></ServiceCard>
-                <ServiceCard
-                  image_src="/playground_assets/img_2868-1500h.jpg"
-                  card_title="evaluare"
-                ></ServiceCard>
-              </div>
+              <Link to="/servicii">
+                <BtnPrimary
+                  cta_text="Afla mai mult"
+                  rootClassName="rootClassName26"
+                  className={styles['component07']}
+                ></BtnPrimary>
+              </Link>
+            </div>
+            <div className={styles['Cards-Container']}>
+              <ServiceCard
+                image_src="/playground_assets/img_4081-1500w.jpg"
+                card_title="personal training"
+              ></ServiceCard>
+              <ServiceCard
+                image_src="/playground_assets/121300894_398877651278033_1137013070053583593_n-1500w.jpg"
+                card_title="online coaching"
+              ></ServiceCard>
+              <ServiceCard
+                image_src="/playground_assets/img_2868-1500w.jpg"
+                card_title="evaluare"
+              ></ServiceCard>
             </div>
           </div>
         </section>
-        <section className={styles['Stories']}>
+        <section
+          className={` ${styles['Stories']} ${projectStyles['section-container']} `}
+        >
           <div
-            className={` ${styles['max-content3']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content3']} ${projectStyles['max-content-container']} `}
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer1']}>
-                <div className={styles['Container5']}>
+                <div className={styles['Container3']}>
                   <div className={styles['horizontal-line2']}></div>
                   <span
-                    className={` ${styles['text11']} ${projectStyles['before-H2']} `}
+                    className={` ${styles['text10']} ${projectStyles['before-H2']} `}
                   >
                     feedback
                   </span>
@@ -190,23 +200,23 @@ const Home = () => {
                 <BtnPrimary
                   cta_text="Afla mai mult"
                   rootClassName="rootClassName27"
-                  className={styles['component08']}
+                  className={styles['component11']}
                 ></BtnPrimary>
               </Link>
             </div>
             <CarrouselWithText></CarrouselWithText>
           </div>
         </section>
-        <section className={styles['Shop']}>
+        <section className={projectStyles['section-container']}>
           <div
-            className={` ${styles['max-content4']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content4']} ${projectStyles['max-content-container']} `}
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer2']}>
-                <div className={styles['Container6']}>
+                <div className={styles['Container4']}>
                   <div className={styles['horizontal-line3']}></div>
                   <span
-                    className={` ${styles['text13']} ${projectStyles['before-H2']} `}
+                    className={` ${styles['text12']} ${projectStyles['before-H2']} `}
                   >
                     HIIT
                   </span>
@@ -219,40 +229,38 @@ const Home = () => {
                 <BtnPrimary
                   cta_text="Afla mai mult"
                   rootClassName="rootClassName28"
-                  className={styles['component10']}
+                  className={styles['component13']}
                 ></BtnPrimary>
               </Link>
             </div>
             <div className={styles['Tablet-Container']}>
-              <div className={styles['Tablet']}>
-                <video
-                  src="https://mypthelperbucket.s3.us-east-2.amazonaws.com/HIIT+promo+2.mp4"
-                  muted="true"
-                  poster="/playground_assets/img_9766-1500h.jpg"
-                  preload="auto"
-                  controls="true"
-                  playsinline="true"
-                  data-video-type="promoVideo"
-                  className={styles['video']}
-                ></video>
-                <PlayBtn
-                  rootClassName="rootClassName"
-                  className={styles['component11']}
-                ></PlayBtn>
-              </div>
+              <video
+                src="https://mypthelperbucket.s3.us-east-2.amazonaws.com/HIIT+promo+2.mp4"
+                muted="true"
+                poster="/playground_assets/img_9766-1500w.jpg"
+                preload="auto"
+                controls="true"
+                playsinline="true"
+                data-video-type="promoVideo"
+                className={styles['video']}
+              ></video>
+              <PlayBtn
+                rootClassName="rootClassName"
+                className={styles['component14']}
+              ></PlayBtn>
             </div>
           </div>
         </section>
-        <section className={styles['Blog']}>
+        <section className={projectStyles['section-container']}>
           <div
-            className={` ${styles['max-content5']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content5']} ${projectStyles['max-content-container']} `}
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer3']}>
-                <div className={styles['Container7']}>
+                <div className={styles['Container5']}>
                   <div className={styles['horizontal-line4']}></div>
                   <span
-                    className={` ${styles['text15']} ${projectStyles['before-H2']} `}
+                    className={` ${styles['text14']} ${projectStyles['before-H2']} `}
                   >
                     Blog
                   </span>
@@ -263,7 +271,7 @@ const Home = () => {
                 <BtnPrimary
                   cta_text="Afla mai mult"
                   rootClassName="rootClassName29"
-                  className={styles['component12']}
+                  className={styles['component15']}
                 ></BtnPrimary>
               </Link>
             </div>

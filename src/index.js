@@ -8,6 +8,7 @@ import Despre from './views/despre'
 import Home from './views/home'
 import Contact from './views/contact'
 import PovestiDeSucces from './views/povesti-de-succes'
+import Account from './views/account'
 import Blog from './views/blog'
 import Hiit from './views/hiit'
 
@@ -20,6 +21,7 @@ const App = () => {
         <Route exact component={Home} path="/" />
         <Route exact component={Contact} path="/contact" />
         <Route exact component={PovestiDeSucces} path="/povesti-de-succes" />
+        <Route exact component={Account} path="/account" />
         <Route exact component={Blog} path="/blog" />
         <Route exact component={Hiit} path="/hiit" />
       </div>

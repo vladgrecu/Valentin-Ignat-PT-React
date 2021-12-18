@@ -2,10 +2,12 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
+import LoginModal from '../components/login-modal'
+import RegisterModal from '../components/register-modal'
 import ContactFormModal from '../components/contact-form-modal'
-import SlideInDownNavbar1 from '../components/slide-in-down-navbar1'
+import Navbar from '../components/navbar'
 import MobileMenu from '../components/mobile-menu'
-import FadeInLeftComponent1 from '../components/fade-in-left-component1'
+import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
 import BtnPrimary from '../components/btn-primary'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
@@ -26,18 +28,22 @@ const Servicii = () => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/3a2f6895-526e-403a-884d-eca828114341?org_if_sml=1"
         />
       </Helmet>
+      <LoginModal rootClassName="rootClassName1"></LoginModal>
+      <RegisterModal rootClassName="rootClassName4"></RegisterModal>
       <ContactFormModal rootClassName="rootClassName1"></ContactFormModal>
-      <SlideInDownNavbar1 rootClassName="rootClassName2"></SlideInDownNavbar1>
+      <Navbar rootClassName="rootClassName2"></Navbar>
       <MobileMenu rootClassName="rootClassName2"></MobileMenu>
       <main className={styles['Main']}>
-        <section className={styles['Hero']}>
+        <section
+          className={` ${styles['Hero']} ${projectStyles['hero-container']} `}
+        >
           <div
-            className={` ${styles['max-content']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content']} ${projectStyles['max-content-container']} `}
           >
-            <FadeInLeftComponent1
+            <FadeInLeftHeroSection
               text_content="cum te pot ajuta?"
               rootClassName="rootClassName3"
-            ></FadeInLeftComponent1>
+            ></FadeInLeftHeroSection>
           </div>
           <div className={styles['hero-overlay']}>
             <div className={styles['social-media-links']}>
@@ -68,65 +74,18 @@ const Servicii = () => {
             </div>
           </div>
         </section>
-        <section className={styles['Cards']}>
-          <div
-            className={` ${styles['max-content1']} ${projectStyles['max-content']} `}
-          >
-            <h1 className={` ${projectStyles['heading-1']} ${styles['text']} `}>
-              ce anume iti doresti
-            </h1>
-            <div className={styles['cards-container']}>
-              <div className={styles['container5']}>
-                <img
-                  alt="image"
-                  src="/playground_assets/cantar-1500w.png"
-                  className={styles['image']}
-                />
-                <span
-                  className={` ${styles['text01']} ${projectStyles['h2']} `}
-                >
-                  sa pierzi in greutate
-                </span>
-              </div>
-              <div className={styles['container6']}>
-                <img
-                  alt="image"
-                  src="/playground_assets/biceps-1500w.png"
-                  className={styles['image1']}
-                />
-                <span
-                  className={` ${styles['text02']} ${projectStyles['h2']} `}
-                >
-                  sa iti cresti masa musculara
-                </span>
-              </div>
-              <div className={styles['container7']}>
-                <img
-                  alt="image"
-                  src="/playground_assets/posture-1500w.png"
-                  className={styles['image2']}
-                />
-                <span
-                  className={` ${styles['text03']} ${projectStyles['h2']} `}
-                >
-                  sa iti imbunatatesti postura
-                </span>
-              </div>
-            </div>
-          </div>
-        </section>
         <div className={styles['Services']}>
           <div
             className={` ${styles['Service']} ${projectStyles['services-card']} `}
           >
             <div className={projectStyles['overlay-container']}>
               <div
-                className={` ${styles['heading-container']} ${projectStyles['max-content']} `}
+                className={` ${styles['heading-container']} ${projectStyles['max-content-container']} `}
               >
                 <h1
                   className={` ${styles['Heading']} ${projectStyles['heading-1']} `}
                 >
-                  <span className={styles['text04']}>
+                  <span className={styles['text']}>
                     evaluare completa si complexa
                   </span>
                 </h1>
@@ -147,12 +106,12 @@ const Servicii = () => {
           >
             <div className={projectStyles['overlay-container']}>
               <div
-                className={` ${styles['heading-container1']} ${projectStyles['max-content']} `}
+                className={` ${styles['heading-container1']} ${projectStyles['max-content-container']} `}
               >
                 <h1
-                  className={` ${styles['text05']} ${projectStyles['heading-1']} `}
+                  className={` ${styles['text1']} ${projectStyles['heading-1']} `}
                 >
-                  <span className={styles['text06']}>
+                  <span className={styles['text2']}>
                     antrenamente personale
                   </span>
                 </h1>
@@ -173,12 +132,12 @@ const Servicii = () => {
           >
             <div className={projectStyles['overlay-container']}>
               <div
-                className={` ${styles['heading-container2']} ${projectStyles['max-content']} `}
+                className={` ${styles['heading-container2']} ${projectStyles['max-content-container']} `}
               >
                 <h1
-                  className={` ${styles['text07']} ${projectStyles['heading-1']} `}
+                  className={` ${styles['text3']} ${projectStyles['heading-1']} `}
                 >
-                  <span className={styles['text08']}>online coaching</span>
+                  <span className={styles['text4']}>online coaching</span>
                 </h1>
               </div>
               <div
@@ -197,12 +156,12 @@ const Servicii = () => {
           >
             <div className={projectStyles['overlay-container']}>
               <div
-                className={` ${styles['heading-container3']} ${projectStyles['max-content']} `}
+                className={` ${styles['heading-container3']} ${projectStyles['max-content-container']} `}
               >
                 <h1
-                  className={` ${styles['text09']} ${projectStyles['heading-1']} `}
+                  className={` ${styles['text5']} ${projectStyles['heading-1']} `}
                 >
-                  <span className={styles['text10']}>
+                  <span className={styles['text6']}>
                     antrenamente personalizate cu suport video
                   </span>
                 </h1>

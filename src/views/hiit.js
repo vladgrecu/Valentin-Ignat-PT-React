@@ -2,9 +2,11 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import MobileMenu from '../components/mobile-menu'
+import LoginModal from '../components/login-modal'
+import RegisterModal from '../components/register-modal'
 import ContactFormModal from '../components/contact-form-modal'
-import SlideInDownNavbar1 from '../components/slide-in-down-navbar1'
+import Navbar from '../components/navbar'
+import MobileMenu from '../components/mobile-menu'
 import BtnPrimary from '../components/btn-primary'
 import PlayBtn from '../components/play-btn'
 import Footer from '../components/footer'
@@ -26,13 +28,17 @@ const Hiit = () => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/3a2f6895-526e-403a-884d-eca828114341?org_if_sml=1"
         />
       </Helmet>
-      <MobileMenu></MobileMenu>
+      <LoginModal rootClassName="rootClassName6"></LoginModal>
+      <RegisterModal rootClassName="rootClassName6"></RegisterModal>
       <ContactFormModal rootClassName="rootClassName6"></ContactFormModal>
-      <SlideInDownNavbar1 rootClassName="rootClassName4"></SlideInDownNavbar1>
+      <Navbar rootClassName="rootClassName4"></Navbar>
+      <MobileMenu></MobileMenu>
       <main className={styles['Main']}>
-        <section className={styles['Hero']}>
+        <section
+          className={` ${styles['Hero']} ${projectStyles['hero-container']} `}
+        >
           <div
-            className={` ${styles['max-content']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content']} ${projectStyles['max-content-container']} `}
           >
             <div
               className={` ${styles['Container01']} ${projectStyles['animation-fade-in-left']} `}
@@ -73,16 +79,20 @@ const Hiit = () => {
             </div>
           </div>
         </section>
-        <section className={styles['Description']}>
+        <section
+          className={` ${styles['Description']} ${projectStyles['section-container']} `}
+        >
           <div
-            className={` ${styles['max-content1']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content1']} ${projectStyles['max-content-container']} `}
           >
             <h1
-              className={` ${styles['text05']} ${projectStyles['heading-1']} `}
+              className={` ${projectStyles['heading-1']} ${styles['text05']} `}
             >
               primul meu program online
             </h1>
-            <div className={styles['Intro']}>
+            <div
+              className={` ${styles['Intro']} ${projectStyles['section-container']} `}
+            >
               <div className={styles['Image-Container']}>
                 <div className={styles['container04']}>
                   <span className={styles['text06']}>150</span>
@@ -122,170 +132,174 @@ const Hiit = () => {
                 </span>
               </div>
             </div>
-            <div className={styles['Picture']}>
-              <img
-                alt="image"
-                src="/playground_assets/img_9822-1500h.jpg"
-                loading="eager"
-                className={styles['image01']}
-              />
-              <div className={styles['container05']}>
-                <span className={styles['text13']}>20</span>
-                <span className={styles['text14']}>&apos;</span>
-              </div>
-            </div>
-            <div className={styles['Features']}>
-              <div className={styles['Text-Container1']}>
-                <span
-                  className={` ${styles['text15']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                >
-                  <span>
-                    HIIT reprezinta prescurtarea de la
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span className={styles['text17']}>
-                    HIGH INTENSITY INTERVAL TRAINING
-                  </span>
-                  <span>
-                    {' '}
-                    si a fost descoperit cu cateva decenii in urma in Suedia, de
-                    cativa antrenori de atletism.
-                  </span>
-                </span>
-                <span
-                  className={` ${styles['text19']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                >
-                  <span>
-                    Practic, in loc sa alergi 45-60â pe banda, unde inteleg cat
-                    de plictisitor poate fi, te vei antrena intr-un sistem de
-                    alternare a intervalelor de intensitate crescuta cu
-                    intervalele de intensitate scazuta,
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span className={styles['text21']}>timp de 20-25â.</span>
-                </span>
-              </div>
-              <div className={styles['List-Container']}>
-                <div className={styles['list-item']}>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon']}>
-                    <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
-                  </svg>
-                  <span
-                    className={` ${styles['text22']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                  >
-                    intervale de timp
-                  </span>
-                </div>
-                <div className={styles['list-item1']}>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon02']}>
-                    <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
-                  </svg>
-                  <span
-                    className={` ${styles['text23']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                  >
-                    rapid
-                  </span>
-                </div>
-                <div className={styles['list-item2']}>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon04']}>
-                    <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
-                  </svg>
-                  <span
-                    className={` ${styles['text24']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                  >
-                    eficient
-                  </span>
-                </div>
-                <div className={styles['list-item3']}>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon06']}>
-                    <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
-                  </svg>
-                  <span
-                    className={` ${styles['text25']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                  >
-                    intens
-                  </span>
-                </div>
-                <div className={styles['list-item4']}>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon08']}>
-                    <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
-                  </svg>
-                  <span
-                    className={` ${styles['text26']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                  >
-                    periodizat
-                  </span>
-                </div>
-                <div className={styles['list-item5']}>
-                  <svg viewBox="0 0 1024 1024" className={styles['icon10']}>
-                    <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
-                  </svg>
-                  <span
-                    className={` ${styles['text27']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                  >
-                    fara echipament
-                  </span>
+            <div
+              className={` ${styles['Features']} ${projectStyles['section-container']} `}
+            >
+              <div className={styles['Picture']}>
+                <img
+                  alt="image"
+                  src="/playground_assets/img_9822-1500h.jpg"
+                  loading="eager"
+                  className={styles['image01']}
+                />
+                <div className={styles['container05']}>
+                  <span className={styles['text13']}>20</span>
+                  <span className={styles['text14']}>&apos;</span>
                 </div>
               </div>
-            </div>
-            <div className={styles['UseCase']}>
-              <img
-                alt="image"
-                src="/playground_assets/img_9754-1500w.jpg"
-                className={styles['image02']}
-              />
-              <div className={styles['container06']}>
-                <span
-                  className={` ${styles['text28']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                >
-                  <span>
-                    De curand am povestit cu un amic - care de aproximativ 3
-                    luni s-a apucat de antrenamente in sistem HIIT, in confortul
-                    casei sale, dupa un
+              <div className={styles['Features1']}>
+                <div className={styles['Text-Container1']}>
+                  <span
+                    className={` ${styles['text15']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  >
+                    <span>
+                      HIIT reprezinta prescurtarea de la
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span className={styles['text17']}>
+                      HIGH INTENSITY INTERVAL TRAINING
+                    </span>
+                    <span>
+                      {' '}
+                      si a fost descoperit cu cateva decenii in urma in Suedia,
+                      de cativa antrenori de atletism.
+                    </span>
+                  </span>
+                  <span
+                    className={` ${styles['text19']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  >
+                    <span>
+                      Practic, in loc sa alergi 45-60â pe banda, unde inteleg
+                      cat de plictisitor poate fi, te vei antrena intr-un sistem
+                      de alternare a intervalelor de intensitate crescuta cu
+                      intervalele de intensitate scazuta,
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span className={styles['text21']}>timp de 20-25â.</span>
+                  </span>
+                </div>
+                <div className={styles['List-Container']}>
+                  <div className={styles['list-item']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon']}>
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
                     <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <span className={styles['text30']}>program periodizat</span>
-                  <span> si nu unul aleatoriu de pe internet.</span>
-                </span>
-                <span
-                  className={` ${styles['text32']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
-                >
-                  <span>
-                    El era obisnuit sa faca miscare, clasic, sets &amp; reps,
-                    insa i s-a parut ca nu i se mai potriveste acel stil, mai
-                    ales ca acum il obseda si gandul ca vrea sa mai slabeasca 4
-                    kg, iar alergatul pentru el nu era o optiune. Mentionez ca
-                    este si gurmand si ii este dificil sa se abtina de la unele
-                    placeri, astfel sacrificand vechiul lui stil de antrenamente
-                    in favoarea altuia nou. S-a aratat super incantat de
-                    antrenamentele de HIIT, pentru ca a intalnit in program
-                    toate
+                      className={` ${styles['text22']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    >
+                      intervale de timp
+                    </span>
+                  </div>
+                  <div className={styles['list-item1']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon02']}>
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
                     <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
+                      className={` ${styles['text23']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    >
+                      rapid
+                    </span>
+                  </div>
+                  <div className={styles['list-item2']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon04']}>
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span
+                      className={` ${styles['text24']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    >
+                      eficient
+                    </span>
+                  </div>
+                  <div className={styles['list-item3']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon06']}>
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span
+                      className={` ${styles['text25']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    >
+                      intens
+                    </span>
+                  </div>
+                  <div className={styles['list-item4']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon08']}>
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span
+                      className={` ${styles['text26']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    >
+                      periodizat
+                    </span>
+                  </div>
+                  <div className={styles['list-item5']}>
+                    <svg viewBox="0 0 1024 1024" className={styles['icon10']}>
+                      <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
+                    </svg>
+                    <span
+                      className={` ${styles['text27']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    >
+                      fara echipament
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className={styles['UseCase']}>
+                <img
+                  alt="image"
+                  src="/playground_assets/img_9754-1500w.jpg"
+                  className={styles['image02']}
+                />
+                <div className={styles['container06']}>
+                  <span
+                    className={` ${styles['text28']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  >
+                    <span>
+                      De curand am povestit cu un amic - care de aproximativ 3
+                      luni s-a apucat de antrenamente in sistem HIIT, in
+                      confortul casei sale, dupa un
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span className={styles['text30']}>program periodizat</span>
+                    <span> si nu unul aleatoriu de pe internet.</span>
                   </span>
-                  <span className={styles['text34']}>
-                    miscarile pe care el le cunostea
+                  <span
+                    className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text32']} `}
+                  >
+                    <span>
+                      El era obisnuit sa faca miscare, clasic, sets &amp; reps,
+                      insa i s-a parut ca nu i se mai potriveste acel stil, mai
+                      ales ca acum il obseda si gandul ca vrea sa mai slabeasca
+                      4 kg, iar alergatul pentru el nu era o optiune. Mentionez
+                      ca este si gurmand si ii este dificil sa se abtina de la
+                      unele placeri, astfel sacrificand vechiul lui stil de
+                      antrenamente in favoarea altuia nou. S-a aratat super
+                      incantat de antrenamentele de HIIT, pentru ca a intalnit
+                      in program toate
+                      <span
+                        dangerouslySetInnerHTML={{
+                          __html: ' ',
+                        }}
+                      />
+                    </span>
+                    <span className={styles['text34']}>
+                      miscarile pe care el le cunostea
+                    </span>
+                    <span>
+                      , insa ceva se modificase: totul era organizat pe
+                      intervale de lucru si intervale de pauza.
+                    </span>
                   </span>
-                  <span>
-                    , insa ceva se modificase: totul era organizat pe intervale
-                    de lucru si intervale de pauza.
-                  </span>
-                </span>
+                </div>
               </div>
             </div>
             <div className={styles['Benefits']}>
@@ -322,6 +336,7 @@ const Hiit = () => {
                 </div>
                 <div className={styles['separator1']}></div>
                 <h3
+                  data-action="showContactFormModal"
                   className={` ${styles['Circle']} ${projectStyles['h5']} ${projectStyles['content-Bold']} ${projectStyles['circle-try']} `}
                 >
                   cumpara
@@ -354,7 +369,9 @@ const Hiit = () => {
                 </div>
               </div>
             </div>
-            <div className={styles['BenefitsExplained']}>
+            <div
+              className={` ${styles['BenefitsExplained']} ${projectStyles['section-container']} `}
+            >
               <div className={styles['Benefit']}>
                 <img
                   alt="image"
@@ -508,7 +525,9 @@ const Hiit = () => {
                 </span>
               </div>
             </div>
-            <div className={styles['MoreExplanations']}>
+            <div
+              className={` ${styles['MoreExplanations']} ${projectStyles['section-container']} `}
+            >
               <div className={styles['HeadingContainer']}>
                 <h1
                   className={` ${styles['text62']} ${projectStyles['heading-1']} `}
@@ -586,7 +605,7 @@ const Hiit = () => {
                     </div>
                     <div className={styles['ContentContainer1']}>
                       <span
-                        className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['Text69']} `}
+                        className={` ${styles['Text69']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                       >
                         <span>
                           La finalul programului vei simti cum sistemul tau
@@ -648,12 +667,14 @@ const Hiit = () => {
                 />
               </div>
             </div>
-            <div className={styles['VideoSection']}>
+            <div
+              className={` ${styles['VideoSection']} ${projectStyles['section-container']} `}
+            >
               <div className={styles['Video']}>
                 <video
                   src="https://mypthelperbucket.s3.us-east-2.amazonaws.com/HIIT+promo+2.mp4"
                   muted="true"
-                  poster="/playground_assets/img_9766-1500h.jpg"
+                  poster="/playground_assets/img_9766-1500w.jpg"
                   preload="auto"
                   controls="true"
                   playsinline="true"
@@ -662,7 +683,7 @@ const Hiit = () => {
                 ></video>
                 <PlayBtn
                   rootClassName="rootClassName1"
-                  className={styles['component4']}
+                  className={styles['component6']}
                 ></PlayBtn>
               </div>
               <span

@@ -2,10 +2,12 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
+import LoginModal from '../components/login-modal'
 import ContactFormModal from '../components/contact-form-modal'
-import SlideInDownNavbar1 from '../components/slide-in-down-navbar1'
+import RegisterModal from '../components/register-modal'
+import Navbar from '../components/navbar'
 import MobileMenu from '../components/mobile-menu'
-import FadeInLeftComponent1 from '../components/fade-in-left-component1'
+import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
 import styles from './contact.module.css'
@@ -25,23 +27,27 @@ const Contact = () => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/3a2f6895-526e-403a-884d-eca828114341?org_if_sml=1"
         />
       </Helmet>
+      <LoginModal rootClassName="rootClassName2"></LoginModal>
       <ContactFormModal rootClassName="rootClassName4"></ContactFormModal>
-      <SlideInDownNavbar1 rootClassName="rootClassName5"></SlideInDownNavbar1>
+      <RegisterModal rootClassName="rootClassName1"></RegisterModal>
+      <Navbar rootClassName="rootClassName5"></Navbar>
       <MobileMenu rootClassName="rootClassName4"></MobileMenu>
       <main className={styles['Main']}>
-        <section className={styles['Hero']}>
+        <section
+          className={` ${styles['Hero']} ${projectStyles['hero-container']} `}
+        >
           <div
-            className={` ${styles['max-content']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content']} ${projectStyles['max-content-container']} `}
           >
-            <FadeInLeftComponent1
+            <FadeInLeftHeroSection
               text_content="unde ma gasesti?"
               rootClassName="rootClassName1"
-            ></FadeInLeftComponent1>
+            ></FadeInLeftHeroSection>
           </div>
         </section>
-        <div className={styles['Map']}>
+        <div className={projectStyles['section-container']}>
           <div
-            className={` ${styles['max-content1']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content1']} ${projectStyles['max-content-container']} `}
           >
             <div className={styles['Container1']}>
               <a href="tel:+40756831946" className={styles['link']}>

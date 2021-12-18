@@ -78,9 +78,22 @@ const CarrouselWithText = (props) => {
       </div>
       <div className={styles['Text-Container']}>
         <span
+          data-slide-index="0"
           className={` ${styles['text']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
         >
-          {props.text}
+          {props.slide_one_text}
+        </span>
+        <span
+          data-slide-index="1"
+          className={` ${styles['text1']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+        >
+          {props.slide_two_text}
+        </span>
+        <span
+          data-slide-index="2"
+          className={` ${styles['text2']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+        >
+          {props.slide_three_text}
         </span>
       </div>
     </div>
@@ -88,17 +101,24 @@ const CarrouselWithText = (props) => {
 }
 
 CarrouselWithText.defaultProps = {
-  text: 'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
-  slide_two_src: '/playground_assets/2-1500h.jpg',
-  slide_one_src: '/playground_assets/0-1500h.jpg',
-  slide_three_src: '/playground_assets/1-1500h.jpg',
+  slide_two_text:
+    'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
+  slide_one_text:
+    'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
+  slide_two_src: '/playground_assets/2-600w.jpg',
+  slide_one_src: '/playground_assets/0-600w.jpg',
+  slide_three_text:
+    'Praesent nec lobortis dolor. Vestibulum scelerisque purus nisi, eu sollicitudin tellus fringilla at. In eget enim et lectus sollicitudin mattis. In vestibulum massa sit amet egestas facilisis. Integer porta augue sit amet diam dignissim suscipit. Ut sit amet pellentesque sapien. Praesent a molestie elit.',
+  slide_three_src: '/playground_assets/1-600w.jpg',
   rootClassName: '',
 }
 
 CarrouselWithText.propTypes = {
-  text: PropTypes.string,
+  slide_two_text: PropTypes.string,
+  slide_one_text: PropTypes.string,
   slide_two_src: PropTypes.string,
   slide_one_src: PropTypes.string,
+  slide_three_text: PropTypes.string,
   slide_three_src: PropTypes.string,
   rootClassName: PropTypes.string,
 }

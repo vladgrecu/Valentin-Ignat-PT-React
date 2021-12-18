@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
+import LoginModal from '../components/login-modal'
+import RegisterModal from '../components/register-modal'
 import ContactFormModal from '../components/contact-form-modal'
-import SlideInDownNavbar1 from '../components/slide-in-down-navbar1'
+import Navbar from '../components/navbar'
 import MobileMenu from '../components/mobile-menu'
 import BtnPrimary from '../components/btn-primary'
 import Footer from '../components/footer'
@@ -26,20 +28,24 @@ const Despre = () => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/0bb31403-1ba8-407c-9d80-4389cc611d8c/3a2f6895-526e-403a-884d-eca828114341?org_if_sml=1"
         />
       </Helmet>
+      <LoginModal rootClassName="rootClassName4"></LoginModal>
+      <RegisterModal rootClassName="rootClassName2"></RegisterModal>
       <ContactFormModal rootClassName="rootClassName"></ContactFormModal>
-      <SlideInDownNavbar1 rootClassName="rootClassName1"></SlideInDownNavbar1>
+      <Navbar rootClassName="rootClassName1"></Navbar>
       <MobileMenu rootClassName="rootClassName1"></MobileMenu>
       <main className={styles['Main']}>
-        <section className={styles['Hero']}>
+        <section
+          className={` ${styles['Hero']} ${projectStyles['hero-container']} `}
+        >
           <div
-            className={` ${styles['max-content']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content']} ${projectStyles['max-content-container']} `}
           >
             <div
-              className={` ${styles['container01']} ${projectStyles['animation-fade-in-left']} `}
+              className={` ${styles['fade-inleft']} ${projectStyles['animation-fade-in-left']} `}
             >
               <div className={styles['horizontal-line']}></div>
-              <div className={styles['container02']}>
-                <div className={styles['container03']}>
+              <div className={styles['container01']}>
+                <div className={styles['container02']}>
                   <span
                     className={` ${styles['text']} ${projectStyles['heading-1']} `}
                   >
@@ -58,7 +64,7 @@ const Despre = () => {
                 </span>
                 <div
                   data-action="showContactFormModal"
-                  className={styles['container04']}
+                  className={styles['container03']}
                 >
                   <BtnPrimary
                     cta_text="Contacteaza-ma"
@@ -69,12 +75,14 @@ const Despre = () => {
             </div>
           </div>
         </section>
-        <section className={styles['About']}>
+        <section
+          className={` ${styles['About']} ${projectStyles['section-container']} `}
+        >
           <div
-            className={` ${styles['max-content1']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content1']} ${projectStyles['max-content-container']} `}
           >
             <div className={styles['Image-Container']}>
-              <div className={styles['container05']}>
+              <div className={styles['container04']}>
                 <img
                   alt="image"
                   src="/playground_assets/img_2970-1500h.jpg"
@@ -91,7 +99,7 @@ const Despre = () => {
               </h1>
             </div>
             <div className={styles['Text-Container']}>
-              <div className={styles['Container06']}>
+              <div className={styles['Container05']}>
                 <div className={styles['horizontal-line1']}></div>
                 <span
                   className={` ${styles['text04']} ${projectStyles['heading-1']} `}
@@ -109,7 +117,7 @@ const Despre = () => {
                 </span>
               </div>
               <span
-                className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['Text08']} `}
+                className={` ${styles['Text08']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
               >
                 <span className={styles['text09']}>
                   La 31 de ani, mai puternic ca la 20
@@ -127,11 +135,13 @@ const Despre = () => {
           </div>
         </section>
         <div className={styles['InfoCards']}>
-          <div className={styles['First']}>
+          <div
+            className={` ${styles['First']} ${projectStyles['section-container']} `}
+          >
             <div
-              className={` ${styles['max-content2']} ${projectStyles['max-content']} `}
+              className={` ${styles['max-content2']} ${projectStyles['max-content-container']} `}
             >
-              <div className={styles['container07']}>
+              <div className={styles['container06']}>
                 <span
                   className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
@@ -181,18 +191,20 @@ const Despre = () => {
               />
             </div>
           </div>
-          <div className={styles['Second']}>
+          <div
+            className={` ${styles['Second']} ${projectStyles['section-container']} `}
+          >
             <div
-              className={` ${styles['max-content3']} ${projectStyles['max-content']} `}
+              className={` ${styles['max-content3']} ${projectStyles['max-content-container']} `}
             >
               <img
                 alt="image"
                 src="/playground_assets/ceas-1500h.png"
                 className={styles['image03']}
               />
-              <div className={styles['container08']}>
+              <div className={styles['container07']}>
                 <span
-                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text19']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Din timpul liceului Ã®mi aduc aminte cÄ aveam cel puÈin 3 ore
@@ -230,13 +242,13 @@ const Despre = () => {
               </div>
             </div>
           </div>
-          <div className={styles['Third']}>
+          <div className={projectStyles['section-container']}>
             <div
-              className={` ${styles['max-content4']} ${projectStyles['max-content']} `}
+              className={` ${styles['max-content4']} ${projectStyles['max-content-container']} `}
             >
-              <div className={styles['container09']}>
+              <div className={styles['container08']}>
                 <span
-                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text25']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Revenind la sporturile practicate, pot sa enumÄr printre
@@ -277,23 +289,23 @@ const Despre = () => {
               </div>
               <img
                 alt="image"
-                src="/playground_assets/img_9818-1500h.jpg"
+                src="/playground_assets/img_9818-1500w.jpg"
                 className={styles['image04']}
               />
             </div>
           </div>
-          <div className={styles['Forfth']}>
+          <div className={projectStyles['section-container']}>
             <div
-              className={` ${styles['max-content5']} ${projectStyles['max-content']} `}
+              className={` ${styles['max-content5']} ${projectStyles['max-content-container']} `}
             >
               <img
                 alt="slide-1"
-                src="/playground_assets/colaj-1500h.jpeg"
+                src="/playground_assets/colaj-1500w.jpeg"
                 className={styles['image05']}
               />
               <div className={styles['Text-Container1']}>
                 <span
-                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text33']} `}
+                  className={` ${styles['text33']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Ãntr-un final, a venit Èi momentul sÄ plec de acasÄ, la
@@ -324,7 +336,7 @@ const Despre = () => {
                   </span>
                 </span>
                 <span
-                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text39']} `}
+                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Pana la urma, orice
@@ -363,7 +375,9 @@ const Despre = () => {
             </div>
           </div>
         </div>
-        <div className={styles['SportLife']}>
+        <div
+          className={` ${styles['SportLife']} ${projectStyles['section-container']} `}
+        >
           <div className={styles['heading-container']}>
             <div className={styles['overlay']}></div>
             <h1
@@ -381,9 +395,9 @@ const Despre = () => {
             </h1>
           </div>
           <div
-            className={` ${styles['max-content6']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content6']} ${projectStyles['max-content-container']} `}
           >
-            <div className={styles['container10']}>
+            <div className={styles['container09']}>
               <img
                 alt="image"
                 src="/playground_assets/img_9585-1500w.jpg"
@@ -391,7 +405,7 @@ const Despre = () => {
               />
               <div className={styles['Text-Container2']}>
                 <span
-                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text49']} `}
+                  className={` ${styles['text49']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Cu un obiectiv bine stabilit am pÄÈit Ã®ntr-o salÄ
@@ -423,7 +437,7 @@ const Despre = () => {
                   <span>.</span>
                 </span>
                 <span
-                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text55']} `}
+                  className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     A fost greu cÃ¢nd am realizat cÃ¢t de mult regresasem Ã®n trei
@@ -444,9 +458,9 @@ const Despre = () => {
                 </span>
               </div>
             </div>
-            <div className={styles['container11']}>
+            <div className={styles['container10']}>
               <span
-                className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text59']} `}
+                className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
               >
                 <span>
                   OdatÄ ce obiectivul a fost atins am fixat altul, care la
@@ -488,12 +502,12 @@ const Despre = () => {
             </div>
           </div>
         </div>
-        <div className={styles['Gallery']}>
+        <div className={projectStyles['section-container']}>
           <div
-            className={` ${styles['max-content7']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content7']} ${projectStyles['max-content-container']} `}
           >
-            <div className={styles['Container12']}>
-              <div className={styles['container13']}>
+            <div className={styles['Left']}>
+              <div className={styles['container11']}>
                 <img
                   alt="image"
                   src="/playground_assets/img_3703-edit-1500h.jpg"
@@ -542,8 +556,8 @@ const Despre = () => {
                 <span> pentru tot ceea ce fac.</span>
               </span>
             </div>
-            <div className={styles['container14']}>
-              <div className={styles['container15']}>
+            <div className={styles['Right']}>
+              <div className={styles['container12']}>
                 <img
                   alt="image"
                   src="/playground_assets/img_4100-1500w.jpg"
@@ -561,7 +575,7 @@ const Despre = () => {
               <span className={` ${styles['text78']} ${projectStyles['h2']} `}>
                 creativ
               </span>
-              <div className={styles['container16']}>
+              <div className={styles['container13']}>
                 <img
                   alt="image"
                   src="/playground_assets/img_9937-1500w.jpg"
@@ -574,9 +588,11 @@ const Despre = () => {
             </div>
           </div>
         </div>
-        <div className={styles['container17']}>
+        <div
+          className={` ${styles['container14']} ${projectStyles['section-container']} `}
+        >
           <div
-            className={` ${styles['max-content8']} ${projectStyles['max-content']} `}
+            className={` ${styles['max-content8']} ${projectStyles['max-content-container']} `}
           >
             <div className={styles['Text-Container3']}>
               <span
@@ -603,7 +619,7 @@ const Despre = () => {
                 <BtnPrimary
                   cta_text="Afla mai mult"
                   rootClassName="rootClassName10"
-                  className={styles['component3']}
+                  className={styles['component6']}
                 ></BtnPrimary>
               </Link>
             </div>
