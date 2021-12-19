@@ -52,7 +52,6 @@
   cursor: pointer;
   transition: 0.3s;
   margin-bottom: var(--dl-space-space-unit);
-  text-decoration: none;
 }
 .navlink1:hover {
   color: var(--dl-color-neutral-white);
@@ -301,6 +300,7 @@
 }
 .container09 {
   display: flex;
+  font-size: 16px;
   align-items: center;
   flex-direction: row;
 }
@@ -321,7 +321,6 @@
 }
 .text19 {
   color: var(--dl-color-neutral-gray);
-  margin-right: var(--dl-space-space-unit);
 }
 .link {
   display: contents;

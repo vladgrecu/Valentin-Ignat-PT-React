@@ -78,22 +78,32 @@ const ContactFormModal = (props) => {
           <div className={styles['container1']}>
             <input
               type="checkbox"
-              checked="true"
+              id="subscribe"
+              name="subscribe"
+              value="subscribe"
+              form-field="true"
+              data-action="newsletterSubscribe"
+              defaultChecked="true"
               className={styles['checkbox']}
             />
-            <label className={styles['text1']}>
-              Ma abonez la newsletter-ul, Coach Vali Ignat
+            <label htmlFor="subscribe" className={styles['text1']}>
+              Ma abonez la newsletter-ul, Coach Vali Ignat.
             </label>
           </div>
           <div className={styles['container2']}>
             <input
               type="checkbox"
-              checked="true"
+              id="consent"
+              name="consent"
+              value="consent"
+              required="true"
+              form-field="true"
+              data-action="giveConsent"
               className={styles['checkbox1']}
             />
-            <label className={styles['text2']}>
+            <label htmlFor="consent" className={styles['text2']}>
               Sunt de acord cu politicile de confidentialitate, termenii si
-              conditiile prezente pe acest site
+              conditiile prezente pe acest site.
             </label>
           </div>
           <div className={styles['container3']}>

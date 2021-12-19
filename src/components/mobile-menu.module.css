@@ -73,6 +73,14 @@
   justify-content: flex-start;
   text-decoration: none;
 }
+.Text {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .navlink1 {
   display: contents;
 }
@@ -83,6 +91,14 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-halfunit);
   justify-content: flex-start;
+  text-decoration: none;
+}
+.text02 {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .navlink2 {
@@ -97,6 +113,14 @@
   justify-content: space-between;
   text-decoration: none;
 }
+.Text03 {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .navlink3 {
   display: contents;
 }
@@ -107,6 +131,14 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-halfunit);
   justify-content: space-between;
+  text-decoration: none;
+}
+.text04 {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .navlink4 {
@@ -121,6 +153,14 @@
   justify-content: space-between;
   text-decoration: none;
 }
+.Text05 {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .navlink5 {
   display: contents;
 }
@@ -133,6 +173,14 @@
   justify-content: space-between;
   text-decoration: none;
 }
+.text06 {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 .navlink6 {
   display: contents;
 }
@@ -143,6 +191,14 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-halfunit);
   justify-content: space-between;
+  text-decoration: none;
+}
+.text07 {
+  font-size: 24px;
+  font-family: Teko;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
   text-decoration: none;
 }
 .Bottom {

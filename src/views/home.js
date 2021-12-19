@@ -11,7 +11,6 @@ import MobileMenu from '../components/mobile-menu'
 import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
 import BtnPrimary from '../components/btn-primary'
 import ServiceCard from '../components/service-card'
-import CarrouselWithText from '../components/carrousel-with-text'
 import PlayBtn from '../components/play-btn'
 import BlogCard from '../components/blog-card'
 import Footer from '../components/footer'
@@ -60,11 +59,7 @@ const Home = () => {
             <div className={styles['Text-Container']}>
               <div className={styles['Info']}>
                 <div className={styles['horizontal-line']}></div>
-                <span
-                  className={` ${styles['info-text']} ${projectStyles['before-H2']} `}
-                >
-                  despre mine
-                </span>
+                <span className={styles['info-text']}>despre mine</span>
               </div>
               <h2
                 className={` ${styles['Heading']} ${projectStyles['heading-1']} `}
@@ -144,11 +139,7 @@ const Home = () => {
               <div className={styles['TitleContainer']}>
                 <div className={styles['Container2']}>
                   <div className={styles['horizontal-line1']}></div>
-                  <span
-                    className={` ${styles['text08']} ${projectStyles['before-H2']} `}
-                  >
-                    Shop
-                  </span>
+                  <span className={styles['text08']}>Shop</span>
                 </div>
                 <h1 className={projectStyles['heading-1']}>Servicii</h1>
               </div>
@@ -186,11 +177,7 @@ const Home = () => {
               <div className={styles['TitleContainer1']}>
                 <div className={styles['Container3']}>
                   <div className={styles['horizontal-line2']}></div>
-                  <span
-                    className={` ${styles['text10']} ${projectStyles['before-H2']} `}
-                  >
-                    feedback
-                  </span>
+                  <span className={styles['text10']}>feedback</span>
                 </div>
                 <h1 className={projectStyles['heading-1']}>
                   Povesti de succes
@@ -204,7 +191,223 @@ const Home = () => {
                 ></BtnPrimary>
               </Link>
             </div>
-            <CarrouselWithText></CarrouselWithText>
+            <div data-role="carrousel" className={styles['Carrousel']}>
+              <div className={styles['Slider']}>
+                <div
+                  className={` ${styles['Slides']} ${projectStyles['slides-container']} `}
+                >
+                  <img
+                    alt="slide-1"
+                    src="/playground_assets/catalina%20b_a-1500h.jpg"
+                    data-slide-index="0"
+                    className={` ${projectStyles['carrousel-slide']} ${projectStyles['slide-active']} ${projectStyles['animation-fade-in']} `}
+                  />
+                  <img
+                    alt="slide-1"
+                    src="/playground_assets/simina%20b_a%20-%20spate-600w.jpg"
+                    data-slide-index="1"
+                    className={` ${styles['Image2']} ${projectStyles['carrousel-slide']} ${projectStyles['animation-fade-in']} `}
+                  />
+                  <img
+                    alt="slide-1"
+                    src="/playground_assets/lorena%20b_a-600w.jpg"
+                    data-slide-index="2"
+                    className={` ${styles['Image3']} ${projectStyles['carrousel-slide']} ${projectStyles['animation-fade-in']} `}
+                  />
+                </div>
+                <div className={projectStyles['carrousel-controls-container']}>
+                  <div
+                    data-slide-index="0"
+                    className={projectStyles['carrousel-control-btn']}
+                  >
+                    <div
+                      className={` ${styles['BulletContent']} ${projectStyles['tl-bullet-active']} ${projectStyles['tl-bullet']} `}
+                    >
+                      <div
+                        className={` ${projectStyles['tl-inner-active']} ${projectStyles['inner-white']} `}
+                      ></div>
+                    </div>
+                    <div className={projectStyles['tl-bullet-inner']}></div>
+                  </div>
+                  <div
+                    className={` ${styles['Line']} ${projectStyles['tl-line']} `}
+                  ></div>
+                  <div
+                    data-slide-index="1"
+                    className={projectStyles['carrousel-control-btn']}
+                  >
+                    <div
+                      className={` ${styles['BulletContent1']} ${projectStyles['tl-bullet']} `}
+                    >
+                      <div className={projectStyles['inner-white']}></div>
+                    </div>
+                    <div className={projectStyles['tl-bullet-inner']}></div>
+                  </div>
+                  <div
+                    className={` ${styles['Line1']} ${projectStyles['tl-line']} `}
+                  ></div>
+                  <div
+                    data-slide-index="2"
+                    className={projectStyles['carrousel-control-btn']}
+                  >
+                    <div
+                      className={` ${styles['BulletContent2']} ${projectStyles['tl-bullet']} `}
+                    >
+                      <div className={projectStyles['inner-white']}></div>
+                    </div>
+                    <div className={projectStyles['tl-bullet-inner']}></div>
+                  </div>
+                </div>
+              </div>
+              <div className={styles['Text-Container1']}>
+                <span
+                  data-slide-index="0"
+                  className={` ${projectStyles['carrousel-text']} ${projectStyles['slide-active']} ${projectStyles['animation-fade-in']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                >
+                  <span>
+                    In 2019 m-am hotarat sa fac o schimbare legata de ce tip de
+                    miscare sa fac. Pana atunci mergeam la clase de Zumba si
+                    Pilates si devenise cam monoton, vroiam ceva mai challenging
+                    asa ca m-am dus la o sala cu total alt fel de clase. Acolo
+                    l-am cunoscut pe Vali, care facea clasele de HIIT. Mergeam
+                    si la alte clase cateodata, dar cel mai des la Vali, pentru
+                    ca energia si buna lui dispozitie (inca)e molipsitoare!
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    In 2020, dupa ce am tot auzit de la prieteni/prietene ca au
+                    apelat la un antrenor personal mi-am zis sa incerc si
+                    eu(pentru prima oara), si a urmat: &quot;Vali, ai un loc si
+                    pentru mine la Personal Training&quot;. Si m-a primit!
+                    Decizia asta a fost motivata de cat de mult mi-a placut la
+                    clasele lui si de ce om fain este.
+                  </span>
+                  <br></br>
+                  <span>
+                    De-atunci orele de PT au fost din ce in ce mai faine si
+                    pentru ca incepeam sa progresez, dar si pentru ca incepeam
+                    sa descopar tot mai multe lucruri bune despre Vali.
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    Pentru mine Vali e un antrenor complet: se intereseaza de
+                    obiectivele fiecaruia si lucreaza cu fiecare pe baza
+                    obiectivelor, e atent permanent la cum execut
+                    exercitiile/miscarile si are rabdare sa explice ce vrea sa
+                    zica de cate ori e nevoie pana inteleg, isi motiveaza
+                    alegerile legate de exercitii, imi raspunde la orice
+                    intrebare am, ma motiveaza prin felul lui de a fi si prin
+                    faptul ca se bucura si el cu mine cand progresez, e foarte
+                    implicat, se documenteaza continuu, m-a invatat sa ma
+                    descurc si singura in sala, si bonus pentru cititori: are si
+                    simtul umorului! :D
+                  </span>
+                  <br></br>
+                  <span>
+                    Din 2020 pana azi: am devenit mai puternica, am mai multa
+                    incredere in mine, sunt mult mai activa si fac asta cu
+                    placere, simt ca sunt in cea mai buna forma a mea de pana
+                    acum, si-n plus sunt mai bogata ca l-am cunoscut pe Vali si
+                    pe colegii de echipa.
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>Multumesc inca o data, Vali!</span>
+                  <br></br>
+                  <span></span>
+                </span>
+                <span
+                  data-slide-index="1"
+                  className={` ${projectStyles['carrousel-text']} ${projectStyles['animation-fade-in']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                >
+                  Pe lÃ¢ngÄ faptul cÄ este un profesionist, Vali este Èi un om
+                  foarte fain! DacÄ simÈi cÄ nu vei ajunge vreodatÄ sÄ mergi cu
+                  drag la salÄ e pentru cÄ nu l-ai cunoscut pe Vali!
+                  Profesionalism (antrenor) + multa transpiraÈie (client) + good
+                  vibes = antrenamente cu Vali
+                </span>
+                <span
+                  data-slide-index="2"
+                  className={` ${projectStyles['carrousel-text']} ${projectStyles['animation-fade-in']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                >
+                  <span>
+                    Hmm.. este asa de indepartat inceputul povestii mele cu
+                    Coach, incat trebuie sa fac niste eforturi pentru a-mi
+                    aminti:D. M-am decis in urma cu vreo 4-5 ani parca... sa nu
+                    mai ignor faptul ca am 20 si ceva de ani si obosesc cand urc
+                    10 scari, asa ca printr-o cunostinta comuna am ajuns sa il
+                    cunosc pe Vali. De atunci lucram impreuna fara pauza:D
+                    indiferent de locatie (diferite Sali de-a lungul timpului,
+                    apoi in online de cand cu pandemia).
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    Ma intreaba multa lume de ce continui sa lucrez cu antrenor
+                    personal avand in vedere ca de atata timp deja stiu sa
+                    execut corect exercitiile. E simplu! Daca nu as face cu
+                    Vali, nu as face deloc:D. Ma motiveaza si ma face sa fac
+                    sport de 4 ani constant. Cum? Simplu!
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    Am sa raspund la 2 intrebari deodata: cum ma motiveaza si ce
+                    imi place la el: profesionalismul, implicarea si
+                    rigurozitatea. Povestim si despre alte lucruri in afara de
+                    sport, inaintea antrenamentelor, dupa antrenamente, in
+                    timpul liber, dar NICIODATA in timpul antrenamentelor (in
+                    ciuda incercarilor mele de a mai fura un minut-2 :D). Pare
+                    cateodata ca nu este atent la tine.. Ai sa aflii in scurt
+                    timp ca te inseli (âai pauza 2 minuteâ si in 2 minute pe
+                    ceas se aude: âPauza a trecut!â) sau faci 10 repetari si la
+                    a 11-a nu mai ai chef si o faci pe jumatate si de undeva din
+                    podea, din ceruri, de dupa usa (tu nu il vezi deci automat
+                    crezi ca nici el nu te vede) : â AIA NU SE PUNE CA
+                    REPETARE!â.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    Cum l-as descrie pe Coach in 3 cuvinte: profesionalist,
+                    ambitios si riguros ( acestea fiind atat calitatile cat si
+                    defectele lui in functie de cat chef am de antrenament in
+                    acea zi:))) totodata un om cald si prietenos. Antrenamentele
+                    sunt variate, astfel incat nu m-am plictisit de ele de 4 ani
+                    ( mare lucru) si faptul ca cineva âma trage de urechiâ
+                    constant sa nu abandonez sportul este foarte de ajutor.
+                  </span>
+                </span>
+              </div>
+            </div>
           </div>
         </section>
         <section className={projectStyles['section-container']}>
@@ -213,13 +416,9 @@ const Home = () => {
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer2']}>
-                <div className={styles['Container4']}>
+                <div className={styles['Container7']}>
                   <div className={styles['horizontal-line3']}></div>
-                  <span
-                    className={` ${styles['text12']} ${projectStyles['before-H2']} `}
-                  >
-                    HIIT
-                  </span>
+                  <span className={styles['text40']}>HIIT</span>
                 </div>
                 <h1 className={projectStyles['heading-1']}>
                   Cum pot sa te ajut
@@ -229,7 +428,7 @@ const Home = () => {
                 <BtnPrimary
                   cta_text="Afla mai mult"
                   rootClassName="rootClassName28"
-                  className={styles['component13']}
+                  className={styles['component12']}
                 ></BtnPrimary>
               </Link>
             </div>
@@ -246,7 +445,7 @@ const Home = () => {
               ></video>
               <PlayBtn
                 rootClassName="rootClassName"
-                className={styles['component14']}
+                className={styles['component13']}
               ></PlayBtn>
             </div>
           </div>
@@ -257,21 +456,17 @@ const Home = () => {
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer3']}>
-                <div className={styles['Container5']}>
+                <div className={styles['Container8']}>
                   <div className={styles['horizontal-line4']}></div>
-                  <span
-                    className={` ${styles['text14']} ${projectStyles['before-H2']} `}
-                  >
-                    Blog
-                  </span>
+                  <span className={styles['text42']}>Blog</span>
                 </div>
                 <h1 className={projectStyles['heading-1']}>Ce mai scriu</h1>
               </div>
-              <Link to="/blog">
+              <Link to="/blog-home">
                 <BtnPrimary
                   cta_text="Afla mai mult"
                   rootClassName="rootClassName29"
-                  className={styles['component15']}
+                  className={styles['component14']}
                 ></BtnPrimary>
               </Link>
             </div>

@@ -30,7 +30,7 @@ const MobileMenu = (props) => {
             <div className={styles['Container01']}>
               <span
                 data-url="/"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['Text']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 <span>acasa</span>
               </span>
@@ -40,7 +40,7 @@ const MobileMenu = (props) => {
             <div className={styles['container02']}>
               <span
                 data-url="/despre"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['text02']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 despre mine
               </span>
@@ -50,7 +50,7 @@ const MobileMenu = (props) => {
             <div className={styles['container03']}>
               <span
                 data-url="/servicii"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['Text03']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 servicii
               </span>
@@ -60,7 +60,7 @@ const MobileMenu = (props) => {
             <div className={styles['container04']}>
               <span
                 data-url="/povesti-de-succes"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['text04']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 povesti
               </span>
@@ -70,17 +70,17 @@ const MobileMenu = (props) => {
             <div className={styles['container05']}>
               <span
                 data-url="/hiit"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['Text05']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 hiit
               </span>
             </div>
           </Link>
-          <Link to="/blog" className={styles['navlink5']}>
+          <Link to="/blog-home" className={styles['navlink5']}>
             <div className={styles['container06']}>
               <span
                 data-url="/blog"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['text06']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 blog
               </span>
@@ -90,7 +90,7 @@ const MobileMenu = (props) => {
             <div className={styles['container07']}>
               <span
                 data-url="/contact"
-                className={` ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
+                className={` ${styles['text07']} ${projectStyles['button-Text']} ${projectStyles['mobile-link-title']} `}
               >
                 contact
               </span>

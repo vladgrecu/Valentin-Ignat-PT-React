@@ -2,14 +2,15 @@
   display: flex;
 }
 .Slider {
-  flex: 0 0 auto;
   width: var(--dl-size-size-half);
   display: flex;
-  align-self: stretch;
+  align-self: center;
   align-items: center;
   margin-right: var(--dl-space-space-eightunits);
   flex-direction: column;
-  justify-content: flex-end;
+}
+.Slides {
+  align-items: flex-end;
 }
 .Image1 {
   flex: 1;
@@ -58,17 +59,6 @@
   padding-top: var(--dl-space-space-eightunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-eightunits);
-}
-.text {
-  margin-bottom: 0px;
-}
-.text1 {
-  display: none;
-  margin-bottom: 0px;
-}
-.text2 {
-  display: none;
-  margin-bottom: 0px;
 }
 
 @media(max-width: 767px) {

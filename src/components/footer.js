@@ -70,7 +70,7 @@ const Footer = (props) => {
                 </span>
               </div>
               <Link
-                to="/blog"
+                to="/blog-home"
                 className={` ${styles['navlink3']} ${projectStyles['footer-Title']} `}
               >
                 Blog

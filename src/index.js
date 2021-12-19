@@ -7,9 +7,10 @@ import Servicii from './views/servicii'
 import Despre from './views/despre'
 import Home from './views/home'
 import Contact from './views/contact'
+import BlogDespreSomn from './views/blog-despre-somn'
 import PovestiDeSucces from './views/povesti-de-succes'
 import Account from './views/account'
-import Blog from './views/blog'
+import BlogHome from './views/blog-home'
 import Hiit from './views/hiit'
 
 const App = () => {
@@ -20,9 +21,10 @@ const App = () => {
         <Route exact component={Despre} path="/despre" />
         <Route exact component={Home} path="/" />
         <Route exact component={Contact} path="/contact" />
+        <Route exact component={BlogDespreSomn} path="/blog-despre-somn" />
         <Route exact component={PovestiDeSucces} path="/povesti-de-succes" />
         <Route exact component={Account} path="/account" />
-        <Route exact component={Blog} path="/blog" />
+        <Route exact component={BlogHome} path="/blog-home" />
         <Route exact component={Hiit} path="/hiit" />
       </div>
     </Router>

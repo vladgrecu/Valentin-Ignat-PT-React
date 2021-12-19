@@ -16,9 +16,7 @@ const SectionHeading = (props) => {
       <div className={styles['TitleContainer']}>
         <div className={styles['Container']}>
           <div className={styles['horizontal-line']}></div>
-          <span className={` ${styles['text']} ${projectStyles['before-H2']} `}>
-            {props.description}
-          </span>
+          <span className={styles['text']}>{props.description}</span>
         </div>
         <h1 className={projectStyles['heading-1']}>{props.title}</h1>
       </div>

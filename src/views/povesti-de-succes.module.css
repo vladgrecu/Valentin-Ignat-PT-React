@@ -116,6 +116,7 @@
   }
   .text4 {
     padding: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-fourunits);
   }
   .cards-container1 {
     justify-content: center;
@@ -134,7 +135,7 @@
   }
   .text4 {
     padding: var(--dl-space-space-halfunit);
-    margin-bottom: var(--dl-space-space-sixteenunits);
+    font-size: 36px;
   }
   .cards-container {
     padding-top: var(--dl-space-space-fourunits);

@@ -59,6 +59,8 @@
   flex-direction: row;
 }
 .checkbox {
+  min-width: 16px;
+  min-height: 16px;
   margin-right: var(--dl-space-space-unit);
 }
 .text1 {
@@ -72,6 +74,8 @@
   flex-direction: row;
 }
 .checkbox1 {
+  min-width: 16px;
+  min-height: 16px;
   margin-right: var(--dl-space-space-unit);
 }
 .text2 {

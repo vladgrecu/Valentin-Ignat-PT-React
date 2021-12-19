@@ -107,7 +107,7 @@ const Navbar = (props) => {
               </div>
             </Link>
             <div className={projectStyles['tl-line']}></div>
-            <Link to="/blog" className={styles['navlink6']}>
+            <Link to="/blog-home" className={styles['navlink6']}>
               <div className={styles['Bullet5']}>
                 <div
                   data-url="/blog"

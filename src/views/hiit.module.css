@@ -947,10 +947,6 @@
   .text {
     margin-bottom: var(--dl-space-space-tripleunit);
   }
-  .Description {
-    padding-bottom: 0px;
-    background-size: cover;
-  }
   .max-content1 {
     flex-direction: column;
   }
