@@ -7,7 +7,7 @@ import styles from './service-card.module.css'
 
 const ServiceCard = (props) => {
   return (
-    <div className={styles['Card']}>
+    <div className={` ${styles['Card']} ${styles[props.rootClassName]} `}>
       <img
         alt={props.image_alt}
         src={props.image_src}
@@ -33,7 +33,8 @@ const ServiceCard = (props) => {
 
 ServiceCard.defaultProps = {
   image_src:
-    'https://images.unsplash.com/photo-1526403223670-2aa44aaface2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1200',
+    'https://images.unsplash.com/photo-1526403223670-2aa44aaface2?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&w=1500',
+  rootClassName: '',
   card_title: 'quality equipment',
   image_alt: 'image',
   card_text:
@@ -42,6 +43,7 @@ ServiceCard.defaultProps = {
 
 ServiceCard.propTypes = {
   image_src: PropTypes.string,
+  rootClassName: PropTypes.string,
   card_title: PropTypes.string,
   image_alt: PropTypes.string,
   card_text: PropTypes.string,

@@ -99,6 +99,9 @@
 .rootClassName6 {
   display: none;
 }
+.rootClassName7 {
+  display: none;
+}
 @media(max-width: 767px) {
   .Top-Bar {
     margin-bottom: var(--dl-space-space-fourunits);

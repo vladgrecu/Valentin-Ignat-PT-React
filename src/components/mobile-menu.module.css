@@ -75,7 +75,6 @@
 }
 .Text {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -95,7 +94,6 @@
 }
 .text02 {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -115,7 +113,6 @@
 }
 .Text03 {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -135,7 +132,6 @@
 }
 .text04 {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -155,7 +151,6 @@
 }
 .Text05 {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -175,7 +170,6 @@
 }
 .text06 {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -195,7 +189,6 @@
 }
 .text07 {
   font-size: 24px;
-  font-family: Teko;
   font-weight: 300;
   line-height: 1.5;
   text-transform: uppercase;
@@ -361,6 +354,7 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
 
 
 

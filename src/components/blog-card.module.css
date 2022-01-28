@@ -42,7 +42,6 @@
 }
 
 
-
 @media(max-width: 767px) {
   .container {
     width: 100%;
@@ -50,9 +49,6 @@
   .rootClassName {
     width: 100%;
     margin-bottom: var(--dl-space-space-fourunits);
-  }
-  .rootClassName2 {
-    width: 100%;
   }
 }
 @media(max-width: 479px) {

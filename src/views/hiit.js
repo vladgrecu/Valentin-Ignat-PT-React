@@ -56,15 +56,22 @@ const Hiit = () => {
                       }}
                     />
                   </span>
-                  <span className={styles['text02']}>schimbare</span>
+                  <span className={styles['text002']}>schimbare</span>
                   <span>?</span>
                 </h1>
                 <span
-                  className={` ${styles['text04']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text004']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
-                  Esti capabil sa pierzi minim 8 kg in 2 luni, corect si
-                  sanatos, doar cu sport si alimentatie echilibrata, in deficit
-                  caloric sensibil. Cum ar suna pentru tine asta?
+                  <span>
+                    Esti capabil sa devii mai puternic si sa aduci in viata ta
+                    schimbarea de care simti ca este nevoie. Poti pierde cateva
+                    kilograme, poti sa iti maresti masa musculara sau sa devii
+                    mai rezistent si sa nu mai gafai cand urci treptele.Toate
+                    acestea le poti realiza prin sport, alimentatie echilibrata,
+                    respirat si somn. Cum ar suna asta pentru tine?
+                  </span>
+                  <br></br>
+                  <span></span>
                 </span>
                 <div
                   data-action="showContactFormModal"
@@ -86,7 +93,7 @@ const Hiit = () => {
             className={` ${styles['max-content1']} ${projectStyles['max-content-container']} `}
           >
             <h1
-              className={` ${projectStyles['heading-1']} ${styles['text05']} `}
+              className={` ${projectStyles['heading-1']} ${styles['text007']} `}
             >
               primul meu program online
             </h1>
@@ -95,10 +102,11 @@ const Hiit = () => {
             >
               <div className={styles['Image-Container']}>
                 <div className={styles['container04']}>
-                  <span className={styles['text06']}>150</span>
-                  <span className={styles['text07']}>+</span>
+                  <span className={styles['text008']}>150</span>
+                  <span className={styles['text009']}>+</span>
                 </div>
                 <img
+                  alt="power Vali Ignat"
                   src="/playground_assets/img_9744-1500w.jpg"
                   loading="eager"
                   className={styles['image']}
@@ -106,7 +114,7 @@ const Hiit = () => {
               </div>
               <div className={styles['Text-Container']}>
                 <span
-                  className={` ${styles['text08']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text010']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Dupa aproximativ 7 ani de zile in care am studiat diverse
@@ -117,7 +125,7 @@ const Hiit = () => {
                       }}
                     />
                   </span>
-                  <span className={styles['text10']}>150 de persoane</span>
+                  <span className={styles['text012']}>150 de persoane</span>
                   <span>
                     , m-am hotarat sa imi scriu primul meu program de HIIT, pe
                     care il poti accesa de oriunde, fara accesorii.
@@ -137,20 +145,20 @@ const Hiit = () => {
             >
               <div className={styles['Picture']}>
                 <img
-                  alt="image"
+                  alt="Deadlift Vali Ignat"
                   src="/playground_assets/img_9822-1500h.jpg"
                   loading="eager"
                   className={styles['image01']}
                 />
                 <div className={styles['container05']}>
-                  <span className={styles['text13']}>20</span>
-                  <span className={styles['text14']}>&apos;</span>
+                  <span className={styles['text015']}>20</span>
+                  <span className={styles['text016']}>&apos;</span>
                 </div>
               </div>
               <div className={styles['Features1']}>
                 <div className={styles['Text-Container1']}>
                   <span
-                    className={` ${styles['text15']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text017']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     <span>
                       HIIT reprezinta prescurtarea de la
@@ -160,7 +168,7 @@ const Hiit = () => {
                         }}
                       />
                     </span>
-                    <span className={styles['text17']}>
+                    <span className={styles['text019']}>
                       HIGH INTENSITY INTERVAL TRAINING
                     </span>
                     <span>
@@ -170,7 +178,7 @@ const Hiit = () => {
                     </span>
                   </span>
                   <span
-                    className={` ${styles['text19']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text021']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     <span>
                       Practic, in loc sa alergi 45-60â pe banda, unde inteleg
@@ -183,7 +191,7 @@ const Hiit = () => {
                         }}
                       />
                     </span>
-                    <span className={styles['text21']}>timp de 20-25â.</span>
+                    <span className={styles['text023']}>timp de 20-25â.</span>
                   </span>
                 </div>
                 <div className={styles['List-Container']}>
@@ -192,7 +200,7 @@ const Hiit = () => {
                       <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
                     </svg>
                     <span
-                      className={` ${styles['text22']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      className={` ${styles['text024']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                     >
                       intervale de timp
                     </span>
@@ -202,7 +210,7 @@ const Hiit = () => {
                       <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
                     </svg>
                     <span
-                      className={` ${styles['text23']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      className={` ${styles['text025']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                     >
                       rapid
                     </span>
@@ -212,7 +220,7 @@ const Hiit = () => {
                       <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
                     </svg>
                     <span
-                      className={` ${styles['text24']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      className={` ${styles['text026']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                     >
                       eficient
                     </span>
@@ -222,7 +230,7 @@ const Hiit = () => {
                       <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
                     </svg>
                     <span
-                      className={` ${styles['text25']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      className={` ${styles['text027']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                     >
                       intens
                     </span>
@@ -232,7 +240,7 @@ const Hiit = () => {
                       <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
                     </svg>
                     <span
-                      className={` ${styles['text26']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      className={` ${styles['text028']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                     >
                       periodizat
                     </span>
@@ -242,7 +250,7 @@ const Hiit = () => {
                       <path d="M170 512q0-140 101-241t241-101 241 101 101 241-101 241-241 101-241-101-101-241z"></path>
                     </svg>
                     <span
-                      className={` ${styles['text27']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                      className={` ${styles['text029']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                     >
                       fara echipament
                     </span>
@@ -251,13 +259,13 @@ const Hiit = () => {
               </div>
               <div className={styles['UseCase']}>
                 <img
-                  alt="image"
+                  alt="Antrenament fitness cu Vali Ignat"
                   src="/playground_assets/img_9754-1500w.jpg"
                   className={styles['image02']}
                 />
                 <div className={styles['container06']}>
                   <span
-                    className={` ${styles['text28']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text030']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     <span>
                       De curand am povestit cu un amic - care de aproximativ 3
@@ -269,11 +277,13 @@ const Hiit = () => {
                         }}
                       />
                     </span>
-                    <span className={styles['text30']}>program periodizat</span>
+                    <span className={styles['text032']}>
+                      program periodizat
+                    </span>
                     <span> si nu unul aleatoriu de pe internet.</span>
                   </span>
                   <span
-                    className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text32']} `}
+                    className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} ${styles['text034']} `}
                   >
                     <span>
                       El era obisnuit sa faca miscare, clasic, sets &amp; reps,
@@ -291,7 +301,7 @@ const Hiit = () => {
                         }}
                       />
                     </span>
-                    <span className={styles['text34']}>
+                    <span className={styles['text036']}>
                       miscarile pe care el le cunostea
                     </span>
                     <span>
@@ -304,7 +314,7 @@ const Hiit = () => {
             </div>
             <div className={styles['Benefits']}>
               <h1
-                className={` ${styles['text36']} ${projectStyles['heading-1']} `}
+                className={` ${styles['text038']} ${projectStyles['heading-1']} `}
               >
                 beneficii
               </h1>
@@ -316,7 +326,7 @@ const Hiit = () => {
                     className={styles['image03']}
                   />
                   <span
-                    className={` ${styles['text37']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text039']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     Oriunde
                   </span>
@@ -329,7 +339,7 @@ const Hiit = () => {
                     className={styles['image04']}
                   />
                   <span
-                    className={` ${styles['text38']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text040']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     Sanatos
                   </span>
@@ -349,7 +359,7 @@ const Hiit = () => {
                     className={styles['image05']}
                   />
                   <span
-                    className={` ${styles['text39']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text041']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     Rapid
                   </span>
@@ -362,7 +372,7 @@ const Hiit = () => {
                     className={styles['image06']}
                   />
                   <span
-                    className={` ${styles['text40']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                    className={` ${styles['text042']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                   >
                     Eficacitate
                   </span>
@@ -374,12 +384,12 @@ const Hiit = () => {
             >
               <div className={styles['Benefit']}>
                 <img
-                  alt="image"
+                  alt="cantar"
                   src="/playground_assets/cantar.svg"
                   className={styles['image07']}
                 />
                 <span
-                  className={` ${styles['text41']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text043']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     Vei reusi sa
@@ -389,7 +399,7 @@ const Hiit = () => {
                       }}
                     />
                   </span>
-                  <span className={styles['text43']}>slabesti</span>
+                  <span className={styles['text045']}>slabesti</span>
                   <span>
                     , sa adaugi
                     <span
@@ -398,7 +408,7 @@ const Hiit = () => {
                       }}
                     />
                   </span>
-                  <span className={styles['text45']}>masa musculara</span>
+                  <span className={styles['text047']}>masa musculara</span>
                   <span>
                     {' '}
                     sau sa te mentii la fel de
@@ -408,7 +418,7 @@ const Hiit = () => {
                       }}
                     />
                   </span>
-                  <span className={styles['text47']}>
+                  <span className={styles['text049']}>
                     fit
                     <span
                       dangerouslySetInnerHTML={{
@@ -424,21 +434,35 @@ const Hiit = () => {
                     kcal, vrei sa slabesti â 1700-1800 kcal, vrei sa adaugi masa
                     musculara â 2200-2400 kcal - Acesta este doar un exemplu de
                     alimentatie pe termen scurt si mediu).
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
                   </span>
+                  <span>
+                    Un alt exemplu de alimentatie echilibrata poate fi
+                    Intermittent Fasting-ul (daca esti incepator iti recomand sa
+                    incepi cu 11 ore de mancat si 13 ore de post din totalul
+                    unei zile).
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <span></span>
                   <br></br>
                   <span></span>
                 </span>
               </div>
               <div className={styles['Benefit1']}>
                 <img
-                  alt="image"
+                  alt="gantera"
                   src="/playground_assets/gantera.svg"
                   className={styles['Image08']}
                 />
                 <span
-                  className={` ${styles['text50']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text055']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
-                  <span className={styles['text51']}>Consum caloric mare</span>
+                  <span className={styles['text056']}>Consum caloric mare</span>
                   <span>
                     . Un studiu realizat pe persoane obeze din 2001, arata ca,
                     fara sa modifice alimentatia, obezii care au facut HIIT
@@ -450,7 +474,10 @@ const Hiit = () => {
                     care au pedalat la un ritm constant, moderat aceeasi durata
                     de timp. Un alt studiu al universitatii Tennessee ne
                     dovedeste ca adeptii HIIT-ului ard in medie cu 100 kcal mai
-                    multe, intr-un ciclu de 24 de ore.
+                    multe, intr-un ciclu de 24 de ore. Cu toate acestea,
+                    rezultatele vizibile pe corpul tau ale unui program de
+                    antrenamente presupune sa mananci echilibrat si sa dormi
+                    suficient, in fiecare noapte.
                   </span>
                   <br></br>
                   <span></span>
@@ -458,12 +485,12 @@ const Hiit = () => {
               </div>
               <div className={styles['Benefit2']}>
                 <img
-                  alt="image"
+                  alt="plan alimentar"
                   src="/playground_assets/clipboard.svg"
                   className={styles['image09']}
                 />
                 <span
-                  className={` ${styles['text54']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text059']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
                     O
@@ -473,7 +500,7 @@ const Hiit = () => {
                       }}
                     />
                   </span>
-                  <span className={styles['text56']}>
+                  <span className={styles['text061']}>
                     diversificare
                     <span
                       dangerouslySetInnerHTML={{
@@ -488,40 +515,54 @@ const Hiit = () => {
                     fii blocat 45-60 min pe o banda de alergare sau pe un rower,
                     ai putea sa ai parte de mai multa varietate, mai putina
                     monotonie, intr-un antrenament HIIT care intr-adevar, poate
-                    fi istovitor, dar va fi scurt, 20-25 min si super
-                    challenging.
+                    fi istovitor, dar va fi
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
                   </span>
+                  <span className={styles['text063']}>scurt</span>
+                  <span>
+                    , 20-25 min si
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <span className={styles['text065']}>super challenging</span>
+                  <span>.</span>
                 </span>
               </div>
               <div className={styles['Benefit3']}>
                 <img
-                  alt="image"
+                  alt="echipament"
                   src="/playground_assets/papuc.svg"
                   className={styles['Image10']}
                 />
                 <span
-                  className={` ${styles['text58']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text067']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    Poti sa te antrenezi
+                    Te poti antrena de
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
                       }}
                     />
                   </span>
-                  <span className={styles['text60']}>oriunde</span>
+                  <span className={styles['text069']}>oriunde</span>
                   <span>
-                    , fara niciun obiect aditional, cu un singur obiect, cu
-                    miscari ale corpului liber, cu aparate din sala, cu o coarda
-                    sau cu benzi elastice ori virtual, in clase online, cu
-                    antrenori implicati si care stiu ce inseamna HIIT.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
+                    , cu corpul liber, fara accesorii si alte costuri
+                    suplimentare. Daca tu consideri ca vrei o provocare mai
+                    mare, esti liber sa folosesti si greutati mici/medii. Mai
+                    important este sa respecti intervalele de lucru/pauza.
                   </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span></span>
                 </span>
               </div>
             </div>
@@ -530,12 +571,12 @@ const Hiit = () => {
             >
               <div className={styles['HeadingContainer']}>
                 <h1
-                  className={` ${styles['text62']} ${projectStyles['heading-1']} `}
+                  className={` ${styles['text073']} ${projectStyles['heading-1']} `}
                 >
                   ce contine hiit?
                 </h1>
                 <span
-                  className={` ${styles['text63']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                  className={` ${styles['text074']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   In primul meu program de HIIT, ma adresez si incepatorilor,
                   unde am inclus exercitii de baza conform tiparelor de miscare
@@ -561,7 +602,7 @@ const Hiit = () => {
                     </div>
                     <div className={styles['ContentContainer']}>
                       <span
-                        className={` ${styles['Text64']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                        className={` ${styles['Text075']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                       >
                         <span>
                           Am creat o
@@ -571,7 +612,7 @@ const Hiit = () => {
                             }}
                           />
                         </span>
-                        <span className={styles['text66']}>
+                        <span className={styles['text077']}>
                           periodizare
                           <span
                             dangerouslySetInnerHTML={{
@@ -581,14 +622,9 @@ const Hiit = () => {
                         </span>
                         <span>
                           cu o durata de 8 saptamani in care te antrenezi de 3
-                          ori/saptamana. Am inceput totul cu intervale de lucru
-                          1:2 si pe parcursul celor 8 saptamani am evoluat la
-                          intervale de lucru 2:1.
-                          <span
-                            dangerouslySetInnerHTML={{
-                              __html: ' ',
-                            }}
-                          />
+                          ori/saptamana. Am inceput totul cu intervale de
+                          lucru/pauza 1:2 si pe parcursul celor 8 saptamani am
+                          evoluat la intervale de lucru/pauza 2:1.
                         </span>
                         <br></br>
                         <span></span>
@@ -605,19 +641,19 @@ const Hiit = () => {
                     </div>
                     <div className={styles['ContentContainer1']}>
                       <span
-                        className={` ${styles['Text69']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                        className={` ${styles['Text080']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                       >
                         <span>
-                          La finalul programului vei simti cum sistemul tau
-                          cardiovascular este mult imbunatatit. Practic vei fi
-                          mai
+                          La finalul programului vei simti cum sistemele tale:
+                          cardiovascular si respirator sunt mult imbunatatite.
+                          Practic vei fi mai
                           <span
                             dangerouslySetInnerHTML={{
                               __html: ' ',
                             }}
                           />
                         </span>
-                        <span className={styles['text71']}>
+                        <span className={styles['text082']}>
                           rezistent
                           <span
                             dangerouslySetInnerHTML={{
@@ -626,11 +662,14 @@ const Hiit = () => {
                           />
                         </span>
                         <span>
-                          fizic si psihic, vei putea face fata la tot ce se
-                          intampla in jurul tau. O sa te uiti in oglinda si vei
-                          observa cum apar forme mai definite ale sistemului tau
-                          muscular.
+                          fizic si psihic, vei fi mai puternic iar aceast
+                          upgrade al corpului tau te va ajuta sa faci fata
+                          situatiilor stresante zilnice. O sa te uiti in oglinda
+                          si vei observa cum &quot;apar&quot; forme mai definite
+                          ale sistemului tau muscular.
                         </span>
+                        <br></br>
+                        <span></span>
                       </span>
                     </div>
                   </div>
@@ -647,7 +686,7 @@ const Hiit = () => {
                     </div>
                     <div className={styles['ContentContainer2']}>
                       <span
-                        className={` ${styles['Text73']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                        className={` ${styles['Text085']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                       >
                         <span>
                           Eu voi fi alaturi de tine pe parcursul celor 8
@@ -660,7 +699,7 @@ const Hiit = () => {
                   </div>
                 </div>
                 <img
-                  alt="image"
+                  alt="handstand cu Vali Ignat"
                   src="/playground_assets/image00002-1500w.png"
                   loading="lazy"
                   className={styles['image11']}
@@ -687,7 +726,7 @@ const Hiit = () => {
                 ></PlayBtn>
               </div>
               <span
-                className={` ${styles['text75']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+                className={` ${styles['text087']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
               >
                 <span>
                   Consider ca programul meu de HIIT poate fi un challenge pentru
@@ -697,7 +736,9 @@ const Hiit = () => {
                     }}
                   />
                 </span>
-                <span className={styles['text77']}>orice nivel de fitness</span>
+                <span className={styles['text089']}>
+                  orice nivel de fitness
+                </span>
                 <span>
                   , deoarece oricine isi poate
                   <span
@@ -706,9 +747,9 @@ const Hiit = () => {
                     }}
                   />
                 </span>
-                <span className={styles['text79']}>adapta</span>
+                <span className={styles['text091']}>adapta</span>
                 <span> intensitatea cu care executa miscarile. Prin â</span>
-                <span className={styles['text81']}>regresie</span>
+                <span className={styles['text093']}>regresie</span>
                 <span>
                   â ma refer la o varianta mai usoara a exercitiului de baza.
                   Vei observa toate detaliile in visualurile grafice din video.
@@ -720,7 +761,7 @@ const Hiit = () => {
                     }}
                   />
                 </span>
-                <span className={styles['text83']}>durata</span>
+                <span className={styles['text095']}>durata</span>
                 <span>
                   {' '}
                   exercitiului afisata pe ecran si respecti un plan alimentar
@@ -731,7 +772,7 @@ const Hiit = () => {
               </span>
             </div>
             <span
-              className={` ${styles['text86']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
+              className={` ${styles['text098']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
             >
               <span>
                 Pentru un
@@ -741,7 +782,7 @@ const Hiit = () => {
                   }}
                 />
               </span>
-              <span className={styles['text88']}>efect maxim</span>
+              <span className={styles['text100']}>efect maxim</span>
               <span>
                 {' '}
                 al acestui program, te indemn ca pe tot parcursul celor 8
@@ -758,7 +799,7 @@ const Hiit = () => {
                   }}
                 />
               </span>
-              <span className={styles['text90']}>7 si 9 ore/noapte</span>
+              <span className={styles['text102']}>7 si 9 ore/noapte</span>
               <span>.</span>
               <br></br>
               <span></span>

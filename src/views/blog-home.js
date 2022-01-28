@@ -53,17 +53,7 @@ const BlogHome = () => {
           >
             <div className={styles['BlogPostCard']}>
               <div className={styles['container1']}>
-                <div className={styles['Image']}>
-                  <div className={styles['Btn']}>
-                    <Link to="/blog-despre-somn" className={styles['navlink']}>
-                      <BtnSecondary
-                        cta_text="citeste mai mult"
-                        rootClassName="rootClassName5"
-                        className={styles['component6']}
-                      ></BtnSecondary>
-                    </Link>
-                  </div>
-                </div>
+                <div className={styles['Image']}></div>
               </div>
               <div className={styles['container2']}>
                 <div className={styles['container3']}>
@@ -100,14 +90,23 @@ const BlogHome = () => {
                   </span>
                   <br></br>
                   <span>
-                    Ambii influenteaza chiar in acest moment mintea si corpul.
+                    Ambii influenteaza chiar in acest moment mintea si corpul...
                   </span>
                 </span>
-                <div className={styles['Btn1']}>
+                <div className={styles['Btn']}>
                   <Link to="/blog-despre-somn">
                     <BtnSecondary
                       cta_text="citeste mai mult"
                       rootClassName="rootClassName9"
+                      className={styles['component6']}
+                    ></BtnSecondary>
+                  </Link>
+                </div>
+                <div className={styles['Btn1']}>
+                  <Link to="/blog-despre-somn" className={styles['navlink1']}>
+                    <BtnSecondary
+                      cta_text="citeste mai mult"
+                      rootClassName="rootClassName5"
                       className={styles['component7']}
                     ></BtnSecondary>
                   </Link>

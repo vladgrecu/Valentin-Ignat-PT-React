@@ -2,7 +2,6 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './testimonial-card-reverse.module.css'
 
@@ -22,10 +21,6 @@ const TestimonialCardReverse = (props) => {
         >
           {props.text}
         </span>
-        <BtnPrimary
-          cta_text="Afla mai mult"
-          rootClassName="rootClassName18"
-        ></BtnPrimary>
       </div>
     </div>
   )

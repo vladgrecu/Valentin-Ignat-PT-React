@@ -38,8 +38,6 @@
   transform-origin: center center;
   scroll-snap-align: start;
 }
-
-
 @media(max-width: 767px) {
   .TestimonialCardReverse {
     flex-direction: column-reverse;

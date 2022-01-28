@@ -94,7 +94,7 @@ const Home = () => {
                   />
                 </span>
                 <span>
-                  si sa amplific toate cunostintele pe care le detin la o
+                  si sa amplific toate cunostintele pe care le detin, la o
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -115,7 +115,7 @@ const Home = () => {
               </Link>
             </div>
             <img
-              alt="image"
+              alt="Obiectivul lui Vali Ignat"
               src="/playground_assets/img_9913-1500h.jpg"
               className={styles['image']}
             />
@@ -127,7 +127,9 @@ const Home = () => {
           <div
             className={` ${styles['max-content-picture']} ${projectStyles['max-content-container']} `}
           >
-            <h1 className={projectStyles['heading-1']}>
+            <h1
+              className={` ${styles['text07']} ${projectStyles['heading-1']} `}
+            >
               evaluare. conexiune. experienta.
             </h1>
             <div className={styles['container1']}></div>
@@ -153,14 +155,18 @@ const Home = () => {
             </div>
             <div className={styles['Cards-Container']}>
               <ServiceCard
+                card_text="In timpul antrenamentului din sala, iti ofer o experienta in care se vor imbina: tiparele de miscare executate corect, focusul pe obiectivele tale si toate cunostintele mele din domeniul sanatatii publice studiate in ultimii 7 ani."
                 image_src="/playground_assets/img_4081-1500w.jpg"
                 card_title="personal training"
+                rootClassName="rootClassName"
               ></ServiceCard>
               <ServiceCard
+                card_text="In urma digitalizarii, am dezvoltat un sistem prin care pot servi persoane din orice colt al lumii, fiind nevoie doar de o conexiune la internet. Antrenamentele se desfasoara doar 1 vs 1, prin videocall. Poti beneficia de toate studiile mele, indiferent daca nu ne vom intalni niciodata."
                 image_src="/playground_assets/121300894_398877651278033_1137013070053583593_n-1500w.jpg"
                 card_title="online coaching"
               ></ServiceCard>
               <ServiceCard
+                card_text="Pe parcursul evaluarii vei afla ce âmasinarieâ inteligenta este corpul uman. O sa discutam despre: mobilitate, flexibilitate, stabilitate, forta, rezistenta, respirat, somn, alimentatie, tipare de miscare. Daca vrei sa poti avea relatii sanatoase cu cei din jurul tau si sa fii puternic, eu cred ca, in primul rand, trebuie sa intelegi de ce este capabil corpul tau."
                 image_src="/playground_assets/img_2868-1500w.jpg"
                 card_title="evaluare"
               ></ServiceCard>
@@ -264,23 +270,9 @@ const Home = () => {
                   data-slide-index="0"
                   className={` ${projectStyles['carrousel-text']} ${projectStyles['slide-active']} ${projectStyles['animation-fade-in']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
-                  <span>
-                    In 2019 m-am hotarat sa fac o schimbare legata de ce tip de
-                    miscare sa fac. Pana atunci mergeam la clase de Zumba si
-                    Pilates si devenise cam monoton, vroiam ceva mai challenging
-                    asa ca m-am dus la o sala cu total alt fel de clase. Acolo
-                    l-am cunoscut pe Vali, care facea clasele de HIIT. Mergeam
-                    si la alte clase cateodata, dar cel mai des la Vali, pentru
-                    ca energia si buna lui dispozitie (inca)e molipsitoare!
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
+                  <span className={styles['text13']}>- Catalina -</span>
                   <br></br>
                   <span></span>
-                  <br></br>
                   <span>
                     In 2020, dupa ce am tot auzit de la prieteni/prietene ca au
                     apelat la un antrenor personal mi-am zis sa incerc si
@@ -290,120 +282,81 @@ const Home = () => {
                     clasele lui si de ce om fain este.
                   </span>
                   <br></br>
+                  <span></span>
+                  <br></br>
                   <span>
                     De-atunci orele de PT au fost din ce in ce mai faine si
                     pentru ca incepeam sa progresez, dar si pentru ca incepeam
                     sa descopar tot mai multe lucruri bune despre Vali.
                   </span>
-                  <br></br>
-                  <span></span>
-                  <br></br>
-                  <span>
-                    Pentru mine Vali e un antrenor complet: se intereseaza de
-                    obiectivele fiecaruia si lucreaza cu fiecare pe baza
-                    obiectivelor, e atent permanent la cum execut
-                    exercitiile/miscarile si are rabdare sa explice ce vrea sa
-                    zica de cate ori e nevoie pana inteleg, isi motiveaza
-                    alegerile legate de exercitii, imi raspunde la orice
-                    intrebare am, ma motiveaza prin felul lui de a fi si prin
-                    faptul ca se bucura si el cu mine cand progresez, e foarte
-                    implicat, se documenteaza continuu, m-a invatat sa ma
-                    descurc si singura in sala, si bonus pentru cititori: are si
-                    simtul umorului! :D
-                  </span>
-                  <br></br>
-                  <span>
-                    Din 2020 pana azi: am devenit mai puternica, am mai multa
-                    incredere in mine, sunt mult mai activa si fac asta cu
-                    placere, simt ca sunt in cea mai buna forma a mea de pana
-                    acum, si-n plus sunt mai bogata ca l-am cunoscut pe Vali si
-                    pe colegii de echipa.
-                  </span>
-                  <br></br>
-                  <span></span>
-                  <br></br>
-                  <span>Multumesc inca o data, Vali!</span>
-                  <br></br>
                   <span></span>
                 </span>
                 <span
                   data-slide-index="1"
                   className={` ${projectStyles['carrousel-text']} ${projectStyles['animation-fade-in']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
-                  Pe lÃ¢ngÄ faptul cÄ este un profesionist, Vali este Èi un om
-                  foarte fain! DacÄ simÈi cÄ nu vei ajunge vreodatÄ sÄ mergi cu
-                  drag la salÄ e pentru cÄ nu l-ai cunoscut pe Vali!
-                  Profesionalism (antrenor) + multa transpiraÈie (client) + good
-                  vibes = antrenamente cu Vali
+                  <span className={styles['text22']}> - Simina -</span>
+                  <br></br>
+                  <span>
+                    Valy este coach-ul meu de 4 ani. Din âcauzaâ lui am
+                    strabatut tot Clujul pentru a merge la sala, dupa o viata de
+                    sedentarism.
+                  </span>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <span>
+                    Cel mai mult apreciez la el ca a crescut constant in toti
+                    acesti ani: ca om si ca antrenor. Imi place mult ca e un om
+                    cu o inteligenta emotionala dezvoltata si ca e amuzant. Asta
+                    a determinat sa devenim si prieteni.
+                  </span>
+                  <br></br>
+                  <span>
+                    A avut abilitatea si rabdarea de a-mi explica constant de ce
+                    exercitiile se executa corect intr-un anume mod.
+                    Explicatiile lui sunt super logice.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <span></span>
                 </span>
                 <span
                   data-slide-index="2"
                   className={` ${projectStyles['carrousel-text']} ${projectStyles['animation-fade-in']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
-                  <span>
-                    Hmm.. este asa de indepartat inceputul povestii mele cu
-                    Coach, incat trebuie sa fac niste eforturi pentru a-mi
-                    aminti:D. M-am decis in urma cu vreo 4-5 ani parca... sa nu
-                    mai ignor faptul ca am 20 si ceva de ani si obosesc cand urc
-                    10 scari, asa ca printr-o cunostinta comuna am ajuns sa il
-                    cunosc pe Vali. De atunci lucram impreuna fara pauza:D
-                    indiferent de locatie (diferite Sali de-a lungul timpului,
-                    apoi in online de cand cu pandemia).
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
+                  <span className={styles['text32']}>- Lorena -</span>
                   <br></br>
                   <span></span>
-                  <br></br>
-                  <span>
-                    Ma intreaba multa lume de ce continui sa lucrez cu antrenor
-                    personal avand in vedere ca de atata timp deja stiu sa
-                    execut corect exercitiile. E simplu! Daca nu as face cu
-                    Vali, nu as face deloc:D. Ma motiveaza si ma face sa fac
-                    sport de 4 ani constant. Cum? Simplu!
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <br></br>
-                  <span></span>
-                  <br></br>
-                  <span>
-                    Am sa raspund la 2 intrebari deodata: cum ma motiveaza si ce
-                    imi place la el: profesionalismul, implicarea si
-                    rigurozitatea. Povestim si despre alte lucruri in afara de
-                    sport, inaintea antrenamentelor, dupa antrenamente, in
-                    timpul liber, dar NICIODATA in timpul antrenamentelor (in
-                    ciuda incercarilor mele de a mai fura un minut-2 :D). Pare
-                    cateodata ca nu este atent la tine.. Ai sa aflii in scurt
-                    timp ca te inseli (âai pauza 2 minuteâ si in 2 minute pe
-                    ceas se aude: âPauza a trecut!â) sau faci 10 repetari si la
-                    a 11-a nu mai ai chef si o faci pe jumatate si de undeva din
-                    podea, din ceruri, de dupa usa (tu nu il vezi deci automat
-                    crezi ca nici el nu te vede) : â AIA NU SE PUNE CA
-                    REPETARE!â.
-                    <span
-                      dangerouslySetInnerHTML={{
-                        __html: ' ',
-                      }}
-                    />
-                  </span>
-                  <br></br>
-                  <span></span>
-                  <br></br>
                   <span>
                     Cum l-as descrie pe Coach in 3 cuvinte: profesionalist,
                     ambitios si riguros ( acestea fiind atat calitatile cat si
                     defectele lui in functie de cat chef am de antrenament in
-                    acea zi:))) totodata un om cald si prietenos. Antrenamentele
-                    sunt variate, astfel incat nu m-am plictisit de ele de 4 ani
-                    ( mare lucru) si faptul ca cineva âma trage de urechiâ
-                    constant sa nu abandonez sportul este foarte de ajutor.
+                    acea zi:))) totodata un om cald si prietenos.
+                    <span
+                      dangerouslySetInnerHTML={{
+                        __html: ' ',
+                      }}
+                    />
+                  </span>
+                  <br></br>
+                  <span></span>
+                  <br></br>
+                  <span>
+                    Antrenamentele sunt variate, astfel incat nu m-am plictisit
+                    de ele de 4 ani ( mare lucru) si faptul ca cineva âma trage
+                    de urechiâ constant sa nu abandonez sportul este foarte de
+                    ajutor.
                   </span>
                 </span>
               </div>
@@ -432,21 +385,25 @@ const Home = () => {
                 ></BtnPrimary>
               </Link>
             </div>
-            <div className={styles['Tablet-Container']}>
-              <video
-                src="https://mypthelperbucket.s3.us-east-2.amazonaws.com/HIIT+promo+2.mp4"
-                muted="true"
-                poster="/playground_assets/img_9766-1500w.jpg"
-                preload="auto"
-                controls="true"
-                playsinline="true"
-                data-video-type="promoVideo"
-                className={styles['video']}
-              ></video>
-              <PlayBtn
-                rootClassName="rootClassName"
-                className={styles['component13']}
-              ></PlayBtn>
+            <div
+              className={` ${styles['VideoSection']} ${projectStyles['section-container']} `}
+            >
+              <div className={styles['Video']}>
+                <video
+                  src="https://mypthelperbucket.s3.us-east-2.amazonaws.com/HIIT+promo+2.mp4"
+                  muted="true"
+                  poster="/playground_assets/img_9766-1500w.jpg"
+                  preload="auto"
+                  controls="true"
+                  playsinline="true"
+                  data-video-type="promoVideo"
+                  className={styles['video1']}
+                ></video>
+                <PlayBtn
+                  rootClassName="rootClassName2"
+                  className={styles['component13']}
+                ></PlayBtn>
+              </div>
             </div>
           </div>
         </section>
@@ -476,12 +433,6 @@ const Home = () => {
                 autor="Vali Ignat"
                 image_src="/playground_assets/image%205%20%5B1%5D-1500w.png"
                 rootClassName="rootClassName"
-              ></BlogCard>
-              <BlogCard
-                data="11 nov 2021"
-                autor="Guest writter"
-                image_src="https://images.unsplash.com/photo-1468436139062-f60a71c5c892?ixlib=rb-1.2.1&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb&amp;w=1000"
-                rootClassName="rootClassName2"
               ></BlogCard>
             </div>
           </div>

@@ -11,7 +11,7 @@
     </style>
     <style>
       html {
-        font-family: Gotham Book;
+        font-family: Montserrat;
         font-size: 18px;
       }
 
@@ -64,6 +64,10 @@
     <link
       rel="stylesheet"
       href="https://vali-ignat-service.vercel.app/assets/fonts.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     />
     <style>
             body {
@@ -475,6 +479,7 @@
 
         const sendEmail = async (data, formElements) => {
           const { view, loading, success, error } = formElements;
+
           try {
             view.style.display = "none";
             loading.style.display = "flex";
@@ -494,6 +499,11 @@
             loading.style.display = "none";
             if (response.status === 200) {
               success.style.display = "flex";
+            } else {
+              const data2 = await response.json();
+              console.log("Data: ", data2);
+              console.log("Response: ", response);
+              throw new Error(response.error);
             }
           } catch (err) {
             error.style.display = "flex";
@@ -586,6 +596,7 @@
             if (isClickedElementByDataSetProp("action", "sendContactForm")) {
               e.preventDefault();
               const contactFormData = {
+                from: window.location.hostname,
                 subject: "",
                 email: "",
                 text: "",

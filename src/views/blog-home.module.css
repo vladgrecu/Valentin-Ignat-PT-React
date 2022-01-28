@@ -64,19 +64,6 @@
   background-image: url("/playground_assets/image%205%20%5B1%5D-1500w.png");
   background-position: center;
 }
-.Btn {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.navlink {
-  display: contents;
-}
-.component6 {
-  text-decoration: none;
-}
 .container2 {
   display: flex;
   align-items: flex-start;
@@ -104,14 +91,27 @@
 }
 .text02 {
   color: var(--dl-color-default-content);
-  margin-bottom: 0px;
+  margin-bottom: var(--dl-space-space-doubleunit);
 }
-.Btn1 {
+.Btn {
   width: 100%;
   display: none;
   align-items: center;
   flex-direction: row;
   justify-content: center;
+}
+.component6 {
+  text-decoration: none;
+}
+.Btn1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.navlink1 {
+  display: contents;
 }
 .component7 {
   text-decoration: none;
@@ -135,11 +135,6 @@
     min-height: 400px;
     padding-bottom: var(--dl-space-space-tripleunit);
   }
-  .Btn {
-    display: none;
-    flex-direction: row;
-    justify-content: center;
-  }
   .container2 {
     padding-top: var(--dl-space-space-tripleunit);
     padding-left: var(--dl-space-space-tripleunit);
@@ -149,11 +144,16 @@
   .text01 {
     font-size: 36px;
   }
-  .Btn1 {
+  .Btn {
     display: flex;
     margin-top: var(--dl-space-space-tripleunit);
     flex-direction: row;
     justify-content: flex-start;
+  }
+  .Btn1 {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
   }
 }
 @media(max-width: 479px) {
@@ -165,15 +165,15 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .Btn {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
   .container2 {
     padding-top: var(--dl-space-space-doubleunit);
     padding-left: var(--dl-space-space-doubleunit);
     padding-right: var(--dl-space-space-doubleunit);
     padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .Btn {
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .Btn1 {
     padding-left: 0px;

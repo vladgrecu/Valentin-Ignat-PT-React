@@ -1,12 +1,12 @@
 .Card {
   flex: 0 0 auto;
-  width: 30%;
   display: flex;
   padding: var(--dl-space-space-fourunits);
   z-index: 1;
   overflow: hidden;
   position: relative;
-  max-width: 350px;
+  max-width: 375px;
+  align-self: stretch;
   transition: 0.4s;
   align-items: center;
   flex-direction: column;
@@ -22,7 +22,7 @@
   margin-bottom: var(--dl-space-space-tripleunit);
 }
 .text1 {
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--dl-space-space-eightunits);
 }
 .Card-Button {
@@ -51,6 +51,9 @@
   width: 20px;
   height: 20px;
 }
+.rootClassName {
+  flex: 1;
+}
 @media(max-width: 991px) {
   .Card {
     width: 40%;
@@ -64,7 +67,7 @@
 }
 @media(max-width: 479px) {
   .text1 {
-    font-size: 20px;
+    font-size: 16px;
   }
   .Card-Button {
     bottom: 0%;
@@ -73,6 +76,6 @@
     visibility: visible;
   }
   .text2 {
-    font-size: 18px;
+    font-size: 14px;
   }
 }

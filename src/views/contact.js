@@ -3,8 +3,8 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 
 import LoginModal from '../components/login-modal'
-import ContactFormModal from '../components/contact-form-modal'
 import RegisterModal from '../components/register-modal'
+import ContactFormModal from '../components/contact-form-modal'
 import Navbar from '../components/navbar'
 import MobileMenu from '../components/mobile-menu'
 import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
@@ -28,8 +28,8 @@ const Contact = () => {
         />
       </Helmet>
       <LoginModal rootClassName="rootClassName2"></LoginModal>
-      <ContactFormModal rootClassName="rootClassName4"></ContactFormModal>
       <RegisterModal rootClassName="rootClassName1"></RegisterModal>
+      <ContactFormModal rootClassName="rootClassName4"></ContactFormModal>
       <Navbar rootClassName="rootClassName5"></Navbar>
       <MobileMenu rootClassName="rootClassName4"></MobileMenu>
       <main className={styles['Main']}>

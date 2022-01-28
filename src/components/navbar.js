@@ -150,7 +150,7 @@ const Navbar = (props) => {
               <svg viewBox="0 0 1024 1024" className={styles['icon']}>
                 <path d="M512 820q68 0 143-40t113-98q-2-56-90-94t-166-38-166 37-90 95q38 58 113 98t143 40zM512 214q-52 0-90 38t-38 90 38 90 90 38 90-38 38-90-38-90-90-38zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"></path>
               </svg>
-              <span>Contul meu</span>
+              <span className={styles['text7']}>Contul meu</span>
             </button>
             <Link
               to="/account"

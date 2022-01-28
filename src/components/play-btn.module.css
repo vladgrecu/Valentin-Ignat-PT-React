@@ -52,6 +52,12 @@
   display: none;
   position: absolute;
 }
+.rootClassName2 {
+  left: calc(50% - 45px);
+  bottom: calc(50% - 45px);
+  display: none;
+  position: absolute;
+}
 @media(max-width: 767px) {
   .Video {
     width: 45px;
@@ -71,6 +77,10 @@
     bottom: calc(50% - 20px);
   }
   .rootClassName1 {
+    left: calc(50% - 20px);
+    bottom: calc(50% - 20px);
+  }
+  .rootClassName2 {
     left: calc(50% - 20px);
     bottom: calc(50% - 20px);
   }

@@ -2,7 +2,6 @@ import React from 'react'
 
 import PropTypes from 'prop-types'
 
-import BtnPrimary from './btn-primary'
 import projectStyles from '../style.module.css'
 import styles from './testimonial-card.module.css'
 
@@ -19,13 +18,13 @@ const TestimonialCard = (props) => {
         >
           {props.text}
         </span>
-        <BtnPrimary
-          cta_text="Afla mai mult"
-          rootClassName="rootClassName32"
-        ></BtnPrimary>
       </div>
       <div className={styles['Image']}>
-        <img alt="slide-1" src={props.image_src} className={styles['image1']} />
+        <img
+          alt={props.image_alt}
+          src={props.image_src}
+          className={styles['image1']}
+        />
       </div>
     </div>
   )
@@ -34,12 +33,14 @@ const TestimonialCard = (props) => {
 TestimonialCard.defaultProps = {
   rootClassName: '',
   text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lob- ortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolorad Lorem ipsum dolor sit amet',
+  image_alt: 'slide-1',
   image_src: '/playground_assets/1-600w.jpg',
 }
 
 TestimonialCard.propTypes = {
   rootClassName: PropTypes.string,
   text: PropTypes.string,
+  image_alt: PropTypes.string,
   image_src: PropTypes.string,
 }
 

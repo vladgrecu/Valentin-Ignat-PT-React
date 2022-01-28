@@ -84,12 +84,12 @@ const Despre = () => {
             <div className={styles['Image-Container']}>
               <div className={styles['container04']}>
                 <img
-                  alt="image"
+                  alt="Vali Ignat - medalie "
                   src="/playground_assets/img_2970-1500h.jpg"
                   className={styles['image']}
                 />
                 <img
-                  alt="image"
+                  alt="Lisa cu Vali Ignat"
                   src="/playground_assets/image00013-1500h.jpeg"
                   className={styles['image01']}
                 />
@@ -124,10 +124,10 @@ const Despre = () => {
                 </span>
                 <span>
                   {' '}
-                  - acesta sunt eu - Ã®nsÄ sunt la fel de progresiv, cu scopul
-                  prevenirii Ã®mbÄtrÃ¢nirii biologice. AÈa vreau sÄ mÄ simt, Èi
-                  Ètiu cÄ sunt pe drumul cel bun - de a menÈine un echilibru
-                  sÄnÄtos al vieÈii.
+                  - acesta sunt eu - insa sunt la fel de progresiv, cu scopul
+                  prevenirii imbatranirii biologice. Asa vreau sa ma simt, si
+                  stiu ca sunt pe drumul cel bun - de a mentine un echilibru
+                  sanatos al vietii.
                 </span>
               </span>
               <h1 className={styles['Heading1']}>Vali Ignat</h1>
@@ -146,31 +146,31 @@ const Despre = () => {
                   className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    Cred cÄ am Ètiut asta de cÃ¢nd am fost copil sau poate ca aÈa
+                    Cred ca am stiut asta de cand am fost copil sau poate ca asa
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
                       }}
                     />
                   </span>
-                  <span className={styles['text13']}>am simÈit</span>
+                  <span className={styles['text13']}>am simtit</span>
                   <span>
-                    . De ce zic asta? Pentru cÄ de cÃ¢nd am amintiri cu mine, Ã®mi
-                    amintesc plimbÃ¢ndu-mÄ pe dealuri, alergÃ¢nd pe terenuri de
-                    fotbal, cÄÈÄrÃ¢ndu-mÄ Ã®n copaci, sÄrind peste garajele de
-                    maÈini Èi Ã®notÃ¢nd Ã®n rÃ¢urile Èi pÃ¢raiele din zona
-                    SubcarpaÈilor de CurburÄ ai RomÃ¢niei. Toate amintirile pe
-                    care le am din frageda tinereÈe se petrec Ã®n miÈcare,
+                    . De ce zic asta? Pentru ca de cand am amintiri cu mine, imi
+                    amintesc plimbandu-ma pe dealuri, alergand pe terenuri de
+                    fotbal, catarandu-ma in copaci, sarind peste garajele de
+                    masini si inotand in raurile si paraiele din zona
+                    Subcarpatilor de Curbura ai Romaniei. Toate amintirile pe
+                    care le am din frageda tinerete se petrec in miscare,
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
                       }}
                     />
                   </span>
-                  <span className={styles['text15']}>miÈcare continuÄ</span>
+                  <span className={styles['text15']}>miscare continua</span>
                   <span>
-                    , inconÈtientÄ, pe care o âexecutamâ cu plÄcere, fÄrÄ sÄ
-                    realizez cÃ¢t de importantÄ va fi mai tÃ¢rziu.
+                    , inconstienta, pe care o âexecutamâ cu placere, fara sa
+                    realizez cat de importanta va fi mai tarziu.
                   </span>
                 </span>
                 <span
@@ -185,7 +185,7 @@ const Despre = () => {
                 </span>
               </div>
               <img
-                alt="image"
+                alt="Listening is power"
                 src="/playground_assets/img_9765-1500w.jpg"
                 className={styles['image02']}
               />
@@ -198,7 +198,7 @@ const Despre = () => {
               className={` ${styles['max-content3']} ${projectStyles['max-content-container']} `}
             >
               <img
-                alt="image"
+                alt="timp"
                 src="/playground_assets/ceas-1500h.png"
                 className={styles['image03']}
               />
@@ -207,10 +207,10 @@ const Despre = () => {
                   className={` ${styles['text19']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    Din timpul liceului Ã®mi aduc aminte cÄ aveam cel puÈin 3 ore
-                    pe sÄptÄmÃ¢nÄ de educaÈie fizicÄ Èi sport. Pe lÃ¢ngÄ ÈcoalÄ -
-                    unde se respecta cu sfinÈenie programa ÈcolarÄ (cu 3 ore de
-                    sport/sÄptÄmÃ¢nÄ) am cochetat cu tot felul de
+                    Din timpul liceului imi aduc aminte ca aveam cel putin 3 ore
+                    pe saptamana de educatie fizica si sport. Pe langa scoala -
+                    unde se respecta cu sfintenie programa scolara (cu 3 ore de
+                    sport/saptamana) am cochetat cu tot felul de
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -220,13 +220,13 @@ const Despre = () => {
                   <span className={styles['text21']}>sporturi</span>
                   <span>
                     {' '}
-                    - la care aveam voie - deoarece mai existau Èi activitÄÈi
-                    interzise de mama care avea grijÄ de fiul ei mai mic, Èi
-                    anume tot ce Ã®nsemna contact fizic voit Èi se lÄsa cu
-                    spart/rupt/umflat nasul Èi faÈa. Èi dacÄ nu mÄ lÄsa la
-                    karate? Oricum improvizam miÈcÄrile de arte marÈiale cu
-                    vecinii Ã®n spatele blocului, uneori la finalul meciurilor de
-                    fotbal sau miuÈa... erau orgolii mari
+                    - la care aveam voie - deoarece mai existau si activitati
+                    interzise de mama care avea grija de fiul ei mai mic, si
+                    anume tot ce insemna contact fizic voit si se lasa cu
+                    spart/rupt/umflat nasul si fata. Si daca nu ma lasa la
+                    karate? Oricum improvizam miscarile de arte martiale cu
+                    vecinii in spatele blocului, uneori la finalul meciurilor de
+                    fotbal sau miuta... erau orgolii mari
                   </span>
                 </span>
                 <span
@@ -251,8 +251,8 @@ const Despre = () => {
                   className={` ${styles['text25']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    Revenind la sporturile practicate, pot sa enumÄr printre
-                    acestea: fotbal, baschet, handbal Èi
+                    Revenind la sporturile practicate, pot sa enumar printre
+                    acestea: fotbal, baschet, handbal si
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -261,8 +261,8 @@ const Despre = () => {
                   </span>
                   <span className={styles['text27']}>volei</span>
                   <span>
-                    , cel din urmÄ rÄmÃ¢nÃ¢nd sportul meu de suflet. Am jucat
-                    volei 5 ani Èi am obÈinut
+                    , cel din urma ramanand sportul meu de suflet. Am jucat
+                    volei 5 ani si am obtinut
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -272,7 +272,7 @@ const Despre = () => {
                   <span className={styles['text29']}>medalia de bronz</span>
                   <span>
                     {' '}
-                    la campionatele naÈionale de juniori, de la Baia Mare 2005,
+                    la campionatele nationale de juniori, de la Baia Mare 2005,
                     pe postul de libero.
                   </span>
                 </span>
@@ -288,7 +288,7 @@ const Despre = () => {
                 </span>
               </div>
               <img
-                alt="image"
+                alt="Deadlift Vali Ignat"
                 src="/playground_assets/img_9818-1500w.jpg"
                 className={styles['image04']}
               />
@@ -299,7 +299,7 @@ const Despre = () => {
               className={` ${styles['max-content5']} ${projectStyles['max-content-container']} `}
             >
               <img
-                alt="slide-1"
+                alt="Trasnformare Vali Ignat"
                 src="/playground_assets/colaj-1500w.jpeg"
                 className={styles['image05']}
               />
@@ -308,8 +308,8 @@ const Despre = () => {
                   className={` ${styles['text33']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    Ãntr-un final, a venit Èi momentul sÄ plec de acasÄ, la
-                    vÃ¢rsta de 19 ani, spre oraÈul ce avea sa mÄ gÄzduiascÄ -
+                    Intr-un final, a venit si momentul sa plec de acasa, la
+                    varsta de 19 ani, spre orasul ce avea sa ma gazduiasca -
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -324,9 +324,9 @@ const Despre = () => {
                 >
                   <span>
                     {' '}
-                    Ãn perioada facultÄÈii am fÄcut o pauzÄ de la sport, timp de
-                    3 ani, faptÄ care a dus la o cÄdere Ã®ntr-o pantÄ abruptÄ
-                    spre un stil de viaÈÄ sedentar Èi cu un nivel scÄzut de
+                    In perioada facultatii am facut o pauza de la sport, timp de
+                    3 ani, fapta care a dus la o cadere intr-o panta abrupta
+                    spre un stil de viata sedentar si cu un nivel scazut de
                     energie.
                     <span
                       dangerouslySetInnerHTML={{
@@ -356,10 +356,10 @@ const Despre = () => {
                   </span>
                   <span>
                     vine cu putina suferinta, iar eu sufeream pentru ca nu imi
-                    mai placeam. Nu mai voiam sÄ mÄ vad gras Ã®n oglindÄ, nu Ã®mi
-                    plÄcea sÄ mÄ aud gÃ¢fÃ¢ind cÃ¢nd urcam cele patru etaje ale
-                    blocului sau sÄ mÄ Ã®ncurce burta cÃ¢nd mÄ Ã®ncheiam la
-                    Èireturi.
+                    mai placeam. Nu mai voiam sa ma vad gras Ã®n oglinda, nu imi
+                    placea sa ma aud gafaind cand urcam cele patru etaje ale
+                    blocului sau sa ma incurce burta cÃ¢nd ma incheiam la
+                    sireturi.
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -368,7 +368,7 @@ const Despre = () => {
                   </span>
                   <span className={styles['text43']}>Eu</span>
                   <span>
-                    , care proveneam dintr-o viaÈÄ sportivÄ neÃ®ntreruptÄ.
+                    , care proveneam dintr-o viata sportiva neintrerupta.
                   </span>
                 </span>
               </div>
@@ -399,7 +399,7 @@ const Despre = () => {
           >
             <div className={styles['container09']}>
               <img
-                alt="image"
+                alt="Inele Vali Ignat"
                 src="/playground_assets/img_9585-1500w.jpg"
                 className={styles['image06']}
               />
@@ -408,9 +408,9 @@ const Despre = () => {
                   className={` ${styles['text49']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    Cu un obiectiv bine stabilit am pÄÈit Ã®ntr-o salÄ
-                    neconvenÈionalÄ Ã®n 2015, unde mi-am reÃ®nceput activitatea de
-                    sportiv, sau cum Ã®mi place mie sÄ zic â
+                    Cu un obiectiv bine stabilit am pasit intr-o sala
+                    neconventionala in 2015, unde mi-am reinceput activitatea de
+                    sportiv, sau cum imi place mie sa zic â
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -426,7 +426,7 @@ const Despre = () => {
                     />
                   </span>
                   <span>
-                    - Èi mai tÃ¢rziu
+                    - si mai tarziu
                     <span
                       dangerouslySetInnerHTML={{
                         __html: ' ',
@@ -440,8 +440,8 @@ const Despre = () => {
                   className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
                 >
                   <span>
-                    A fost greu cÃ¢nd am realizat cÃ¢t de mult regresasem Ã®n trei
-                    ani de zile, Ã®nsÄ memoria muscularÄ Èi-a fÄcut treaba Èi aÈa
+                    A fost greu cand am realizat cat de mult regresasem in trei
+                    ani de zile, insa memoria musculara si-a facut treaba si asa
                     am revenit la forma pe care mi-am dorit-o, dar tot timpul cu
                     <span
                       dangerouslySetInnerHTML={{
@@ -452,7 +452,7 @@ const Despre = () => {
                   <span className={styles['text57']}>obiectivul notat</span>
                   <span>
                     {' '}
-                    cu litere mari pe hÃ¢rtie Èi Ã®n minte, ajungÃ¢nd din ce Ã®n ce
+                    cu litere mari pe hartie si Ã®n minte, ajungand din ce in ce
                     mai aproape de el.
                   </span>
                 </span>
@@ -463,8 +463,8 @@ const Despre = () => {
                 className={` ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
               >
                 <span>
-                  OdatÄ ce obiectivul a fost atins am fixat altul, care la
-                  rÃ¢ndul sÄu a fost Ã®ndeplinit cu
+                  Odata ce obiectivul a fost atins am fixat altul, care la
+                  randul sau a fost indeplinit cu
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -473,7 +473,7 @@ const Despre = () => {
                 </span>
                 <span className={styles['text61']}>succes</span>
                 <span>
-                  . Ãn acest mod anii au trecut, adÄugÃ¢nd Èi mai multÄ
+                  . In acest mod anii au trecut, adaugand si mai multa
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
@@ -489,14 +489,14 @@ const Despre = () => {
                   />
                 </span>
                 <span>
-                  pentru ceea ce fac Èi
+                  pentru ceea ce fac si
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className={styles['text65']}>disciplinÄ</span>
+                <span className={styles['text65']}>disciplina</span>
                 <span>.</span>
               </span>
             </div>
@@ -509,7 +509,7 @@ const Despre = () => {
             <div className={styles['Left']}>
               <div className={styles['container11']}>
                 <img
-                  alt="image"
+                  alt="La sala cu Vali Ignat"
                   src="/playground_assets/img_3703-edit-1500h.jpg"
                   className={styles['image07']}
                 />
@@ -525,7 +525,7 @@ const Despre = () => {
                 </span>
               </div>
               <img
-                alt="image"
+                alt="Spartan - Vali Ignat"
                 src="/playground_assets/img_3005-1500h.jpg"
                 className={styles['image08']}
               />
@@ -541,25 +541,25 @@ const Despre = () => {
                   />
                 </span>
                 <span className={styles['text71']}>antrenor</span>
-                <span>, iar atleÈii mei Ã®mi spun â</span>
+                <span>, iar atletii mei imi spun â</span>
                 <span className={styles['text73']}>coach</span>
                 <span>
-                  â. Sunt cel mai fericit pentru cÄ merg la un job unde devin pe
-                  zi ce trece mai puternic, mai Ã®nÈelept, Èi unde am reuÈit
+                  â. Sunt cel mai fericit pentru ca merg la un job unde devin pe
+                  zi ce trece mai puternic, mai intelept, si unde am reusit
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className={styles['text75']}>sÄ mÄ iubesc</span>
+                <span className={styles['text75']}>sa ma iubesc</span>
                 <span> pentru tot ceea ce fac.</span>
               </span>
             </div>
             <div className={styles['Right']}>
               <div className={styles['container12']}>
                 <img
-                  alt="image"
+                  alt="Yoga cu Vali Ignat"
                   src="/playground_assets/img_4100-1500w.jpg"
                   className={styles['image09']}
                 />
@@ -568,7 +568,7 @@ const Despre = () => {
                 </h1>
               </div>
               <img
-                alt="image"
+                alt="La mare cu Vali Ignat"
                 src="/playground_assets/img_2868-1500h.jpg"
                 className={styles['image10']}
               />
@@ -577,7 +577,7 @@ const Despre = () => {
               </span>
               <div className={styles['container13']}>
                 <img
-                  alt="image"
+                  alt="Fandari cu Vali Ignat"
                   src="/playground_assets/img_9937-1500w.jpg"
                   className={styles['image11']}
                 />
@@ -599,20 +599,20 @@ const Despre = () => {
                 className={` ${styles['text80']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
               >
                 <span>
-                  Realizez cÄ job-ul reprezintÄ
+                  Realizez cÄ job-ul reprezinta
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
                     }}
                   />
                 </span>
-                <span className={styles['text82']}>modul meu de a trÄi</span>
+                <span className={styles['text82']}>modul meu de a trai</span>
                 <span>
                   {' '}
-                  Èi de a-mi rescrie povestea spre obiectivele importante ale
-                  vieÈii. Apreciez fiecare moment care mi se Ã®ntÃ¢mplÄ Èi mÄ
-                  bucur de fiecare clipÄ Ã®ncercÃ¢nd sÄ acumulez cÃ¢te ceva nou Èi
-                  util din mediul âcu care mÄ Ã®nconjorâ
+                  si de a-mi rescrie povestea spre obiectivele importante ale
+                  vietii. Apreciez fiecare moment care mi se intampla si ma
+                  bucur de fiecare clipa incercand sa acumulez cate ceva nou si
+                  util din mediul âcu care ma inconjorâ
                 </span>
               </span>
               <Link to="/povesti-de-succes" className={styles['navlink']}>
@@ -625,12 +625,12 @@ const Despre = () => {
             </div>
             <div className={styles['Image-Container1']}>
               <img
-                alt="image"
+                alt="La mare cu Vali Ignat"
                 src="/playground_assets/img_1871-1500h.jpg"
                 className={styles['image12']}
               />
               <img
-                alt="image"
+                alt="Tractiuni cu Vali Ignat"
                 src="/playground_assets/img_9904-1500h.jpg"
                 className={styles['image13']}
               />
