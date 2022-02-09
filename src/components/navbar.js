@@ -110,7 +110,7 @@ const Navbar = (props) => {
             <Link to="/blog-home" className={styles['navlink6']}>
               <div className={styles['Bullet5']}>
                 <div
-                  data-url="/blog"
+                  data-url="/blog-home"
                   className={` ${styles['BulletContent5']} ${projectStyles['tl-bullet']} `}
                 >
                   <div className={projectStyles['inner-white']}></div>

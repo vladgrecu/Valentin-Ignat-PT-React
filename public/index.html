@@ -414,9 +414,13 @@
           // TODO
         };
 
-        const setActivePage = () => {
+       const setActivePage = () => {
           document.querySelectorAll(".tl-bullet").forEach((bullet) => {
-            if (bullet.dataset.url === `/${location.href.split("/")[3]}`) {
+            const url = `/${location.href.split("/")[3]}`;
+            if (
+              bullet.dataset.url === url ||
+              (bullet.dataset.url === "/blog-home" && url.includes("/blog"))
+            ) {
               bullet.classList.add("tl-bullet-active");
               bullet.firstElementChild.classList.add("tl-inner-active");
             } else {

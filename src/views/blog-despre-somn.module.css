@@ -31,6 +31,7 @@
   display: flex;
   position: relative;
   margin-bottom: var(--dl-space-space-doubleunit);
+  flex-direction: column;
 }
 .horizontal-line {
   width: 4px;
@@ -38,6 +39,16 @@
   align-self: stretch;
   margin-right: var(--dl-space-space-doubleunit);
   background-color: var(--dl-color-default-primary);
+}
+.navlink {
+  display: contents;
+}
+.goBack {
+  width: fit-content;
+  display: flex;
+  margin-top: var(--dl-space-space-doubleunit);
+  flex-direction: column;
+  text-decoration: none;
 }
 .Articol {
   flex: 0 0 auto;

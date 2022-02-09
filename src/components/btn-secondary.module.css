@@ -24,6 +24,8 @@
 
 
 
+
+
 @media(max-width: 767px) {
   .rootClassName5 {
     align-self: flex-end;
@@ -44,6 +46,12 @@
     align-self: flex-end;
   }
   .rootClassName13 {
+    align-self: flex-end;
+  }
+  .rootClassName16 {
+    align-self: flex-end;
+  }
+  .rootClassName17 {
     align-self: flex-end;
   }
 }

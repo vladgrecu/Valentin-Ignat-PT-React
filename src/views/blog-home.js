@@ -9,6 +9,7 @@ import ContactFormModal from '../components/contact-form-modal'
 import Navbar from '../components/navbar'
 import MobileMenu from '../components/mobile-menu'
 import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
+import BlogPostCard from '../components/blog-post-card'
 import BtnSecondary from '../components/btn-secondary'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
@@ -51,16 +52,35 @@ const BlogHome = () => {
           <div
             className={` ${styles['max-content1']} ${projectStyles['max-content-container']} `}
           >
-            <div className={styles['BlogPostCard']}>
+            <BlogPostCard
+              titlu="Post 1"
+              Image_src="/playground_assets/34249831-1500w.jpg"
+              rootClassName="rootClassName"
+            ></BlogPostCard>
+            <BlogPostCard
+              titlu="Post 2"
+              Image_src="/playground_assets/121300894_398877651278033_1137013070053583593_n-1500w.jpg"
+              rootClassName="rootClassName2"
+            ></BlogPostCard>
+            <BlogPostCard
+              titlu="post 3"
+              Image_src="/playground_assets/121331170_254931365935904_1111116640039076298_n-1500w.jpg"
+              rootClassName="rootClassName1"
+            ></BlogPostCard>
+            <div id="despre-somn" className={styles['BlogPostCard']}>
               <div className={styles['container1']}>
-                <div className={styles['Image']}></div>
+                <img
+                  alt="descriere imagine"
+                  src="/playground_assets/image%205%20%5B1%5D-1500w.png"
+                  className={styles['Image']}
+                />
               </div>
               <div className={styles['container2']}>
                 <div className={styles['container3']}>
                   <span className={styles['text']}>24 dec 2021</span>
                 </div>
                 <h1 className={` ${styles['text01']} ${projectStyles['h2']} `}>
-                  Titlu articol
+                  Despre somn
                 </h1>
                 <span
                   className={` ${styles['text02']} ${projectStyles['content-Bold']} ${projectStyles['content-bold-white']} `}
@@ -94,20 +114,11 @@ const BlogHome = () => {
                   </span>
                 </span>
                 <div className={styles['Btn']}>
-                  <Link to="/blog-despre-somn">
+                  <Link to="/blog-despre-somn" className={styles['navlink']}>
                     <BtnSecondary
                       cta_text="citeste mai mult"
-                      rootClassName="rootClassName9"
-                      className={styles['component6']}
-                    ></BtnSecondary>
-                  </Link>
-                </div>
-                <div className={styles['Btn1']}>
-                  <Link to="/blog-despre-somn" className={styles['navlink1']}>
-                    <BtnSecondary
-                      cta_text="citeste mai mult"
-                      rootClassName="rootClassName5"
-                      className={styles['component7']}
+                      rootClassName="rootClassName17"
+                      className={styles['component09']}
                     ></BtnSecondary>
                   </Link>
                 </div>

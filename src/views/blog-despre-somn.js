@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
 
@@ -49,11 +50,19 @@ const BlogDespreSomn = () => {
               >
                 despre somn
               </span>
+              <Link to="/blog-home" className={styles['navlink']}>
+                <div
+                  scrollTo="despre-somn"
+                  data-goBack="blog-home"
+                  className={styles['goBack']}
+                >
+                  <BtnSecondary
+                    cta_text="Inapoi la lista articole..."
+                    rootClassName="rootClassName14"
+                  ></BtnSecondary>
+                </div>
+              </Link>
             </div>
-            <BtnSecondary
-              cta_text="Inapoi la lista articole..."
-              rootClassName="rootClassName14"
-            ></BtnSecondary>
           </div>
         </section>
         <div
