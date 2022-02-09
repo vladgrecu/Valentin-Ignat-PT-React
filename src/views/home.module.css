@@ -103,7 +103,7 @@
   font-size: 45px;
   text-align: center;
 }
-.container1 {
+.container01 {
   flex: 1;
   width: 100%;
   height: 100%;
@@ -113,7 +113,7 @@
   background-image: url("/playground_assets/img_9665-1500w.jpg");
   background-position: top left;
 }
-.container1:hover {
+.container01:hover {
   background-color: rgba(215, 39, 48, 0.3);
   background-blend-mode: color-burn;
 }
@@ -129,7 +129,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.Container2 {
+.Container02 {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -184,7 +184,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.Container3 {
+.Container03 {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -300,7 +300,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.Container7 {
+.Container07 {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -360,7 +360,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.Container8 {
+.Container08 {
   flex: 0 0 auto;
   display: flex;
   align-items: center;
@@ -397,6 +397,51 @@
   align-items: stretch;
   flex-direction: row;
   justify-content: space-between;
+}
+.BlogCard {
+  width: 48%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dl-color-neutral-white);
+}
+.image4 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.container09 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.horizontal-line5 {
+  flex: 0 0 auto;
+  width: 35px;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-doubleunit);
+  flex-direction: column;
+  background-color: var(--dl-color-neutral-white);
+}
+.text44 {
+  color: var(--dl-color-neutral-white);
+}
+.text45 {
+  color: var(--dl-color-neutral-white);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.articol-link {
+  transform: translateY();
+}
+.component15 {
+  text-decoration: none;
 }
 @media(max-width: 991px) {
   .Text-Container {
@@ -450,6 +495,9 @@
   .TitleContainer3 {
     margin-bottom: var(--dl-space-space-tripleunit);
   }
+  .BlogCard {
+    width: 100%;
+  }
 }
 @media(max-width: 479px) {
   .Text-Container {
@@ -466,5 +514,8 @@
   }
   .Text-Container1 {
     padding-top: var(--dl-space-space-doubleunit);
+  }
+  .BlogCard {
+    height: 350px;
   }
 }

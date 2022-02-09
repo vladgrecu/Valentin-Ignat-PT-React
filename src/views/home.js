@@ -12,7 +12,7 @@ import FadeInLeftHeroSection from '../components/fade-in-left-hero-section'
 import BtnPrimary from '../components/btn-primary'
 import ServiceCard from '../components/service-card'
 import PlayBtn from '../components/play-btn'
-import BlogCard from '../components/blog-card'
+import BtnSecondary from '../components/btn-secondary'
 import Footer from '../components/footer'
 import projectStyles from '../style.module.css'
 import styles from './home.module.css'
@@ -132,14 +132,14 @@ const Home = () => {
             >
               evaluare. conexiune. experienta.
             </h1>
-            <div className={styles['container1']}></div>
+            <div className={styles['container01']}></div>
           </div>
           <div
             className={` ${styles['max-content2']} ${projectStyles['max-content-container']} `}
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer']}>
-                <div className={styles['Container2']}>
+                <div className={styles['Container02']}>
                   <div className={styles['horizontal-line1']}></div>
                   <span className={styles['text08']}>Shop</span>
                 </div>
@@ -181,7 +181,7 @@ const Home = () => {
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer1']}>
-                <div className={styles['Container3']}>
+                <div className={styles['Container03']}>
                   <div className={styles['horizontal-line2']}></div>
                   <span className={styles['text10']}>feedback</span>
                 </div>
@@ -369,7 +369,7 @@ const Home = () => {
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer2']}>
-                <div className={styles['Container7']}>
+                <div className={styles['Container07']}>
                   <div className={styles['horizontal-line3']}></div>
                   <span className={styles['text40']}>HIIT</span>
                 </div>
@@ -413,7 +413,7 @@ const Home = () => {
           >
             <div className={projectStyles['section-heading-container']}>
               <div className={styles['TitleContainer3']}>
-                <div className={styles['Container8']}>
+                <div className={styles['Container08']}>
                   <div className={styles['horizontal-line4']}></div>
                   <span className={styles['text42']}>Blog</span>
                 </div>
@@ -428,12 +428,37 @@ const Home = () => {
               </Link>
             </div>
             <div className={styles['Cards-Container1']}>
-              <BlogCard
-                data="24 dec 2021"
-                autor="Vali Ignat"
-                image_src="/playground_assets/image%205%20%5B1%5D-1500w.png"
-                rootClassName="rootClassName"
-              ></BlogCard>
+              <div className={styles['BlogCard']}>
+                <div className={projectStyles['blog-card-fullbg-container']}>
+                  <img
+                    alt="image"
+                    src="/playground_assets/image%205%20%5B1%5D-1500w.png"
+                    className={styles['image4']}
+                  />
+                  <div className={projectStyles['blog-card-caption']}>
+                    <div className={styles['container09']}>
+                      <div className={styles['horizontal-line5']}></div>
+                      <span
+                        className={` ${styles['text44']} ${projectStyles['content-Light']} `}
+                      >
+                        24 dec 2021
+                      </span>
+                    </div>
+                    <h3 className={styles['text45']}>Vali Ignat</h3>
+                    <div
+                      className={` ${styles['articol-link']} ${projectStyles['blog-card-bottom-container']} `}
+                    >
+                      <Link to="/blog-despre-somn">
+                        <BtnSecondary
+                          cta_text="Citeste articol"
+                          rootClassName="rootClassName15"
+                          className={styles['component15']}
+                        ></BtnSecondary>
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
